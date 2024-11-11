@@ -1,0 +1,4634 @@
+# depslib dependency file v1.0
+1557912487 source:e:\boulot\amandine\8ball\main.cpp
+	"8ball.h"
+	"lights.h"
+	"mask_model.h"
+	"cube_model.h"
+	"camera.c"
+	"charset.c"
+	"copy_v.c"
+	"angle.c"
+	"length.c"
+	"sub_v.c"
+	"add_v.c"
+	"unit.c"
+	"misc.c"
+
+1073234947 e:\boulot\amandine\sdl-1.2.9\include\sdl.h
+	"SDL_main.h"
+	"SDL_types.h"
+	"SDL_getenv.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_timer.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_joystick.h"
+	"SDL_events.h"
+	"SDL_video.h"
+	"SDL_byteorder.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073234947 e:\boulot\amandine\sdl-1.2.9\include\sdl_main.h
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1090382006 e:\boulot\amandine\sdl-1.2.9\include\sdl_types.h
+
+1105225981 e:\boulot\amandine\sdl-1.2.9\include\begin_code.h
+
+1073234948 e:\boulot\amandine\sdl-1.2.9\include\close_code.h
+
+1018532113 e:\boulot\amandine\sdl-1.2.9\include\sdl_getenv.h
+	"begin_code.h"
+	"close_code.h"
+
+1100561407 e:\boulot\amandine\sdl-1.2.9\include\sdl_error.h
+	"begin_code.h"
+	"close_code.h"
+
+1093024621 e:\boulot\amandine\sdl-1.2.9\include\sdl_rwops.h
+	<stdio.h>
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1105658696 e:\boulot\amandine\sdl-1.2.9\include\sdl_timer.h
+	"SDL_main.h"
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1093024621 e:\boulot\amandine\sdl-1.2.9\include\sdl_audio.h
+	<stdio.h>
+	"SDL_main.h"
+	"SDL_types.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_byteorder.h"
+	"begin_code.h"
+	"close_code.h"
+
+1100297357 e:\boulot\amandine\sdl-1.2.9\include\sdl_byteorder.h
+
+1113729390 e:\boulot\amandine\sdl-1.2.9\include\sdl_cdrom.h
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1090173906 e:\boulot\amandine\sdl-1.2.9\include\sdl_joystick.h
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1093024621 e:\boulot\amandine\sdl-1.2.9\include\sdl_events.h
+	"SDL_types.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073234947 e:\boulot\amandine\sdl-1.2.9\include\sdl_active.h
+	"begin_code.h"
+	"close_code.h"
+
+1090187860 e:\boulot\amandine\sdl-1.2.9\include\sdl_keyboard.h
+	"SDL_types.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073234947 e:\boulot\amandine\sdl-1.2.9\include\sdl_keysym.h
+
+1113729390 e:\boulot\amandine\sdl-1.2.9\include\sdl_mouse.h
+	"SDL_types.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1104642676 e:\boulot\amandine\sdl-1.2.9\include\sdl_video.h
+	<stdio.h>
+	"SDL_types.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073234947 e:\boulot\amandine\sdl-1.2.9\include\sdl_mutex.h
+	"SDL_main.h"
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073234947 e:\boulot\amandine\sdl-1.2.9\include\sdl_quit.h
+
+1113729390 e:\boulot\amandine\sdl-1.2.9\include\sdl_version.h
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1556376011 source:e:\boulot\amandine\8ball\src\buttons_ft.cpp
+	"HeightMap.h"
+
+1572200733 e:\boulot\amandine\8ball\include\heightmap.h
+	"8ball.h"
+
+1556139687 source:e:\boulot\amandine\8ball\src\circle.cpp
+	"HeightMap.h"
+
+1555958522 source:e:\boulot\amandine\8ball\src\click_area.cpp
+	"HeightMap.h"
+
+1556108773 source:e:\boulot\amandine\8ball\src\click_surface.cpp
+	"HeightMap.h"
+
+1556281902 source:e:\boulot\amandine\8ball\src\color_scheme.cpp
+	"HeightMap.h"
+
+1556122701 source:e:\boulot\amandine\8ball\src\cursor.cpp
+	"HeightMap.h"
+
+1556539439 source:e:\boulot\amandine\8ball\src\draw.cpp
+	"HeightMap.h"
+
+1555872028 source:e:\boulot\amandine\8ball\src\dtoa.cpp
+	"HeightMap.h"
+
+1556524325 source:e:\boulot\amandine\8ball\src\edit_tools.cpp
+	"HeightMap.h"
+
+1556374574 source:e:\boulot\amandine\8ball\src\ellipse.cpp
+	"HeightMap.h"
+
+1556539397 source:e:\boulot\amandine\8ball\src\event_processing.cpp
+	"HeightMap.h"
+
+1555941948 source:e:\boulot\amandine\8ball\src\export.cpp
+	"HeightMap.h"
+
+1555956704 source:e:\boulot\amandine\8ball\src\fill_surface.cpp
+	"HeightMap.h"
+
+1556530672 source:e:\boulot\amandine\8ball\src\grid.cpp
+	"HeightMap.h"
+
+1556533745 source:e:\boulot\amandine\8ball\src\isometric.cpp
+	"HeightMap.h"
+
+1556293528 source:e:\boulot\amandine\8ball\src\line.cpp
+	"HeightMap.h"
+
+1555876126 source:e:\boulot\amandine\8ball\src\list.cpp
+	"HeightMap.h"
+
+1556539447 source:e:\boulot\amandine\8ball\src\main.cpp
+	"HeightMap.h"
+
+1556276498 source:e:\boulot\amandine\8ball\src\make_conf.cpp
+	"HeightMap.h"
+
+1556188789 source:e:\boulot\amandine\8ball\src\mapping.cpp
+	"HeightMap.h"
+
+1556530949 source:e:\boulot\amandine\8ball\src\mouse_input_processing.cpp
+	"HeightMap.h"
+
+1556120719 source:e:\boulot\amandine\8ball\src\on_area.cpp
+	"HeightMap.h"
+
+1556108769 source:e:\boulot\amandine\8ball\src\on_surface.cpp
+	"HeightMap.h"
+
+1556137901 source:e:\boulot\amandine\8ball\src\rotate_pt.cpp
+	"HeightMap.h"
+
+1556028587 source:e:\boulot\amandine\8ball\src\set_color.cpp
+	"HeightMap.h"
+
+1556101004 source:e:\boulot\amandine\8ball\src\square.cpp
+	"HeightMap.h"
+
+1556201351 source:e:\boulot\amandine\8ball\src\toolbar_input_processing.cpp
+	"HeightMap.h"
+
+1556525231 source:e:\boulot\amandine\8ball\src\ui.cpp
+	"HeightMap.h"
+
+1556376011 source:e:\boulot\amandine\8ball\src\heightmap\buttons_ft.cpp
+	"HeightMap.h"
+
+1583422249 e:\boulot\amandine\8ball\include\8ball.h
+	<cstdlib>
+	<stdlib.h>
+	<windows.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<time.h>
+	<pthread.h>
+	<OpenCL/cl.h>
+	"cl.h"
+	"todo_string.h"
+	"SDL.h"
+	"my_color_table.h"
+	"model.h"
+	"float.h"
+	"macro/NATOphonetic.h"
+	"structures.h"
+	"camera.h"
+	"alphabet_tileset.h"
+	"geometry.h"
+	"rasterization.h"
+	"sdl_util.h"
+	"opencl_util.h"
+	"ft_gpu.h"
+	"toolset.h"
+	"mouse.h"
+	"filesystem.h"
+	"export.h"
+	"import.h"
+	"hud.h"
+	"morpho.h"
+	"frame.h"
+	"history.h"
+	"user_interface.h"
+	"input_manager.h"
+	"ascii_art_box.h"
+
+1575124440 e:\boulot\amandine\8ball\include\geometry.h
+	"8ball.h"
+
+1583438273 e:\boulot\amandine\8ball\include\sdl_util.h
+	"8ball.h"
+
+1556139687 source:e:\boulot\amandine\8ball\src\heightmap\circle.cpp
+	"HeightMap.h"
+
+1555958522 source:e:\boulot\amandine\8ball\src\heightmap\click_area.cpp
+	"HeightMap.h"
+
+1556108773 source:e:\boulot\amandine\8ball\src\heightmap\click_surface.cpp
+	"HeightMap.h"
+
+1556281902 source:e:\boulot\amandine\8ball\src\heightmap\color_scheme.cpp
+	"HeightMap.h"
+
+1556122701 source:e:\boulot\amandine\8ball\src\heightmap\cursor.cpp
+	"HeightMap.h"
+
+1557331844 source:e:\boulot\amandine\8ball\src\heightmap\draw.cpp
+	"HeightMap.h"
+
+1555872028 source:e:\boulot\amandine\8ball\src\heightmap\dtoa.cpp
+	"HeightMap.h"
+
+1556524325 source:e:\boulot\amandine\8ball\src\heightmap\edit_tools.cpp
+	"HeightMap.h"
+
+1556374574 source:e:\boulot\amandine\8ball\src\heightmap\ellipse.cpp
+	"HeightMap.h"
+
+1557152293 source:e:\boulot\amandine\8ball\src\heightmap\event_processing.cpp
+	"HeightMap.h"
+
+1555941948 source:e:\boulot\amandine\8ball\src\heightmap\export.cpp
+	"HeightMap.h"
+
+1555956704 source:e:\boulot\amandine\8ball\src\heightmap\fill_surface.cpp
+	"HeightMap.h"
+
+1557145078 source:e:\boulot\amandine\8ball\src\heightmap\grid.cpp
+	"HeightMap.h"
+
+1556533745 source:e:\boulot\amandine\8ball\src\heightmap\isometric.cpp
+	"HeightMap.h"
+
+1556293528 source:e:\boulot\amandine\8ball\src\heightmap\line.cpp
+	"HeightMap.h"
+
+1555876126 source:e:\boulot\amandine\8ball\src\heightmap\list.cpp
+	"HeightMap.h"
+
+1556276498 source:e:\boulot\amandine\8ball\src\heightmap\make_conf.cpp
+	"HeightMap.h"
+
+1556188789 source:e:\boulot\amandine\8ball\src\heightmap\mapping.cpp
+	"HeightMap.h"
+
+1556530949 source:e:\boulot\amandine\8ball\src\heightmap\mouse_input_processing.cpp
+	"HeightMap.h"
+
+1556120719 source:e:\boulot\amandine\8ball\src\heightmap\on_area.cpp
+	"HeightMap.h"
+
+1556108769 source:e:\boulot\amandine\8ball\src\heightmap\on_surface.cpp
+	"HeightMap.h"
+
+1556137901 source:e:\boulot\amandine\8ball\src\heightmap\rotate_pt.cpp
+	"HeightMap.h"
+
+1556028587 source:e:\boulot\amandine\8ball\src\heightmap\set_color.cpp
+	"HeightMap.h"
+
+1556101004 source:e:\boulot\amandine\8ball\src\heightmap\square.cpp
+	"HeightMap.h"
+
+1556201351 source:e:\boulot\amandine\8ball\src\heightmap\toolbar_input_processing.cpp
+	"HeightMap.h"
+
+1556525231 source:e:\boulot\amandine\8ball\src\heightmap\ui.cpp
+	"HeightMap.h"
+
+1582127765 source:e:\boulot\amandine\8ball\src\sdl_util\blit.c
+	"8ball.h"
+
+1581940750 e:\boulot\amandine\8ball\include\rasterization.h
+	"8ball.h"
+
+1581940985 source:e:\boulot\amandine\8ball\src\rasterization\triangle.c
+	"8ball.h"
+
+1557156871 source:e:\boulot\amandine\8ball\src\sdl_util\line.cpp
+	"sdl_util.h"
+
+1557912942 source:e:\boulot\amandine\8ball\src\sdl_util\mapping.cpp
+	"sdl_util.h"
+
+1557154984 source:e:\boulot\amandine\8ball\src\sdl_util\square.cpp
+	"sdl_util.h"
+
+1557158059 e:\boulot\amandine\8ball\src\sdl_util\blit.c
+	"sdl_util.h"
+
+1557839550 source:e:\boulot\amandine\8ball\src\sdl_util\blit.cpp
+	"8ball.h"
+
+1557681924 source:e:\boulot\amandine\8ball\src\rasterization\triangle.cpp
+	"8ball.h"
+	"dot_prod.c"
+	"cross_prod.c"
+	"div_v.c"
+
+1569147768 source:e:\boulot\amandine\8ball\src\geometry\add_v.c
+	"geometry.h"
+
+1563116075 source:e:\boulot\amandine\8ball\src\geometry\cross_prod.c
+	"geometry.h"
+
+1562851837 source:e:\boulot\amandine\8ball\src\geometry\dot_prod.c
+	"geometry.h"
+
+1571940909 source:e:\boulot\amandine\8ball\src\geometry\length.c
+	"geometry.h"
+
+1562851901 source:e:\boulot\amandine\8ball\src\geometry\sub_v.c
+	"geometry.h"
+
+1563011387 source:e:\boulot\amandine\8ball\src\geometry\unit.c
+	"geometry.h"
+
+1557488370 e:\boulot\amandine\8ball\src\geometry\dot_prod.c
+	"geometry.h"
+
+1569765343 source:e:\boulot\amandine\8ball\src\geometry\mtp_v.c
+	"geometry.h"
+
+1562851798 source:e:\boulot\amandine\8ball\src\geometry\div_v.c
+	"geometry.h"
+
+1557330188 e:\boulot\amandine\8ball\src\geometry\cross_prod.c
+	"geometry.h"
+
+1557335811 e:\boulot\amandine\8ball\src\geometry\div_v.c
+	"geometry.h"
+
+1557917689 e:\boulot\amandine\8ball\include\mask_model.h
+
+1570724724 source:e:\boulot\amandine\8ball\src\geometry\rotate.c
+	"geometry.h"
+
+1583496954 source:e:\boulot\amandine\8ball\src\camera.c
+	"camera.h"
+	"opencl_util.h"
+
+1562851886 source:e:\boulot\amandine\8ball\src\geometry\misc.c
+	"geometry.h"
+
+1556539447 source:e:\boulot\amandine\8ball\src\heightmap\oldmain.cpp
+	"HeightMap.h"
+
+1562851780 source:e:\boulot\amandine\8ball\src\geometry\copy_v.c
+	"geometry.h"
+
+1573299916 source:e:\boulot\amandine\8ball\src\geometry\angle.c
+	"geometry.h"
+
+1557497971 e:\boulot\amandine\8ball\src\geometry\length.c
+	"geometry.h"
+
+1557493740 e:\boulot\amandine\8ball\src\geometry\angle.c
+	"geometry.h"
+
+1557765413 e:\boulot\amandine\8ball\src\camera.c
+	"8ball.h"
+
+1557488005 e:\boulot\amandine\8ball\src\geometry\copy_v.c
+	"geometry.h"
+
+1557081183 e:\boulot\amandine\8ball\src\geometry\sub_v.c
+	"geometry.h"
+
+1557081153 e:\boulot\amandine\8ball\src\geometry\unit.c
+	"geometry.h"
+
+1557081169 e:\boulot\amandine\8ball\src\geometry\add_v.c
+	"geometry.h"
+
+1557507611 e:\boulot\amandine\8ball\src\geometry\misc.c
+	"geometry.h"
+
+1557917717 e:\boulot\amandine\8ball\include\lights.h
+
+1557918972 e:\boulot\amandine\8ball\include\cube_model.h
+
+1579274169 source:e:\boulot\amandine\8ball\src\charset.c
+	"alphabet_tileset.h"
+
+1576987610 e:\boulot\amandine\8ball\tileset\charset_lowercase.h
+
+1571919522 e:\boulot\amandine\8ball\tileset\charset_uppercase.h
+
+1563029958 e:\boulot\amandine\8ball\tileset\charset_numbers.h
+
+1563029971 e:\boulot\amandine\8ball\tileset\charset_ponctuation.h
+
+1557913481 e:\boulot\amandine\8ball\src\charset.c
+	"8ball.h"
+	"sdl_util.h"
+	"charset_lowercase.h"
+	"charset_uppercase.h"
+	"charset_numbers.h"
+	"charset_ponctuation.h"
+
+1557912942 e:\boulot\amandine\8ball\src\sdl_util\mapping.cpp
+	"sdl_util.h"
+
+1583442278 source:e:\boulot\amandine\8ball\main.c
+	"8ball.h"
+	"model.h"
+	"alphabet_tileset.h"
+	"frame.h"
+
+1556372411 source:e:\boulot\amandine\8ball\src\heightmap\buttons_ft.c
+	"HeightMap.h"
+
+1572200712 source:e:\boulot\amandine\8ball\src\heightmap\circle.c
+	"HeightMap.h"
+
+1555954922 source:e:\boulot\amandine\8ball\src\heightmap\click_area.c
+	"HeightMap.h"
+
+1556105173 source:e:\boulot\amandine\8ball\src\heightmap\click_surface.c
+	"HeightMap.h"
+
+1562852752 source:e:\boulot\amandine\8ball\src\heightmap\color_scheme.c
+	"HeightMap.h"
+
+1556119101 source:e:\boulot\amandine\8ball\src\heightmap\cursor.c
+	"HeightMap.h"
+
+1562852836 source:e:\boulot\amandine\8ball\src\heightmap\draw.c
+	"HeightMap.h"
+
+1555868428 source:e:\boulot\amandine\8ball\src\heightmap\dtoa.c
+	"HeightMap.h"
+
+1562852862 source:e:\boulot\amandine\8ball\src\heightmap\edit_tools.c
+	"HeightMap.h"
+
+1556370974 source:e:\boulot\amandine\8ball\src\heightmap\ellipse.c
+	"HeightMap.h"
+
+1557148693 source:e:\boulot\amandine\8ball\src\heightmap\event_processing.c
+	"HeightMap.h"
+
+1555938348 source:e:\boulot\amandine\8ball\src\heightmap\export.c
+	"HeightMap.h"
+
+1555953104 source:e:\boulot\amandine\8ball\src\heightmap\fill_surface.c
+	"HeightMap.h"
+
+1562852445 source:e:\boulot\amandine\8ball\src\heightmap\grid.c
+	"HeightMap.h"
+
+1562852897 source:e:\boulot\amandine\8ball\src\heightmap\isometric.c
+	"HeightMap.h"
+
+1555872526 source:e:\boulot\amandine\8ball\src\heightmap\list.c
+	"HeightMap.h"
+
+1556272898 source:e:\boulot\amandine\8ball\src\heightmap\make_conf.c
+	"HeightMap.h"
+
+1556527349 source:e:\boulot\amandine\8ball\src\heightmap\mouse_input_processing.c
+	"HeightMap.h"
+
+1556539447 source:e:\boulot\amandine\8ball\src\heightmap\oldmain.c
+	"HeightMap.h"
+
+1556117119 source:e:\boulot\amandine\8ball\src\heightmap\on_area.c
+	"HeightMap.h"
+
+1556105169 source:e:\boulot\amandine\8ball\src\heightmap\on_surface.c
+	"HeightMap.h"
+
+1562852468 source:e:\boulot\amandine\8ball\src\heightmap\rotate_pt.c
+	"HeightMap.h"
+
+1556024987 source:e:\boulot\amandine\8ball\src\heightmap\set_color.c
+	"HeightMap.h"
+
+1556197751 source:e:\boulot\amandine\8ball\src\heightmap\toolbar_input_processing.c
+	"HeightMap.h"
+
+1556521631 source:e:\boulot\amandine\8ball\src\heightmap\ui.c
+	"HeightMap.h"
+
+1579119091 source:e:\boulot\amandine\8ball\src\sdl_util\line.c
+	"sdl_util.h"
+
+1582489543 source:e:\boulot\amandine\8ball\src\sdl_util\mapping.c
+	"sdl_util.h"
+
+1582383430 source:e:\boulot\amandine\8ball\src\sdl_util\square.c
+	"sdl_util.h"
+
+1582387695 e:\boulot\amandine\8ball\include\alphabet_tileset.h
+	"8ball.h"
+	"charset_lowercase.h"
+	"charset_uppercase.h"
+	"charset_numbers.h"
+	"charset_ponctuation.h"
+	"charset_special.h"
+
+1578489856 e:\boulot\amandine\8ball\include\model.h
+	"8ball.h"
+	"putin_model.h"
+	"disc_model.h"
+	"miko_model.h"
+	"debug_model.h"
+	"punk_model.h"
+	"lol_model.h"
+	"wave_model.h"
+	"strip_model.h"
+	"knight_model.h"
+	"mask_model.h"
+	"bust_model.h"
+	"cube_model.h"
+	"lights.h"
+
+1557919886 source:e:\boulot\amandine\8ball\src\model\lights.c
+	"model.h"
+
+1557920856 source:e:\boulot\amandine\8ball\src\model\cube_model.c
+	"model.h"
+
+1557920904 source:e:\boulot\amandine\8ball\src\model\mask_model.c
+	"model.h"
+
+1582199469 e:\boulot\amandine\8ball\include\my_color_table.h
+	"8ball.h"
+
+1557922410 source:e:\boulot\amandine\8ball\src\color\my_color_table.c
+
+1567193547 e:\boulot\amandine\8ball\include\model\cube_model.h
+	"model.h"
+
+1574884287 e:\boulot\amandine\8ball\include\model\mask_model.h
+	"model.h"
+
+1564745054 e:\boulot\amandine\8ball\include\model\lights.h
+	"model.h"
+
+1571139886 e:\boulot\amandine\8ball\tileset\ascii_art_box.h
+
+1581626204 e:\boulot\amandine\8ball\tileset\charset_special.h
+
+1562852639 e:\boulot\amandine\8ball\include\model\debug_model.h
+	"model.h"
+
+1583442291 e:\boulot\amandine\8ball\include\camera.h
+	"8ball.h"
+
+1562852801 e:\boulot\amandine\8ball\include\model\teapot_model.h
+	"model.h"
+
+1569165444 e:\boulot\amandine\8ball\include\model\strip_model.h
+	"model.h"
+
+1563115139 source:e:\boulot\amandine\8ball\src\sdl_util\mtp_color.c
+	"8ball.h"
+
+1562856165 e:\boulot\amandine\8ball\include\model\carpet_model.h
+	"model.h"
+
+1562584329 source:e:\boulot\amandine\8ball\src\sdl_util\print_farray.c
+	"8ball.h"
+
+1562852639 e:\boulot\amandine\8ball\include\model\wave_model.h
+	"model.h"
+
+1563030647 source:e:\boulot\amandine\8ball\src\geometry\minmax.c
+	"geometry.h"
+
+1563118454 source:e:\boulot\amandine\8ball\src\sdl_util\clamp_color.c
+	"8ball.h"
+
+1563115769 source:e:\boulot\amandine\8ball\src\geometry\clamp_v.c
+	"geometry.h"
+
+1563115932 source:e:\boulot\amandine\8ball\src\sdl_util\add_color.c
+	"8ball.h"
+
+1583444498 e:\boulot\amandine\8ball\include\opencl_util.h
+	"8ball.h"
+
+1583444228 source:e:\boulot\amandine\8ball\src\opencl_util\init_opencl.c
+	"opencl_util.h"
+
+1556859844 e:\boulot\amandine\8ball\include\cl\cl.h
+	<CL/cl_version.h>
+	<CL/cl_platform.h>
+
+1556859844 e:\boulot\amandine\8ball\include\cl\cl_version.h
+
+1556859844 e:\boulot\amandine\8ball\include\cl\cl_platform.h
+	<CL/cl_version.h>
+	<stdint.h>
+	<stddef.h>
+	<altivec.h>
+	<intrin.h>
+	<xmmintrin.h>
+	<intrin.h>
+	<emmintrin.h>
+	<mmintrin.h>
+	<intrin.h>
+	<immintrin.h>
+
+1583499008 source:e:\boulot\amandine\8ball\src\opencl_util\push_model_opencl.c
+	"opencl_util.h"
+
+1563300758 e:\boulot\amandine\8ball\include\model\miko_model.h
+	"model.h"
+
+1563305643 e:\boulot\amandine\8ball\include\model\putin_model.h
+	"model.h"
+
+1563359877 e:\boulot\amandine\8ball\include\model\disc_model.h
+	"model.h"
+
+1563360345 e:\boulot\amandine\8ball\include\model\lol_model.h
+	"model.h"
+
+1563364334 e:\boulot\amandine\8ball\include\model\uvsphere_model.h
+	"model.h"
+
+1568226250 source:e:\boulot\amandine\8ball\src\opencl_util\init_kernel.c
+	"opencl_util.h"
+
+1583495011 source:e:\boulot\amandine\8ball\src\opencl_util\init_clmem.c
+	"opencl_util.h"
+
+1563641473 source:e:\boulot\amandine\8ball\src\opencl_util\get_device_info.c
+	"opencl_util.h"
+
+1572023861 e:\boulot\amandine\8ball\include\model\knight_model.h
+	"model.h"
+
+1563493793 e:\boulot\amandine\8ball\include\model\punk_model.h
+	"model.h"
+
+1583444167 e:\boulot\amandine\8ball\include\structures.h
+	"8ball.h"
+
+1578071436 e:\boulot\amandine\8ball\include\mouse.h
+	"8ball.h"
+
+1571147953 source:e:\boulot\amandine\8ball\src\mouse\mouse.c
+	"mouse.h"
+
+1571414856 source:e:\boulot\amandine\8ball\src\camera\camera_motion.c
+	"camera.h"
+
+1578514200 e:\boulot\amandine\8ball\include\toolset.h
+	"8ball.h"
+
+1583319258 e:\boulot\amandine\8ball\include\export.h
+	"8ball.h"
+
+1582148735 source:e:\boulot\amandine\8ball\src\export\export_dxf.c
+	"export.h"
+
+1576959753 source:e:\boulot\amandine\8ball\src\toolset\select.c
+	"toolset.h"
+
+1575122005 e:\boulot\amandine\8ball\include\model\bust_model.h
+	"model.h"
+
+1583330673 source:e:\boulot\amandine\8ball\src\export\export_obj.c
+	"export.h"
+
+1583406702 source:e:\boulot\amandine\8ball\src\import\import_obj.c
+	"import.h"
+
+1583418776 e:\boulot\amandine\8ball\include\import.h
+	"8ball.h"
+
+1581532282 e:\boulot\amandine\8ball\include\input_manager.h
+	"8ball.h"
+
+1582478790 source:e:\boulot\amandine\8ball\src\destructor.c
+	"8ball.h"
+
+1583494660 source:e:\boulot\amandine\8ball\src\constructor.c
+	"8ball.h"
+
+1569851389 source:e:\boulot\amandine\8ball\src\input_manager\user_quit.c
+	"input_manager.h"
+
+1569851282 source:e:\boulot\amandine\8ball\src\input_manager\user_switchcloudview.c
+	"input_manager.h"
+
+1569851175 source:e:\boulot\amandine\8ball\src\input_manager\user_switchmodelview.c
+	"input_manager.h"
+
+1582478872 source:e:\boulot\amandine\8ball\src\input_manager\user_resizewindow.c
+	"input_manager.h"
+
+1581967971 source:e:\boulot\amandine\8ball\src\input_manager\user_keyup.c
+	"input_manager.h"
+
+1582986169 source:e:\boulot\amandine\8ball\src\input_manager\user_mousemotion.c
+	"input_manager.h"
+
+1570635157 source:e:\boulot\amandine\8ball\src\hud\new_hud_arrows.c
+	"hud.h"
+
+1572545015 e:\boulot\amandine\8ball\include\hud.h
+	"8ball.h"
+
+1582325341 source:e:\boulot\amandine\8ball\src\input_manager\user_keydown.c
+	"input_manager.h"
+
+1580220145 source:e:\boulot\amandine\8ball\src\input_manager\user_mousebuttondown.c
+	"input_manager.h"
+
+1582726472 source:e:\boulot\amandine\8ball\src\input_manager\user_mousebuttonup.c
+	"input_manager.h"
+
+1570032973 source:e:\boulot\amandine\8ball\src\input_manager\user_computecloude.c
+	"input_manager.h"
+
+1582151165 source:e:\boulot\amandine\8ball\src\input_manager\user_computecloud.c
+	"input_manager.h"
+
+1570099977 source:e:\boulot\amandine\8ball\src\input_manager\user_idle.c
+	"input_manager.h"
+
+1582818473 source:e:\boulot\amandine\8ball\src\input_manager\user_cameradrag.c
+	"input_manager.h"
+
+1575730826 source:e:\boulot\amandine\8ball\src\input_manager\user_camerazoom.c
+	"input_manager.h"
+
+1580219729 source:e:\boulot\amandine\8ball\src\input_manager\user_canvaclick.c
+	"input_manager.h"
+
+1580219976 source:e:\boulot\amandine\8ball\src\input_manager\user_onleftclick.c
+	"input_manager.h"
+
+1571150445 source:e:\boulot\amandine\8ball\src\toolset\tool_buildidle.c
+	"toolset.h"
+
+1576933641 source:e:\boulot\amandine\8ball\src\toolset\tool_select.c
+	"toolset.h"
+
+1571237526 source:e:\boulot\amandine\8ball\src\toolset\tool_buildselect.c
+	"toolset.h"
+
+1571239620 source:e:\boulot\amandine\8ball\src\toolset\tool_buildtransform.c
+	"toolset.h"
+
+1583445867 source:e:\boulot\amandine\8ball\src\toolset\tool_transform.c
+	"toolset.h"
+
+1570139566 source:e:\boulot\amandine\8ball\src\toolset\tool_idle.c
+	"toolset.h"
+
+1571138320 source:e:\boulot\amandine\8ball\src\input_manager\user_mousemotionhud.c
+	"input_manager.h"
+
+1571237502 source:e:\boulot\amandine\8ball\src\toolset\tool_buildscale.c
+	"toolset.h"
+
+1576953256 source:e:\boulot\amandine\8ball\src\toolset\tool_scale.c
+	"toolset.h"
+
+1571395259 source:e:\boulot\amandine\8ball\src\toolset\tool_buildresize.c
+	"toolset.h"
+
+1580307717 source:e:\boulot\amandine\8ball\src\toolset\tool_resize.c
+	"toolset.h"
+
+1570628197 source:e:\boulot\amandine\8ball\src\hud\selection_center.c
+	"hud.h"
+
+1571139422 source:e:\boulot\amandine\8ball\src\input_manager\user_mousemotionradiushud.c
+	"input_manager.h"
+
+1570620440 source:e:\boulot\amandine\8ball\src\hud\hud_drawarrow.c
+	"hud.h"
+
+1571144280 source:e:\boulot\amandine\8ball\src\toolset\tool_projectref.c
+	"toolset.h"
+
+1571135717 source:e:\boulot\amandine\8ball\src\input_manager\user_mousemotionanglehud.c
+	"input_manager.h"
+
+1576956862 source:e:\boulot\amandine\8ball\src\toolset\tool_rotate.c
+	"toolset.h"
+
+1571237494 source:e:\boulot\amandine\8ball\src\toolset\tool_buildrotate.c
+	"toolset.h"
+
+1570653536 source:e:\boulot\amandine\8ball\src\hud\hud_drawangle.c
+	"hud.h"
+
+1570728915 source:e:\boulot\amandine\8ball\src\hud\new_hud_angle.c
+	"hud.h"
+
+1572200524 source:e:\boulot\amandine\8ball\src\hud\angle\hud_drawangle.c
+	"hud.h"
+
+1572022608 source:e:\boulot\amandine\8ball\src\hud\angle\hud_newangle.c
+	"hud.h"
+
+1576160934 source:e:\boulot\amandine\8ball\src\hud\arrow\hud_drawarrow.c
+	"hud.h"
+
+1572545793 source:e:\boulot\amandine\8ball\src\hud\arrow\hud_newarrow.c
+	"hud.h"
+
+1570541951 source:e:\boulot\amandine\8ball\src\hud\ref\ref_project.c
+
+1571666307 source:e:\boulot\amandine\8ball\src\hud\ref\selection_center.c
+	"hud.h"
+
+1571047082 source:e:\boulot\amandine\8ball\src\hud\init\hud_initaxis.c
+	"hud.h"
+
+1571047117 source:e:\boulot\amandine\8ball\src\hud\init\hud_initpersp.c
+	"hud.h"
+
+1571141315 source:e:\boulot\amandine\8ball\src\hud\init\hud_init.c
+	"hud.h"
+
+1572545044 source:e:\boulot\amandine\8ball\src\toolset\tool_init.c
+	"toolset.h"
+
+1582726396 source:e:\boulot\amandine\8ball\src\mouse\motion\mouse_motionarrow.c
+	"mouse.h"
+
+1580220156 source:e:\boulot\amandine\8ball\src\mouse\motion\mouse_motionlength.c
+	"mouse.h"
+
+1582817711 source:e:\boulot\amandine\8ball\src\mouse\motion\mouse_motionangle.c
+	"mouse.h"
+
+1572190338 source:e:\boulot\amandine\8ball\src\hud\ref\hud_project.c
+	"hud.h"
+
+1572187095 source:e:\boulot\amandine\8ball\src\hud\hud_draw.c
+	"hud.h"
+
+1583332929 source:e:\boulot\amandine\8ball\src\mouse\click\mouse_clickselect.c
+	"mouse.h"
+
+1571324727 source:e:\boulot\amandine\8ball\src\mouse\click\mouse_clickhud.c
+	"mouse.h"
+
+1571235553 e:\boulot\amandine\8ball\include\todo.info
+
+1575495272 e:\boulot\amandine\8ball\include\todo_string.h
+
+1572022699 source:e:\boulot\amandine\8ball\src\mouse\click\hud\mouse_clickhudangle.c
+	"mouse.h"
+
+1572520662 source:e:\boulot\amandine\8ball\src\mouse\click\hud\mouse_clickhud.c
+	"mouse.h"
+
+1580219772 source:e:\boulot\amandine\8ball\src\mouse\click\hud\mouse_clickhudarrow.c
+	"mouse.h"
+
+1571931202 source:e:\boulot\amandine\8ball\src\mouse\click\hud\mouse_clickhudlength.c
+	"mouse.h"
+
+1572187213 source:e:\boulot\amandine\8ball\src\hud\length\hud_drawlength.c
+	"hud.h"
+
+1580220137 source:e:\boulot\amandine\8ball\src\hud\length\hud_newlength.c
+	"hud.h"
+
+1571395450 source:e:\boulot\amandine\8ball\src\sdl_util\isincanva.c
+	"sdl_util.h"
+
+1571941386 source:e:\boulot\amandine\8ball\src\camera\camera_event.c
+	"camera.h"
+
+1582327797 source:e:\boulot\amandine\8ball\src\input_manager\user_interfaceclick.c
+	"input_manager.h"
+
+1575205147 source:e:\boulot\amandine\8ball\src\input_manager\user_morphoclick.c
+	"input_manager.h"
+
+1575123860 e:\boulot\amandine\8ball\include\morpho.h
+	"8ball.h"
+
+1575123924 source:e:\boulot\amandine\8ball\src\morpho\morpho_setallactive.c
+	"morpho.h"
+
+1575124359 source:e:\boulot\amandine\8ball\src\export\export_c.c
+	"export.h"
+
+1575124425 source:e:\boulot\amandine\8ball\src\geometry\translate_vector.c
+	"geometry.h"
+
+1575477141 e:\boulot\amandine\8ball\include\pthread\pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	<sched.h>
+	<sys/types.h>
+
+1575477233 e:\boulot\amandine\8ball\include\pthread\sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+
+1576868513 source:e:\boulot\amandine\8ball\src\history\history_add.c
+	"history.h"
+
+1581630565 e:\boulot\amandine\8ball\include\history.h
+	"8ball.h"
+
+1576959046 source:e:\boulot\amandine\8ball\src\history\history_clear.c
+	"history.h"
+
+1576861460 source:e:\boulot\amandine\8ball\src\history\history_new.c
+	"history.h"
+
+1581630197 source:e:\boulot\amandine\8ball\src\history\history_redo.c
+	"history.h"
+
+1581629808 source:e:\boulot\amandine\8ball\src\history\history_undo.c
+	"history.h"
+
+1576856922 source:e:\boulot\amandine\8ball\src\history\history_display.c
+	"history.h"
+
+1580219664 source:e:\boulot\amandine\8ball\src\history\actiontype\history_relinkselection.c
+	"history.h"
+
+1582147326 source:e:\boulot\amandine\8ball\src\sdl_util\new_surface.c
+	"sdl_util.h"
+
+1582145057 source:e:\boulot\amandine\8ball\src\sdl_util\clean_surface.c
+	"sdl_util.h"
+
+1581630903 source:e:\boulot\amandine\8ball\src\history\history_type.c
+	"history.h"
+
+1576931962 source:e:\boulot\amandine\8ball\src\history\actiontype\history_tooltransform.c
+	"history.h"
+
+1576931845 e:\boulot\amandine\8ball\include\ft_gpu.h
+	"8ball.h"
+
+1583445920 source:e:\boulot\amandine\8ball\src\ft_gpu\gpu_modelrefresh.c
+	"ft_gpu.h"
+
+1576960430 source:e:\boulot\amandine\8ball\src\history\actiontype\history_toolscale.c
+	"history.h"
+
+1576960406 source:e:\boulot\amandine\8ball\src\history\actiontype\history_toolrotate.c
+	"history.h"
+
+1576960382 source:e:\boulot\amandine\8ball\src\history\actiontype\history_toolresize.c
+	"history.h"
+
+1577543204 e:\boulot\amandine\8ball\include\model\busthd_model.h
+	"model.h"
+
+1583407061 e:\boulot\amandine\8ball\include\user_interface.h
+	"8ball.h"
+	"cursor.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\button\btn_icon.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\button\btn_quit.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\button\btn_text.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\display\dsp_num.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\display\dsp_real.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\display\dsp_separator.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\display\dsp_text.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\input\input_bool.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\input\input_num.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\input\input_select.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\input\input_text.c
+	"user_interface.h"
+
+1582311895 source:e:\boulot\amandine\8ball\src\user_interface\ui_info.c
+	"user_interface.h"
+
+1578942287 source:e:\boulot\amandine\8ball\src\user_interface\ui_newbox.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\zone\zone_area.c
+	"user_interface.h"
+
+1577623145 source:e:\boulot\amandine\8ball\src\user_interface\zone\zone_scroll.c
+	"user_interface.h"
+
+1578140026 source:e:\boulot\amandine\8ball\src\user_interface\ui_isclick.c
+	"user_interface.h"
+
+1583410235 source:e:\boulot\amandine\8ball\src\user_interface\ui_main.c
+	"user_interface.h"
+
+1582128914 source:e:\boulot\amandine\8ball\src\sdl_util\set_alpha.c
+	"sdl_util.h"
+
+1578100718 source:e:\boulot\amandine\8ball\src\mouse\click\ui\mouse_clickui.c
+	"mouse.h"
+
+1578096039 source:e:\boulot\amandine\8ball\src\sdl_util\isinzone.c
+	"sdl_util.h"
+
+1582324432 source:e:\boulot\amandine\8ball\src\user_interface\ui_swapbox.c
+	"user_interface.h"
+
+1578142435 source:e:\boulot\amandine\8ball\src\user_interface\ui_onclickgetboxhandle.c
+	"user_interface.h"
+
+1582322743 source:e:\boulot\amandine\8ball\src\user_interface\ui_foregroundbox.c
+	"user_interface.h"
+
+1578337961 source:e:\boulot\amandine\8ball\src\user_interface\ui_getitemhandleat.c
+	"user_interface.h"
+
+1578400094 source:e:\boulot\amandine\8ball\src\user_interface\ui_getboxhandleat.c
+	"user_interface.h"
+
+1579537415 source:e:\boulot\amandine\8ball\src\user_interface\ui_isgrabbar.c
+	"user_interface.h"
+
+1579548813 source:e:\boulot\amandine\8ball\src\user_interface\ui_iskill.c
+	"user_interface.h"
+
+1578157442 source:e:\boulot\amandine\8ball\src\user_interface\ui_setdim.c
+	"user_interface.h"
+
+1578596714 source:e:\boulot\amandine\8ball\src\user_interface\ui_setevent.c
+	"user_interface.h"
+
+1578157344 source:e:\boulot\amandine\8ball\src\user_interface\ui_setpos.c
+	"user_interface.h"
+
+1579273404 source:e:\boulot\amandine\8ball\src\user_interface\ui_displaybox.c
+	"user_interface.h"
+
+1578321512 source:e:\boulot\amandine\8ball\src\user_interface\ui_getfrontboxhandle.c
+	"user_interface.h"
+
+1582418181 source:e:\boulot\amandine\8ball\src\user_interface\ui_getboxside.c
+	"user_interface.h"
+
+1582417245 source:e:\boulot\amandine\8ball\src\user_interface\ui_isresize.c
+	"user_interface.h"
+
+1579721361 source:e:\boulot\amandine\8ball\src\user_interface\ui_setboxside.c
+	"user_interface.h"
+
+1578331177 source:e:\boulot\amandine\8ball\src\user_interface\cursor\ui_cursor.c
+	"user_interface.h"
+
+1578331011 e:\boulot\amandine\8ball\include\cursor.h
+	"user_interface.h"
+
+1578327118 source:e:\boulot\amandine\8ball\src\sdl_util\dtoa.c
+	"sdl_util.h"
+
+1578327419 source:e:\boulot\amandine\8ball\src\sdl_util\list.c
+	"sdl_util.h"
+
+1578327536 source:e:\boulot\amandine\8ball\src\sdl_util\circle.c
+	"sdl_util.h"
+
+1582388002 source:e:\boulot\amandine\8ball\src\user_interface\ui_stringgetptrat.c
+	"user_interface.h"
+
+1578755372 source:e:\boulot\amandine\8ball\rc\icon.rc
+
+1579341491 source:e:\boulot\amandine\8ball\src\user_interface\ui_interfacemotion.c
+	"user_interface.h"
+
+1580473462 source:e:\boulot\amandine\8ball\src\user_interface\destructor\ui_releaseassets.c
+	"user_interface.h"
+
+1580485086 source:e:\boulot\amandine\8ball\src\user_interface\constructor\ui_initassets.c
+	"user_interface.h"
+
+1578861435 source:e:\boulot\amandine\8ball\src\user_interface\functions\ui_functiontest.c
+	"user_interface.h"
+
+1578927766 source:e:\boulot\amandine\8ball\src\user_interface\ui_newitemsimplebutton.c
+	"user_interface.h"
+
+1578853938 source:e:\boulot\amandine\8ball\src\user_interface\destructor\ui_releasebox.c
+	"user_interface.h"
+
+1580393221 source:e:\boulot\amandine\8ball\src\user_interface\destructor\ui_releaseitem.c
+	"user_interface.h"
+
+1582417539 source:e:\boulot\amandine\8ball\src\user_interface\ui_interfaceonrelease.c
+	"user_interface.h"
+
+1580748868 source:e:\boulot\amandine\8ball\src\user_interface\ui_drawbutton.c
+	"user_interface.h"
+
+1578877452 source:e:\boulot\amandine\8ball\src\user_interface\functions\ui_functionfall.c
+	"user_interface.h"
+
+1578928890 source:e:\boulot\amandine\8ball\src\user_interface\functions\ui_functionexportdxf.c
+	"user_interface.h"
+
+1580473770 source:e:\boulot\amandine\8ball\src\user_interface\constructor\ui_newitemtext.c
+	"user_interface.h"
+
+1579717898 source:e:\boulot\amandine\8ball\src\user_interface\constructor\ui_newitemsimplebutton.c
+	"user_interface.h"
+
+1578937783 source:e:\boulot\amandine\8ball\src\sdl_util\stretch_surface.c
+	"user_interface.h"
+
+1579095201 source:e:\boulot\amandine\8ball\src\user_interface\functions\ui_functionbye.c
+	"user_interface.h"
+
+1579006432 source:e:\boulot\amandine\8ball\src\user_interface\constructor\ui_newfont.c
+	"user_interface.h"
+
+1579004649 source:e:\boulot\amandine\8ball\src\user_interface\destructor\ui_releasefont.c
+	"user_interface.h"
+
+1579008444 source:e:\boulot\amandine\8ball\src\sdl_util\blit_font_at.c
+	"sdl_util.h"
+
+1583407194 source:e:\boulot\amandine\8ball\src\user_interface\constructor\ui_newbox.c
+	"user_interface.h"
+
+1579695238 source:e:\boulot\amandine\8ball\src\user_interface\ui_getboxenvdim.c
+	"user_interface.h"
+
+1579012981 source:e:\boulot\amandine\8ball\src\sdl_util\isintile.c
+	"sdl_util.h"
+
+1579176428 source:e:\boulot\amandine\8ball\src\user_interface\constructor\ui_newscrollbar.c
+	"user_interface.h"
+
+1582232320 source:e:\boulot\amandine\8ball\src\user_interface\ui_drawscrollbar.c
+	"user_interface.h"
+
+1579107664 source:e:\boulot\amandine\8ball\src\user_interface\ui_isscrollbar.c
+	"user_interface.h"
+
+1579093617 source:e:\boulot\amandine\8ball\src\user_interface\ui_getscrollbarlength.c
+	"user_interface.h"
+
+1579094704 source:e:\boulot\amandine\8ball\src\user_interface\ui_getscrollbuttonpos.c
+	"user_interface.h"
+
+1579098539 source:e:\boulot\amandine\8ball\src\user_interface\ui_clampscrollbarfactor.c
+	"user_interface.h"
+
+1579274835 source:e:\boulot\amandine\8ball\src\user_interface\ui_displayitemstring.c
+	"user_interface.h"
+
+1579275614 source:e:\boulot\amandine\8ball\src\user_interface\ui_displayitembutton.c
+	"user_interface.h"
+
+1579258118 source:e:\boulot\amandine\8ball\src\user_interface\ui_displayitemscrollbar.c
+	"user_interface.h"
+
+1579271312 source:e:\boulot\amandine\8ball\src\user_interface\ui_displayitem.c
+	"user_interface.h"
+
+1579270612 source:e:\boulot\amandine\8ball\src\user_interface\ui_onclick.c
+	"user_interface.h"
+
+1579272585 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventbargrab_motion.c
+	"user_interface.h"
+
+1579341914 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventitemclick_motion.c
+	"user_interface.h"
+
+1579340851 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventscrollbar_motion.c
+	"user_interface.h"
+
+1582321449 source:e:\boulot\amandine\8ball\src\user_interface\ui_interfaceonclick.c
+	"user_interface.h"
+
+1582387645 source:e:\boulot\amandine\8ball\src\charset\charset.c
+	"alphabet_tileset.h"
+
+1579341606 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventbargrab_onclick.c
+	"user_interface.h"
+
+1579294009 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventitem_onclick.c
+	"user_interface.h"
+
+1579296279 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventscrollbar_onclick.c
+	"user_interface.h"
+
+1579338405 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventboxside_onclick.c
+	"user_interface.h"
+
+1579342562 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventitemclick_onrelease.c
+	"user_interface.h"
+
+1579340916 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventboxkill_motion.c
+	"user_interface.h"
+
+1579341176 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventboxkill_onclick.c
+	"user_interface.h"
+
+1579341471 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventboxside_motion.c
+	"user_interface.h"
+
+1579351841 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventboxside_onrelease.c
+	"user_interface.h"
+
+1579439553 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventscrollbar_onrelease.c
+	"user_interface.h"
+
+1579440158 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventbargrab_onrelease.c
+	"user_interface.h"
+
+1579440746 source:e:\boulot\amandine\8ball\src\user_interface\event\ui_eventboxkill_onrelease.c
+	"user_interface.h"
+
+1581885226 source:e:\boulot\amandine\8ball\src\user_interface\display\item\ui_displayitem.c
+	"user_interface.h"
+
+1582231092 source:e:\boulot\amandine\8ball\src\user_interface\display\item\ui_displayitembutton.c
+	"user_interface.h"
+
+1580220029 source:e:\boulot\amandine\8ball\src\user_interface\display\item\ui_displayitemscrollbar.c
+	"user_interface.h"
+
+1582231406 source:e:\boulot\amandine\8ball\src\user_interface\display\item\ui_displayitemstring.c
+	"user_interface.h"
+
+1581886292 source:e:\boulot\amandine\8ball\src\user_interface\display\ui_displaybox.c
+	"user_interface.h"
+
+1582232257 source:e:\boulot\amandine\8ball\src\user_interface\ui_drawbox.c
+	"user_interface.h"
+
+1582328591 source:e:\boulot\amandine\8ball\src\user_interface\handler\ui_getboxhandleat.c
+	"user_interface.h"
+
+1582417602 source:e:\boulot\amandine\8ball\src\user_interface\handler\ui_getfrontboxhandle.c
+	"user_interface.h"
+
+1580485784 source:e:\boulot\amandine\8ball\src\user_interface\handler\ui_getitemhandleat.c
+	"user_interface.h"
+
+1580399866 source:e:\boulot\amandine\8ball\src\user_interface\handler\ui_getscrollbarhandle.c
+	"user_interface.h"
+
+1582328201 source:e:\boulot\amandine\8ball\src\user_interface\event\bargrab\ui_eventbargrab_motion.c
+	"user_interface.h"
+
+1582328519 source:e:\boulot\amandine\8ball\src\user_interface\event\bargrab\ui_eventbargrab_onclick.c
+	"user_interface.h"
+
+1579440158 source:e:\boulot\amandine\8ball\src\user_interface\event\bargrab\ui_eventbargrab_onrelease.c
+	"user_interface.h"
+
+1579340916 source:e:\boulot\amandine\8ball\src\user_interface\event\boxkill\ui_eventboxkill_motion.c
+	"user_interface.h"
+
+1579341176 source:e:\boulot\amandine\8ball\src\user_interface\event\boxkill\ui_eventboxkill_onclick.c
+	"user_interface.h"
+
+1582324398 source:e:\boulot\amandine\8ball\src\user_interface\event\boxkill\ui_eventboxkill_onrelease.c
+	"user_interface.h"
+
+1579721295 source:e:\boulot\amandine\8ball\src\user_interface\event\boxside\ui_eventboxside_motion.c
+	"user_interface.h"
+
+1579338405 source:e:\boulot\amandine\8ball\src\user_interface\event\boxside\ui_eventboxside_onclick.c
+	"user_interface.h"
+
+1579351841 source:e:\boulot\amandine\8ball\src\user_interface\event\boxside\ui_eventboxside_onrelease.c
+	"user_interface.h"
+
+1580399352 source:e:\boulot\amandine\8ball\src\user_interface\event\item\ui_eventitem_onclick.c
+	"user_interface.h"
+
+1579341914 source:e:\boulot\amandine\8ball\src\user_interface\event\item\ui_eventitemclick_motion.c
+	"user_interface.h"
+
+1579342562 source:e:\boulot\amandine\8ball\src\user_interface\event\item\ui_eventitemclick_onrelease.c
+	"user_interface.h"
+
+1579777955 source:e:\boulot\amandine\8ball\src\user_interface\event\scrollbar\ui_eventscrollbar_motion.c
+	"user_interface.h"
+
+1579549429 source:e:\boulot\amandine\8ball\src\user_interface\event\scrollbar\ui_eventscrollbar_onclick.c
+	"user_interface.h"
+
+1580220093 source:e:\boulot\amandine\8ball\src\user_interface\event\scrollbar\ui_eventscrollbar_onrelease.c
+	"user_interface.h"
+
+1580393622 source:e:\boulot\amandine\8ball\src\user_interface\event\item\ui_eventitem_onrelease.c
+	"user_interface.h"
+
+1582808283 source:e:\boulot\amandine\8ball\src\user_interface\event\item\ui_eventitem_motion.c
+	"user_interface.h"
+
+1579723062 source:e:\boulot\amandine\8ball\src\user_interface\destructor\item\ui_releaseitem_simplebutton.c
+	"user_interface.h"
+
+1579722926 source:e:\boulot\amandine\8ball\src\user_interface\destructor\item\ui_releaseitem_string.c
+	"user_interface.h"
+
+1579723592 source:e:\boulot\amandine\8ball\src\user_interface\constructor\ui_newitempicture.c
+	"user_interface.h"
+
+1579724456 source:e:\boulot\amandine\8ball\src\user_interface\destructor\item\ui_releaseitempicture.c
+	"user_interface.h"
+
+1581888983 source:e:\boulot\amandine\8ball\src\user_interface\display\item\ui_displayitempicture.c
+	"user_interface.h"
+
+1579777215 source:e:\boulot\amandine\8ball\src\user_interface\envdim\item\ui_getitemheight_simplebutton.c
+	"user_interface.h"
+
+1580219853 source:e:\boulot\amandine\8ball\src\user_interface\envdim\item\ui_getitemheight_string.c
+	"user_interface.h"
+
+1580818160 source:e:\boulot\amandine\8ball\src\user_interface\envdim\ui_getboxenvdim.c
+	"user_interface.h"
+
+1579731560 source:e:\boulot\amandine\8ball\src\user_interface\event\item\picture\ui_eventitem_picture_motion.c
+	"user_interface.h"
+
+1579731449 source:e:\boulot\amandine\8ball\src\user_interface\event\item\picture\ui_eventitem_picture_onclick.c
+	"user_interface.h"
+
+1579732585 source:e:\boulot\amandine\8ball\src\user_interface\event\item\picture\ui_eventitem_picture_onrelease.c
+	"user_interface.h"
+
+1579730996 source:e:\boulot\amandine\8ball\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_motion.c
+	"user_interface.h"
+
+1579732109 source:e:\boulot\amandine\8ball\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_onclick.c
+	"user_interface.h"
+
+1579732182 source:e:\boulot\amandine\8ball\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_onrelease.c
+	"user_interface.h"
+
+1579732260 source:e:\boulot\amandine\8ball\src\user_interface\event\item\string\ui_eventitem_string_motion.c
+	"user_interface.h"
+
+1579732305 source:e:\boulot\amandine\8ball\src\user_interface\event\item\string\ui_eventitem_string_onclick.c
+	"user_interface.h"
+
+1579732695 source:e:\boulot\amandine\8ball\src\user_interface\event\item\string\ui_eventitem_string_onrelease.c
+	"user_interface.h"
+
+1579733068 source:e:\boulot\amandine\8ball\src\user_interface\destructor\item\ui_releaseitem_picture.c
+	"user_interface.h"
+
+1581529008 source:e:\boulot\amandine\8ball\src\user_interface\constructor\ui_newitem_numericchooser.c
+	"user_interface.h"
+
+1580391525 source:e:\boulot\amandine\8ball\src\user_interface\destructor\item\ui_releaseitem_numericchooser.c
+	"user_interface.h"
+
+1580818029 source:e:\boulot\amandine\8ball\src\user_interface\envdim\item\ui_getitemheight_numericchooser.c
+	"user_interface.h"
+
+1582830708 source:e:\boulot\amandine\8ball\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_motion.c
+	"user_interface.h"
+
+1582314760 source:e:\boulot\amandine\8ball\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_onclick.c
+	"user_interface.h"
+
+1582463992 source:e:\boulot\amandine\8ball\src\user_interface\display\item\ui_displayitem_numericchooser.c
+	"user_interface.h"
+
+1582416994 source:e:\boulot\amandine\8ball\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_onrelease.c
+	"user_interface.h"
+
+1580921881 source:e:\boulot\amandine\8ball\src\charset\valtostr.c
+	"alphabet_tileset.h"
+
+1581001449 source:e:\boulot\amandine\8ball\src\user_interface\datatype\valtostr.c
+	"user_interface.h"
+
+1581004398 source:e:\boulot\amandine\8ball\src\user_interface\datatype\setval.c
+	"user_interface.h"
+
+1581075069 e:\boulot\amandine\8ball\include\macro\natophonetic.h
+	"8ball.h"
+
+1581188287 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\double\doublefilter_alfa.c
+	"user_interface.h"
+
+1581190923 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\double\doublefilter_bravo.c
+	"user_interface.h"
+
+1581190939 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\double\doublefilter_charlie.c
+	"user_interface.h"
+
+1581190957 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\double\doublefilter_delta.c
+	"user_interface.h"
+
+1581188104 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\float\floatfilter_alfa.c
+	"user_interface.h"
+
+1581191384 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\corefilter.c
+	"user_interface.h"
+
+1581188129 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\float\floatfilter_charlie.c
+	"user_interface.h"
+
+1581191502 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\double\doublefilter_echo.c
+	"user_interface.h"
+
+1581188139 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\float\floatfilter_delta.c
+	"user_interface.h"
+
+1581191512 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\double\doublefilter_foxtrot.c
+	"user_interface.h"
+
+1581187392 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\int\intfilter_alfa.c
+	"user_interface.h"
+
+1581196651 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\float\floatfilter_foxtrot.c
+	"user_interface.h"
+
+1581196654 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\float\floatfilter_bravo.c
+	"user_interface.h"
+
+1581196663 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\float\floatfilter_echo.c
+	"user_interface.h"
+
+1581275549 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\int\intfilter_bravo.c
+	"user_interface.h"
+
+1581196676 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\int\intfilter_echo.c
+	"user_interface.h"
+
+1581196684 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\int\intfilter_charlie.c
+	"user_interface.h"
+
+1581182410 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\uint\uintfilter_alfa.c
+	"user_interface.h"
+
+1581196691 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\int\intfilter_delta.c
+	"user_interface.h"
+
+1581196699 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\int\intfilter_foxtrot.c
+	"user_interface.h"
+
+1581196702 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\uint\uintfilter_bravo.c
+	"user_interface.h"
+
+1581275583 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\uint\uintfilter_charlie.c
+	"user_interface.h"
+
+1581190718 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\coreinstruction.c
+	"user_interface.h"
+
+1581275581 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\uint\uintfilter_delta.c
+	"user_interface.h"
+
+1581181088 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\double\double_copy.c
+	"user_interface.h"
+
+1581526069 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\double\double_get.c
+	"user_interface.h"
+
+1581275578 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\uint\uintfilter_echo.c
+	"user_interface.h"
+
+1581536519 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\double\double_set.c
+	"user_interface.h"
+
+1581181032 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\float\float_copy.c
+	"user_interface.h"
+
+1581275575 source:e:\boulot\amandine\8ball\src\user_interface\datatype\filter\uint\uintfilter_foxtrot.c
+	"user_interface.h"
+
+1581536567 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\float\float_set.c
+	"user_interface.h"
+
+1581180951 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\int\int_copy.c
+	"user_interface.h"
+
+1581180938 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\int\int_get.c
+	"user_interface.h"
+
+1581536591 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\int\int_set.c
+	"user_interface.h"
+
+1581180269 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\uint\uint_copy.c
+	"user_interface.h"
+
+1582154956 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\uint\uint_get.c
+	"user_interface.h"
+
+1581196764 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\float\float_get.c
+	"user_interface.h"
+
+1582154943 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\uint\uint_set.c
+	"user_interface.h"
+
+1581275099 source:e:\boulot\amandine\8ball\src\user_interface\datatype\type\uint\uint_processor.c
+	"user_interface.h"
+
+1582152747 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\double\double_add.c
+	"user_interface.h"
+
+1581275077 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\float\float_add.c
+	"user_interface.h"
+
+1581536890 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\int\int_add.c
+	"user_interface.h"
+
+1582152719 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\uint\uint_add.c
+	"user_interface.h"
+
+1582152646 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\scheduler\valtostr.c
+	"user_interface.h"
+
+1583341167 source:e:\boulot\amandine\8ball\src\user_interface\functions\ui_functioninput.c
+	"user_interface.h"
+
+1582820640 source:e:\boulot\amandine\8ball\src\input_manager\inputmanager_loop.c
+	"input_manager.h"
+
+1582152664 source:e:\boulot\amandine\8ball\src\user_interface\datatype\instruction\scheduler\strtoval.c
+	"user_interface.h"
+
+1581885073 source:e:\boulot\amandine\8ball\src\camera\frame.c
+	"camera.h"
+
+1581630469 source:e:\boulot\amandine\8ball\src\history\actiontype\history_setval.c
+	"history.h"
+
+1581940330 e:\boulot\amandine\8ball\include\frame.h
+	"8ball.h"
+
+1581940641 source:e:\boulot\amandine\8ball\src\frame\draw_model_stack.c
+	"frame.h"
+
+1582483155 source:e:\boulot\amandine\8ball\src\frame\frame.c
+	"camera.h"
+
+1582041983 source:e:\boulot\amandine\8ball\src\frame\print_debug.c
+	"frame.h"
+
+1581941085 source:e:\boulot\amandine\8ball\src\frame\draw_f.c
+	"frame.h"
+
+1582031134 source:e:\boulot\amandine\8ball\src\user_interface\ui_drawcameraorientation.c
+	"user_interface.h"
+
+1582040880 source:e:\boulot\amandine\8ball\src\sdl_util\layer_merge.c
+	"sdl_util.h"
+
+1582496896 source:e:\boulot\amandine\8ball\src\sdl_util\super_blit.c
+	"sdl_util.h"
+
+1582041506 source:e:\boulot\amandine\8ball\src\sdl_util\layer_popmerge.c
+	"sdl_util.h"
+
+1582127341 source:e:\boulot\amandine\8ball\src\sdl_util\halt_program.c
+	"sdl_util.h"
+
+1583438280 source:e:\boulot\amandine\8ball\src\sdl_util\strequ.c
+	"sdl_util.h"
+
+1582323936 source:e:\boulot\amandine\8ball\src\user_interface\ui_background.c
+	"user_interface.h"
+
+1582323904 source:e:\boulot\amandine\8ball\src\user_interface\ui_totalbox.c
+	"user_interface.h"
+
+1582383716 source:e:\boulot\amandine\8ball\src\charset\charset_printstopwidth_noalpha.c
+	"alphabet_tileset.h"
+
+1582383495 source:e:\boulot\amandine\8ball\src\sdl_util\square_dim.c
+	"sdl_util.h"
+
+1582387682 source:e:\boulot\amandine\8ball\src\charset\is_printable.c
+	"alphabet_tileset.h"
+
+1582469217 source:e:\boulot\amandine\8ball\src\export\c\print_c.c
+	"export.h"
+
+1582475897 source:e:\boulot\amandine\8ball\src\user_interface\display\ui_displaycursorcaption.c
+	"user_interface.h"
+
+1582495731 source:e:\boulot\amandine\8ball\src\sdl_util\copy_surface.c
+	"sdl_util.h"
+
+1582818582 source:e:\boulot\amandine\8ball\src\sdl_util\setcursorposition.c
+	"sdl_util.h"
+
+1582567508 source:e:\boulot\amandine\8ball\src\sdl_util\togglefullscreen.c
+	"sdl_util.h"
+
+1583418883 e:\boulot\amandine\8ball\include\filesystem.h
+	"8ball.h"
+
+1583237529 source:e:\boulot\amandine\8ball\src\filesystem\obj_comment.c
+	"filesystem.h"
+
+1583239256 source:e:\boulot\amandine\8ball\src\filesystem\fs_touch.c
+	"filesystem.h"
+
+1583239540 source:e:\boulot\amandine\8ball\src\filesystem\fs_fd.c
+	"filesystem.h"
+
+1583446693 source:e:\boulot\amandine\8ball\src\user_interface\functions\ui_functionexportobj.c
+	"user_interface.h"
+
+1583325213 source:e:\boulot\amandine\8ball\src\filesystem\getvalidfilename.c
+	"filesystem.h"
+
+1583410329 source:e:\boulot\amandine\8ball\src\filesystem\fs_get.c
+	"filesystem.h"
+
+1583493944 source:e:\boulot\amandine\8ball\src\import\obj_import.c
+	"import.h"
+
+1583446446 source:e:\boulot\amandine\8ball\src\user_interface\functions\ui_functionimportobj.c
+	"user_interface.h"
+
+1583433071 source:e:\boulot\amandine\8ball\src\filesystem\fs\fs_abort.c
+	"filesystem.h"
+
+1583413331 source:e:\boulot\amandine\8ball\src\filesystem\fs\fs_close.c
+	"filesystem.h"
+
+1583411139 source:e:\boulot\amandine\8ball\src\filesystem\fs\fs_pipe.c
+	"filesystem.h"
+
+1583435398 source:e:\boulot\amandine\8ball\src\filesystem\fs\fd\fd_readclose.c
+	"filesystem.h"
+
+1583411266 source:e:\boulot\amandine\8ball\src\filesystem\fs\fs_read.c
+	"filesystem.h"
+
+1583411216 source:e:\boulot\amandine\8ball\src\filesystem\fs\fs_touch.c
+	"filesystem.h"
+
+1583434786 source:e:\boulot\amandine\8ball\src\sdl_util\ft_realloc.c
+	"sdl_util.h"
+
+1583442253 source:e:\boulot\amandine\8ball\src\camera\data\push_model.c
+	"camera.h"
+
+1585593008 source:e:\boulot\gravure\8ball\main.c
+	"8ball.h"
+	"model.h"
+	"alphabet_tileset.h"
+	"frame.h"
+
+1585568153 e:\boulot\gravure\8ball\include\8ball.h
+	<cstdlib>
+	<stdlib.h>
+	<windows.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<time.h>
+	<pthread.h>
+	<OpenCL/cl.h>
+	"cl.h"
+	"todo_string.h"
+	"SDL.h"
+	"my_color_table.h"
+	"model.h"
+	"float.h"
+	"macro/logical_shrinker.h"
+	"macro/NATOphonetic.h"
+	"dbg_util.h"
+	"structures.h"
+	"memmgr.h"
+	"camera.h"
+	"alphabet_tileset.h"
+	"geometry.h"
+	"rasterization.h"
+	"str_util.h"
+	"sdl_util.h"
+	"opencl_util.h"
+	"ft_gpu.h"
+	"toolset.h"
+	"mouse.h"
+	"filesystem.h"
+	"export.h"
+	"import.h"
+	"hud.h"
+	"morpho.h"
+	"frame.h"
+	"history.h"
+	"user_interface.h"
+	"input_manager.h"
+	"ascii_art_box.h"
+
+1575480741 e:\boulot\gravure\8ball\include\pthread\pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	<sched.h>
+	<sys/types.h>
+
+1575480833 e:\boulot\gravure\8ball\include\pthread\sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+
+1556863444 e:\boulot\gravure\8ball\include\cl\cl.h
+	<CL/cl_version.h>
+	<CL/cl_platform.h>
+
+1556863444 e:\boulot\gravure\8ball\include\cl\cl_version.h
+
+1556863444 e:\boulot\gravure\8ball\include\cl\cl_platform.h
+	<CL/cl_version.h>
+	<stdint.h>
+	<stddef.h>
+	<altivec.h>
+	<intrin.h>
+	<xmmintrin.h>
+	<intrin.h>
+	<emmintrin.h>
+	<mmintrin.h>
+	<intrin.h>
+	<immintrin.h>
+
+1575498872 e:\boulot\gravure\8ball\include\todo_string.h
+
+1073238547 e:\boulot\gravure\sdl-1.2.9\include\sdl.h
+	"SDL_main.h"
+	"SDL_types.h"
+	"SDL_getenv.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_timer.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_joystick.h"
+	"SDL_events.h"
+	"SDL_video.h"
+	"SDL_byteorder.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073238547 e:\boulot\gravure\sdl-1.2.9\include\sdl_main.h
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1090385606 e:\boulot\gravure\sdl-1.2.9\include\sdl_types.h
+
+1105229581 e:\boulot\gravure\sdl-1.2.9\include\begin_code.h
+
+1073238548 e:\boulot\gravure\sdl-1.2.9\include\close_code.h
+
+1018535713 e:\boulot\gravure\sdl-1.2.9\include\sdl_getenv.h
+	"begin_code.h"
+	"close_code.h"
+
+1100565007 e:\boulot\gravure\sdl-1.2.9\include\sdl_error.h
+	"begin_code.h"
+	"close_code.h"
+
+1093028221 e:\boulot\gravure\sdl-1.2.9\include\sdl_rwops.h
+	<stdio.h>
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1105662296 e:\boulot\gravure\sdl-1.2.9\include\sdl_timer.h
+	"SDL_main.h"
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1093028221 e:\boulot\gravure\sdl-1.2.9\include\sdl_audio.h
+	<stdio.h>
+	"SDL_main.h"
+	"SDL_types.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"SDL_byteorder.h"
+	"begin_code.h"
+	"close_code.h"
+
+1100300957 e:\boulot\gravure\sdl-1.2.9\include\sdl_byteorder.h
+
+1113732990 e:\boulot\gravure\sdl-1.2.9\include\sdl_cdrom.h
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1090177506 e:\boulot\gravure\sdl-1.2.9\include\sdl_joystick.h
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1093028221 e:\boulot\gravure\sdl-1.2.9\include\sdl_events.h
+	"SDL_types.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073238547 e:\boulot\gravure\sdl-1.2.9\include\sdl_active.h
+	"begin_code.h"
+	"close_code.h"
+
+1090191460 e:\boulot\gravure\sdl-1.2.9\include\sdl_keyboard.h
+	"SDL_types.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073238547 e:\boulot\gravure\sdl-1.2.9\include\sdl_keysym.h
+
+1113732990 e:\boulot\gravure\sdl-1.2.9\include\sdl_mouse.h
+	"SDL_types.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1104646276 e:\boulot\gravure\sdl-1.2.9\include\sdl_video.h
+	<stdio.h>
+	"SDL_types.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073238547 e:\boulot\gravure\sdl-1.2.9\include\sdl_mutex.h
+	"SDL_main.h"
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1073238547 e:\boulot\gravure\sdl-1.2.9\include\sdl_quit.h
+
+1113732990 e:\boulot\gravure\sdl-1.2.9\include\sdl_version.h
+	"SDL_types.h"
+	"begin_code.h"
+	"close_code.h"
+
+1582203069 e:\boulot\gravure\8ball\include\my_color_table.h
+	"8ball.h"
+
+1585593141 e:\boulot\gravure\8ball\include\model.h
+	"8ball.h"
+	"putin_model.h"
+	"disc_model.h"
+	"miko_model.h"
+	"debug_model.h"
+	"punk_model.h"
+	"lol_model.h"
+	"wave_model.h"
+	"strip_model.h"
+	"knight_model.h"
+	"mask_model.h"
+	"bust_model.h"
+	"cube_model.h"
+	"lights.h"
+
+1563309243 e:\boulot\gravure\8ball\include\model\putin_model.h
+	"model.h"
+
+1563363477 e:\boulot\gravure\8ball\include\model\disc_model.h
+	"model.h"
+
+1563304358 e:\boulot\gravure\8ball\include\model\miko_model.h
+	"model.h"
+
+1562856239 e:\boulot\gravure\8ball\include\model\debug_model.h
+	"model.h"
+
+1563497393 e:\boulot\gravure\8ball\include\model\punk_model.h
+	"model.h"
+
+1563363945 e:\boulot\gravure\8ball\include\model\lol_model.h
+	"model.h"
+
+1562856239 e:\boulot\gravure\8ball\include\model\wave_model.h
+	"model.h"
+
+1569169044 e:\boulot\gravure\8ball\include\model\strip_model.h
+	"model.h"
+
+1572027461 e:\boulot\gravure\8ball\include\model\knight_model.h
+	"model.h"
+
+1574887887 e:\boulot\gravure\8ball\include\model\mask_model.h
+	"model.h"
+
+1585157437 e:\boulot\gravure\8ball\include\model\bust_model.h
+	"model.h"
+
+1567197147 e:\boulot\gravure\8ball\include\model\cube_model.h
+	"model.h"
+
+1564748654 e:\boulot\gravure\8ball\include\model\lights.h
+	"model.h"
+
+1581078669 e:\boulot\gravure\8ball\include\macro\natophonetic.h
+	"8ball.h"
+
+1585663013 e:\boulot\gravure\8ball\include\structures.h
+	"8ball.h"
+
+1585224726 e:\boulot\gravure\8ball\include\camera.h
+	"8ball.h"
+	"opencl_util.h"
+
+1585662961 e:\boulot\gravure\8ball\include\alphabet_tileset.h
+	"8ball.h"
+	"charset_lowercase.h"
+	"charset_uppercase.h"
+	"charset_numbers.h"
+	"charset_ponctuation.h"
+	"charset_special.h"
+
+1576991210 e:\boulot\gravure\8ball\tileset\charset_lowercase.h
+
+1571923122 e:\boulot\gravure\8ball\tileset\charset_uppercase.h
+
+1563033558 e:\boulot\gravure\8ball\tileset\charset_numbers.h
+
+1563033571 e:\boulot\gravure\8ball\tileset\charset_ponctuation.h
+
+1581629804 e:\boulot\gravure\8ball\tileset\charset_special.h
+
+1575128040 e:\boulot\gravure\8ball\include\geometry.h
+	"8ball.h"
+
+1583600892 e:\boulot\gravure\8ball\include\rasterization.h
+	"8ball.h"
+
+1585227894 e:\boulot\gravure\8ball\include\sdl_util.h
+	"8ball.h"
+
+1585566116 e:\boulot\gravure\8ball\include\opencl_util.h
+	"8ball.h"
+
+1576935445 e:\boulot\gravure\8ball\include\ft_gpu.h
+	"8ball.h"
+
+1585071879 e:\boulot\gravure\8ball\include\toolset.h
+	"8ball.h"
+
+1578075036 e:\boulot\gravure\8ball\include\mouse.h
+	"8ball.h"
+
+1583422483 e:\boulot\gravure\8ball\include\filesystem.h
+	"8ball.h"
+
+1585568508 e:\boulot\gravure\8ball\include\export.h
+	"8ball.h"
+	"user_interface.h"
+
+1583691983 e:\boulot\gravure\8ball\include\import.h
+	"8ball.h"
+
+1572548615 e:\boulot\gravure\8ball\include\hud.h
+	"8ball.h"
+
+1575127460 e:\boulot\gravure\8ball\include\morpho.h
+	"8ball.h"
+
+1585592962 e:\boulot\gravure\8ball\include\frame.h
+	"8ball.h"
+
+1585566258 e:\boulot\gravure\8ball\include\history.h
+	"8ball.h"
+
+1585662832 e:\boulot\gravure\8ball\include\user_interface.h
+	"8ball.h"
+	"cursor.h"
+
+1578334611 e:\boulot\gravure\8ball\include\cursor.h
+	"user_interface.h"
+
+1585255254 e:\boulot\gravure\8ball\include\input_manager.h
+	"8ball.h"
+
+1571143486 e:\boulot\gravure\8ball\tileset\ascii_art_box.h
+
+1578758972 source:e:\boulot\gravure\8ball\rc\icon.rc
+
+1585078104 source:e:\boulot\gravure\8ball\src\camera.c
+	"camera.h"
+	"opencl_util.h"
+
+1571944986 source:e:\boulot\gravure\8ball\src\camera\camera_event.c
+	"camera.h"
+
+1571418456 source:e:\boulot\gravure\8ball\src\camera\camera_motion.c
+	"camera.h"
+
+1585070473 source:e:\boulot\gravure\8ball\src\camera\data\push_model.c
+	"camera.h"
+
+1585492653 source:e:\boulot\gravure\8ball\src\charset\charset.c
+	"alphabet_tileset.h"
+
+1582387316 source:e:\boulot\gravure\8ball\src\charset\charset_printstopwidth_noalpha.c
+	"alphabet_tileset.h"
+
+1582391282 source:e:\boulot\gravure\8ball\src\charset\is_printable.c
+	"alphabet_tileset.h"
+
+1585566509 source:e:\boulot\gravure\8ball\src\constructor.c
+	"8ball.h"
+
+1585566523 source:e:\boulot\gravure\8ball\src\destructor.c
+	"8ball.h"
+
+1582472817 source:e:\boulot\gravure\8ball\src\export\c\print_c.c
+	"export.h"
+
+1575127959 source:e:\boulot\gravure\8ball\src\export\export_c.c
+	"export.h"
+
+1582152335 source:e:\boulot\gravure\8ball\src\export\export_dxf.c
+	"export.h"
+
+1583334273 source:e:\boulot\gravure\8ball\src\export\export_obj.c
+	"export.h"
+
+1583438998 source:e:\boulot\gravure\8ball\src\filesystem\fs\fd\fd_readclose.c
+	"filesystem.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\filesystem\fs\fs_abort.c
+	"filesystem.h"
+
+1583416931 source:e:\boulot\gravure\8ball\src\filesystem\fs\fs_close.c
+	"filesystem.h"
+
+1583414739 source:e:\boulot\gravure\8ball\src\filesystem\fs\fs_pipe.c
+	"filesystem.h"
+
+1583414866 source:e:\boulot\gravure\8ball\src\filesystem\fs\fs_read.c
+	"filesystem.h"
+
+1583414816 source:e:\boulot\gravure\8ball\src\filesystem\fs\fs_touch.c
+	"filesystem.h"
+
+1583328813 source:e:\boulot\gravure\8ball\src\filesystem\getvalidfilename.c
+	"filesystem.h"
+
+1583241129 source:e:\boulot\gravure\8ball\src\filesystem\obj_comment.c
+	"filesystem.h"
+
+1585579994 source:e:\boulot\gravure\8ball\src\frame\draw_f.c
+	"frame.h"
+
+1581944241 source:e:\boulot\gravure\8ball\src\frame\draw_model_stack.c
+	"frame.h"
+
+1585574582 source:e:\boulot\gravure\8ball\src\frame\frame.c
+	"frame.h"
+
+1582045583 source:e:\boulot\gravure\8ball\src\frame\print_debug.c
+	"frame.h"
+
+1585081769 source:e:\boulot\gravure\8ball\src\ft_gpu\gpu_modelrefresh.c
+	"ft_gpu.h"
+
+1569151368 source:e:\boulot\gravure\8ball\src\geometry\add_v.c
+	"geometry.h"
+
+1573303516 source:e:\boulot\gravure\8ball\src\geometry\angle.c
+	"geometry.h"
+
+1563119369 source:e:\boulot\gravure\8ball\src\geometry\clamp_v.c
+	"geometry.h"
+
+1562855380 source:e:\boulot\gravure\8ball\src\geometry\copy_v.c
+	"geometry.h"
+
+1563119675 source:e:\boulot\gravure\8ball\src\geometry\cross_prod.c
+	"geometry.h"
+
+1562855398 source:e:\boulot\gravure\8ball\src\geometry\div_v.c
+	"geometry.h"
+
+1562855437 source:e:\boulot\gravure\8ball\src\geometry\dot_prod.c
+	"geometry.h"
+
+1571944509 source:e:\boulot\gravure\8ball\src\geometry\length.c
+	"geometry.h"
+
+1563034247 source:e:\boulot\gravure\8ball\src\geometry\minmax.c
+	"geometry.h"
+
+1562855486 source:e:\boulot\gravure\8ball\src\geometry\misc.c
+	"geometry.h"
+
+1569768943 source:e:\boulot\gravure\8ball\src\geometry\mtp_v.c
+	"geometry.h"
+
+1570728324 source:e:\boulot\gravure\8ball\src\geometry\rotate.c
+	"geometry.h"
+
+1562855501 source:e:\boulot\gravure\8ball\src\geometry\sub_v.c
+	"geometry.h"
+
+1575128025 source:e:\boulot\gravure\8ball\src\geometry\translate_vector.c
+	"geometry.h"
+
+1563014987 source:e:\boulot\gravure\8ball\src\geometry\unit.c
+	"geometry.h"
+
+1580223264 source:e:\boulot\gravure\8ball\src\history\actiontype\history_relinkselection.c
+	"history.h"
+
+1583608788 source:e:\boulot\gravure\8ball\src\history\actiontype\history_setval.c
+	"history.h"
+
+1576963982 source:e:\boulot\gravure\8ball\src\history\actiontype\history_toolresize.c
+	"history.h"
+
+1576964006 source:e:\boulot\gravure\8ball\src\history\actiontype\history_toolrotate.c
+	"history.h"
+
+1576964030 source:e:\boulot\gravure\8ball\src\history\actiontype\history_toolscale.c
+	"history.h"
+
+1576935562 source:e:\boulot\gravure\8ball\src\history\actiontype\history_tooltransform.c
+	"history.h"
+
+1585081192 source:e:\boulot\gravure\8ball\src\history\history_add.c
+	"history.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\history\history_clear.c
+	"history.h"
+
+1583880360 source:e:\boulot\gravure\8ball\src\history\history_display.c
+	"history.h"
+
+1583748838 source:e:\boulot\gravure\8ball\src\history\history_new.c
+	"history.h"
+
+1581633797 source:e:\boulot\gravure\8ball\src\history\history_redo.c
+	"history.h"
+
+1581634503 source:e:\boulot\gravure\8ball\src\history\history_type.c
+	"history.h"
+
+1585071806 source:e:\boulot\gravure\8ball\src\history\history_undo.c
+	"history.h"
+
+1572204124 source:e:\boulot\gravure\8ball\src\hud\angle\hud_drawangle.c
+	"hud.h"
+
+1572026208 source:e:\boulot\gravure\8ball\src\hud\angle\hud_newangle.c
+	"hud.h"
+
+1576164534 source:e:\boulot\gravure\8ball\src\hud\arrow\hud_drawarrow.c
+	"hud.h"
+
+1572549393 source:e:\boulot\gravure\8ball\src\hud\arrow\hud_newarrow.c
+	"hud.h"
+
+1572190695 source:e:\boulot\gravure\8ball\src\hud\hud_draw.c
+	"hud.h"
+
+1571144915 source:e:\boulot\gravure\8ball\src\hud\init\hud_init.c
+	"hud.h"
+
+1571050682 source:e:\boulot\gravure\8ball\src\hud\init\hud_initaxis.c
+	"hud.h"
+
+1571050717 source:e:\boulot\gravure\8ball\src\hud\init\hud_initpersp.c
+	"hud.h"
+
+1572190813 source:e:\boulot\gravure\8ball\src\hud\length\hud_drawlength.c
+	"hud.h"
+
+1580223737 source:e:\boulot\gravure\8ball\src\hud\length\hud_newlength.c
+	"hud.h"
+
+1572193938 source:e:\boulot\gravure\8ball\src\hud\ref\hud_project.c
+	"hud.h"
+
+1571669907 source:e:\boulot\gravure\8ball\src\hud\ref\selection_center.c
+	"hud.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\import\obj_import.c
+	"import.h"
+
+1585329712 source:e:\boulot\gravure\8ball\src\input_manager\inputmanager_loop.c
+	"input_manager.h"
+
+1582822073 source:e:\boulot\gravure\8ball\src\input_manager\user_cameradrag.c
+	"input_manager.h"
+
+1575734426 source:e:\boulot\gravure\8ball\src\input_manager\user_camerazoom.c
+	"input_manager.h"
+
+1580223329 source:e:\boulot\gravure\8ball\src\input_manager\user_canvaclick.c
+	"input_manager.h"
+
+1585566509 source:e:\boulot\gravure\8ball\src\input_manager\user_computecloud.c
+	"input_manager.h"
+
+1570103577 source:e:\boulot\gravure\8ball\src\input_manager\user_idle.c
+	"input_manager.h"
+
+1582331397 source:e:\boulot\gravure\8ball\src\input_manager\user_interfaceclick.c
+	"input_manager.h"
+
+1583688433 source:e:\boulot\gravure\8ball\src\input_manager\user_keydown.c
+	"input_manager.h"
+
+1583688802 source:e:\boulot\gravure\8ball\src\input_manager\user_keyup.c
+	"input_manager.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\input_manager\user_morphoclick.c
+	"input_manager.h"
+
+1585251243 source:e:\boulot\gravure\8ball\src\input_manager\user_mousebuttondown.c
+	"input_manager.h"
+
+1585082004 source:e:\boulot\gravure\8ball\src\input_manager\user_mousebuttonup.c
+	"input_manager.h"
+
+1582989769 source:e:\boulot\gravure\8ball\src\input_manager\user_mousemotion.c
+	"input_manager.h"
+
+1580223576 source:e:\boulot\gravure\8ball\src\input_manager\user_onleftclick.c
+	"input_manager.h"
+
+1585566436 source:e:\boulot\gravure\8ball\src\input_manager\user_quit.c
+	"input_manager.h"
+
+1585254007 source:e:\boulot\gravure\8ball\src\input_manager\user_resizewindow.c
+	"input_manager.h"
+
+1569854882 source:e:\boulot\gravure\8ball\src\input_manager\user_switchcloudview.c
+	"input_manager.h"
+
+1569854775 source:e:\boulot\gravure\8ball\src\input_manager\user_switchmodelview.c
+	"input_manager.h"
+
+1575127524 source:e:\boulot\gravure\8ball\src\morpho\morpho_setallactive.c
+	"morpho.h"
+
+1585081801 source:e:\boulot\gravure\8ball\src\mouse\click\hud\mouse_clickhud.c
+	"mouse.h"
+
+1572026299 source:e:\boulot\gravure\8ball\src\mouse\click\hud\mouse_clickhudangle.c
+	"mouse.h"
+
+1580223372 source:e:\boulot\gravure\8ball\src\mouse\click\hud\mouse_clickhudarrow.c
+	"mouse.h"
+
+1571934802 source:e:\boulot\gravure\8ball\src\mouse\click\hud\mouse_clickhudlength.c
+	"mouse.h"
+
+1583336529 source:e:\boulot\gravure\8ball\src\mouse\click\mouse_clickselect.c
+	"mouse.h"
+
+1578104318 source:e:\boulot\gravure\8ball\src\mouse\click\ui\mouse_clickui.c
+	"mouse.h"
+
+1582821311 source:e:\boulot\gravure\8ball\src\mouse\motion\mouse_motionangle.c
+	"mouse.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\mouse\motion\mouse_motionarrow.c
+	"mouse.h"
+
+1580223756 source:e:\boulot\gravure\8ball\src\mouse\motion\mouse_motionlength.c
+	"mouse.h"
+
+1563645073 source:e:\boulot\gravure\8ball\src\opencl_util\get_device_info.c
+	"opencl_util.h"
+
+1585081852 source:e:\boulot\gravure\8ball\src\opencl_util\init_clmem.c
+	"opencl_util.h"
+
+1568229850 source:e:\boulot\gravure\8ball\src\opencl_util\init_kernel.c
+	"opencl_util.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\opencl_util\init_opencl.c
+	"opencl_util.h"
+
+1585081948 source:e:\boulot\gravure\8ball\src\opencl_util\push_model_opencl.c
+	"opencl_util.h"
+
+1581944585 source:e:\boulot\gravure\8ball\src\rasterization\triangle.c
+	"8ball.h"
+
+1563119532 source:e:\boulot\gravure\8ball\src\sdl_util\add_color.c
+	"8ball.h"
+
+1585485573 source:e:\boulot\gravure\8ball\src\sdl_util\blit.c
+	"8ball.h"
+
+1579012044 source:e:\boulot\gravure\8ball\src\sdl_util\blit_font_at.c
+	"sdl_util.h"
+
+1578327536 source:e:\boulot\gravure\8ball\src\sdl_util\circle.c
+	"sdl_util.h"
+
+1585260298 source:e:\boulot\gravure\8ball\src\sdl_util\clean_surface.c
+	"sdl_util.h"
+
+1585412419 source:e:\boulot\gravure\8ball\src\sdl_util\copy_surface.c
+	"sdl_util.h"
+
+1578330718 source:e:\boulot\gravure\8ball\src\sdl_util\dtoa.c
+	"sdl_util.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\sdl_util\ft_realloc.c
+	"sdl_util.h"
+
+1582130941 source:e:\boulot\gravure\8ball\src\sdl_util\halt_program.c
+	"sdl_util.h"
+
+1571399050 source:e:\boulot\gravure\8ball\src\sdl_util\isincanva.c
+	"sdl_util.h"
+
+1579016581 source:e:\boulot\gravure\8ball\src\sdl_util\isintile.c
+	"sdl_util.h"
+
+1578099639 source:e:\boulot\gravure\8ball\src\sdl_util\isinzone.c
+	"sdl_util.h"
+
+1582044480 source:e:\boulot\gravure\8ball\src\sdl_util\layer_merge.c
+	"sdl_util.h"
+
+1583666649 source:e:\boulot\gravure\8ball\src\sdl_util\layer_popmerge.c
+	"sdl_util.h"
+
+1583758606 source:e:\boulot\gravure\8ball\src\sdl_util\line.c
+	"sdl_util.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\sdl_util\list.c
+	"sdl_util.h"
+
+1585408971 source:e:\boulot\gravure\8ball\src\sdl_util\mapping.c
+	"sdl_util.h"
+
+1563118739 source:e:\boulot\gravure\8ball\src\sdl_util\mtp_color.c
+	"8ball.h"
+
+1585416560 source:e:\boulot\gravure\8ball\src\sdl_util\new_surface.c
+	"sdl_util.h"
+
+1585260556 source:e:\boulot\gravure\8ball\src\sdl_util\set_alpha.c
+	"sdl_util.h"
+
+1582822182 source:e:\boulot\gravure\8ball\src\sdl_util\setcursorposition.c
+	"sdl_util.h"
+
+1582383430 source:e:\boulot\gravure\8ball\src\sdl_util\square.c
+	"sdl_util.h"
+
+1582383495 source:e:\boulot\gravure\8ball\src\sdl_util\square_dim.c
+	"sdl_util.h"
+
+1583438280 source:e:\boulot\gravure\8ball\src\sdl_util\strequ.c
+	"sdl_util.h"
+
+1585416418 source:e:\boulot\gravure\8ball\src\sdl_util\stretch_surface.c
+	"user_interface.h"
+
+1585331597 source:e:\boulot\gravure\8ball\src\sdl_util\super_blit.c
+	"sdl_util.h"
+
+1582571108 source:e:\boulot\gravure\8ball\src\sdl_util\togglefullscreen.c
+	"sdl_util.h"
+
+1576959753 source:e:\boulot\gravure\8ball\src\toolset\select.c
+	"toolset.h"
+
+1571150445 source:e:\boulot\gravure\8ball\src\toolset\tool_buildidle.c
+	"toolset.h"
+
+1571395259 source:e:\boulot\gravure\8ball\src\toolset\tool_buildresize.c
+	"toolset.h"
+
+1571237494 source:e:\boulot\gravure\8ball\src\toolset\tool_buildrotate.c
+	"toolset.h"
+
+1571237502 source:e:\boulot\gravure\8ball\src\toolset\tool_buildscale.c
+	"toolset.h"
+
+1571237526 source:e:\boulot\gravure\8ball\src\toolset\tool_buildselect.c
+	"toolset.h"
+
+1571239620 source:e:\boulot\gravure\8ball\src\toolset\tool_buildtransform.c
+	"toolset.h"
+
+1570139566 source:e:\boulot\gravure\8ball\src\toolset\tool_idle.c
+	"toolset.h"
+
+1572548644 source:e:\boulot\gravure\8ball\src\toolset\tool_init.c
+	"toolset.h"
+
+1580307717 source:e:\boulot\gravure\8ball\src\toolset\tool_resize.c
+	"toolset.h"
+
+1576956862 source:e:\boulot\gravure\8ball\src\toolset\tool_rotate.c
+	"toolset.h"
+
+1576953256 source:e:\boulot\gravure\8ball\src\toolset\tool_scale.c
+	"toolset.h"
+
+1576933641 source:e:\boulot\gravure\8ball\src\toolset\tool_select.c
+	"toolset.h"
+
+1583445867 source:e:\boulot\gravure\8ball\src\toolset\tool_transform.c
+	"toolset.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\button\btn_icon.c
+	"user_interface.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\button\btn_quit.c
+	"user_interface.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\button\btn_text.c
+	"user_interface.h"
+
+1580488686 source:e:\boulot\gravure\8ball\src\user_interface\constructor\ui_initassets.c
+	"user_interface.h"
+
+1583748838 source:e:\boulot\gravure\8ball\src\user_interface\constructor\ui_newbox.c
+	"user_interface.h"
+
+1579010032 source:e:\boulot\gravure\8ball\src\user_interface\constructor\ui_newfont.c
+	"user_interface.h"
+
+1581532608 source:e:\boulot\gravure\8ball\src\user_interface\constructor\ui_newitem_numericchooser.c
+	"user_interface.h"
+
+1579727192 source:e:\boulot\gravure\8ball\src\user_interface\constructor\ui_newitempicture.c
+	"user_interface.h"
+
+1583748586 source:e:\boulot\gravure\8ball\src\user_interface\constructor\ui_newitemsimplebutton.c
+	"user_interface.h"
+
+1585064139 source:e:\boulot\gravure\8ball\src\user_interface\constructor\ui_newitemtext.c
+	"user_interface.h"
+
+1579180028 source:e:\boulot\gravure\8ball\src\user_interface\constructor\ui_newscrollbar.c
+	"user_interface.h"
+
+1578334777 source:e:\boulot\gravure\8ball\src\user_interface\cursor\ui_cursor.c
+	"user_interface.h"
+
+1581194984 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\corefilter.c
+	"user_interface.h"
+
+1581191887 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\double\doublefilter_alfa.c
+	"user_interface.h"
+
+1581194523 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\double\doublefilter_bravo.c
+	"user_interface.h"
+
+1581194539 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\double\doublefilter_charlie.c
+	"user_interface.h"
+
+1581194557 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\double\doublefilter_delta.c
+	"user_interface.h"
+
+1581195102 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\double\doublefilter_echo.c
+	"user_interface.h"
+
+1581195112 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\double\doublefilter_foxtrot.c
+	"user_interface.h"
+
+1581191704 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\float\floatfilter_alfa.c
+	"user_interface.h"
+
+1581200254 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\float\floatfilter_bravo.c
+	"user_interface.h"
+
+1581191729 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\float\floatfilter_charlie.c
+	"user_interface.h"
+
+1581191739 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\float\floatfilter_delta.c
+	"user_interface.h"
+
+1581200263 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\float\floatfilter_echo.c
+	"user_interface.h"
+
+1581200251 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\float\floatfilter_foxtrot.c
+	"user_interface.h"
+
+1581190992 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\int\intfilter_alfa.c
+	"user_interface.h"
+
+1581279149 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\int\intfilter_bravo.c
+	"user_interface.h"
+
+1581200284 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\int\intfilter_charlie.c
+	"user_interface.h"
+
+1581200291 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\int\intfilter_delta.c
+	"user_interface.h"
+
+1581200276 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\int\intfilter_echo.c
+	"user_interface.h"
+
+1581200299 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\int\intfilter_foxtrot.c
+	"user_interface.h"
+
+1581186010 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\uint\uintfilter_alfa.c
+	"user_interface.h"
+
+1581200302 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\uint\uintfilter_bravo.c
+	"user_interface.h"
+
+1581279183 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\uint\uintfilter_charlie.c
+	"user_interface.h"
+
+1581279181 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\uint\uintfilter_delta.c
+	"user_interface.h"
+
+1581279178 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\uint\uintfilter_echo.c
+	"user_interface.h"
+
+1581279175 source:e:\boulot\gravure\8ball\src\user_interface\datatype\filter\uint\uintfilter_foxtrot.c
+	"user_interface.h"
+
+1581194318 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\coreinstruction.c
+	"user_interface.h"
+
+1582156347 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\double\double_add.c
+	"user_interface.h"
+
+1581184688 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\double\double_copy.c
+	"user_interface.h"
+
+1581529669 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\double\double_get.c
+	"user_interface.h"
+
+1581540119 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\double\double_set.c
+	"user_interface.h"
+
+1581278677 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\float\float_add.c
+	"user_interface.h"
+
+1581184632 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\float\float_copy.c
+	"user_interface.h"
+
+1581200364 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\float\float_get.c
+	"user_interface.h"
+
+1581540167 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\float\float_set.c
+	"user_interface.h"
+
+1581540490 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\int\int_add.c
+	"user_interface.h"
+
+1581184551 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\int\int_copy.c
+	"user_interface.h"
+
+1581184538 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\int\int_get.c
+	"user_interface.h"
+
+1581540191 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\int\int_set.c
+	"user_interface.h"
+
+1583609385 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\scheduler\strtoval.c
+	"user_interface.h"
+
+1583609840 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\scheduler\valtostr.c
+	"user_interface.h"
+
+1582156319 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\uint\uint_add.c
+	"user_interface.h"
+
+1581183869 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\uint\uint_copy.c
+	"user_interface.h"
+
+1582158556 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\uint\uint_get.c
+	"user_interface.h"
+
+1582158543 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\uint\uint_set.c
+	"user_interface.h"
+
+1581278699 source:e:\boulot\gravure\8ball\src\user_interface\datatype\type\uint\uint_processor.c
+	"user_interface.h"
+
+1580395125 source:e:\boulot\gravure\8ball\src\user_interface\destructor\item\ui_releaseitem_numericchooser.c
+	"user_interface.h"
+
+1579736668 source:e:\boulot\gravure\8ball\src\user_interface\destructor\item\ui_releaseitem_picture.c
+	"user_interface.h"
+
+1579726662 source:e:\boulot\gravure\8ball\src\user_interface\destructor\item\ui_releaseitem_simplebutton.c
+	"user_interface.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\user_interface\destructor\item\ui_releaseitem_string.c
+	"user_interface.h"
+
+1580477062 source:e:\boulot\gravure\8ball\src\user_interface\destructor\ui_releaseassets.c
+	"user_interface.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\user_interface\destructor\ui_releasebox.c
+	"user_interface.h"
+
+1579008249 source:e:\boulot\gravure\8ball\src\user_interface\destructor\ui_releasefont.c
+	"user_interface.h"
+
+1580396821 source:e:\boulot\gravure\8ball\src\user_interface\destructor\ui_releaseitem.c
+	"user_interface.h"
+
+1585333917 source:e:\boulot\gravure\8ball\src\user_interface\display\item\ui_displayitem.c
+	"user_interface.h"
+
+1582467592 source:e:\boulot\gravure\8ball\src\user_interface\display\item\ui_displayitem_numericchooser.c
+	"user_interface.h"
+
+1582234692 source:e:\boulot\gravure\8ball\src\user_interface\display\item\ui_displayitembutton.c
+	"user_interface.h"
+
+1585485511 source:e:\boulot\gravure\8ball\src\user_interface\display\item\ui_displayitempicture.c
+	"user_interface.h"
+
+1580223629 source:e:\boulot\gravure\8ball\src\user_interface\display\item\ui_displayitemscrollbar.c
+	"user_interface.h"
+
+1585484697 source:e:\boulot\gravure\8ball\src\user_interface\display\item\ui_displayitemstring.c
+	"user_interface.h"
+
+1585332315 source:e:\boulot\gravure\8ball\src\user_interface\display\ui_displaybox.c
+	"user_interface.h"
+
+1585329591 source:e:\boulot\gravure\8ball\src\user_interface\display\ui_displaycursorcaption.c
+	"user_interface.h"
+
+1580821629 source:e:\boulot\gravure\8ball\src\user_interface\envdim\item\ui_getitemheight_numericchooser.c
+	"user_interface.h"
+
+1579780815 source:e:\boulot\gravure\8ball\src\user_interface\envdim\item\ui_getitemheight_simplebutton.c
+	"user_interface.h"
+
+1580223453 source:e:\boulot\gravure\8ball\src\user_interface\envdim\item\ui_getitemheight_string.c
+	"user_interface.h"
+
+1580821760 source:e:\boulot\gravure\8ball\src\user_interface\envdim\ui_getboxenvdim.c
+	"user_interface.h"
+
+1582331801 source:e:\boulot\gravure\8ball\src\user_interface\event\bargrab\ui_eventbargrab_motion.c
+	"user_interface.h"
+
+1582332119 source:e:\boulot\gravure\8ball\src\user_interface\event\bargrab\ui_eventbargrab_onclick.c
+	"user_interface.h"
+
+1579443758 source:e:\boulot\gravure\8ball\src\user_interface\event\bargrab\ui_eventbargrab_onrelease.c
+	"user_interface.h"
+
+1579344516 source:e:\boulot\gravure\8ball\src\user_interface\event\boxkill\ui_eventboxkill_motion.c
+	"user_interface.h"
+
+1579344776 source:e:\boulot\gravure\8ball\src\user_interface\event\boxkill\ui_eventboxkill_onclick.c
+	"user_interface.h"
+
+1582327998 source:e:\boulot\gravure\8ball\src\user_interface\event\boxkill\ui_eventboxkill_onrelease.c
+	"user_interface.h"
+
+1579724895 source:e:\boulot\gravure\8ball\src\user_interface\event\boxside\ui_eventboxside_motion.c
+	"user_interface.h"
+
+1579342005 source:e:\boulot\gravure\8ball\src\user_interface\event\boxside\ui_eventboxside_onclick.c
+	"user_interface.h"
+
+1579355441 source:e:\boulot\gravure\8ball\src\user_interface\event\boxside\ui_eventboxside_onrelease.c
+	"user_interface.h"
+
+1582834308 source:e:\boulot\gravure\8ball\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_motion.c
+	"user_interface.h"
+
+1582318360 source:e:\boulot\gravure\8ball\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_onclick.c
+	"user_interface.h"
+
+1582420594 source:e:\boulot\gravure\8ball\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_onrelease.c
+	"user_interface.h"
+
+1579735160 source:e:\boulot\gravure\8ball\src\user_interface\event\item\picture\ui_eventitem_picture_motion.c
+	"user_interface.h"
+
+1579735049 source:e:\boulot\gravure\8ball\src\user_interface\event\item\picture\ui_eventitem_picture_onclick.c
+	"user_interface.h"
+
+1579736185 source:e:\boulot\gravure\8ball\src\user_interface\event\item\picture\ui_eventitem_picture_onrelease.c
+	"user_interface.h"
+
+1579734596 source:e:\boulot\gravure\8ball\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_motion.c
+	"user_interface.h"
+
+1579735709 source:e:\boulot\gravure\8ball\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_onclick.c
+	"user_interface.h"
+
+1579735782 source:e:\boulot\gravure\8ball\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_onrelease.c
+	"user_interface.h"
+
+1579735860 source:e:\boulot\gravure\8ball\src\user_interface\event\item\string\ui_eventitem_string_motion.c
+	"user_interface.h"
+
+1579735905 source:e:\boulot\gravure\8ball\src\user_interface\event\item\string\ui_eventitem_string_onclick.c
+	"user_interface.h"
+
+1579736295 source:e:\boulot\gravure\8ball\src\user_interface\event\item\string\ui_eventitem_string_onrelease.c
+	"user_interface.h"
+
+1582811883 source:e:\boulot\gravure\8ball\src\user_interface\event\item\ui_eventitem_motion.c
+	"user_interface.h"
+
+1580402952 source:e:\boulot\gravure\8ball\src\user_interface\event\item\ui_eventitem_onclick.c
+	"user_interface.h"
+
+1580397222 source:e:\boulot\gravure\8ball\src\user_interface\event\item\ui_eventitem_onrelease.c
+	"user_interface.h"
+
+1579781555 source:e:\boulot\gravure\8ball\src\user_interface\event\scrollbar\ui_eventscrollbar_motion.c
+	"user_interface.h"
+
+1579553029 source:e:\boulot\gravure\8ball\src\user_interface\event\scrollbar\ui_eventscrollbar_onclick.c
+	"user_interface.h"
+
+1580223693 source:e:\boulot\gravure\8ball\src\user_interface\event\scrollbar\ui_eventscrollbar_onrelease.c
+	"user_interface.h"
+
+1585566430 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functionbye.c
+	"user_interface.h"
+
+1578932490 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functionexportdxf.c
+	"user_interface.h"
+
+1583755497 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functionexportobj.c
+	"user_interface.h"
+
+1578881052 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functionfall.c
+	"user_interface.h"
+
+1585082048 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functionimportobj.c
+	"user_interface.h"
+
+1585081669 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functioninput.c
+	"user_interface.h"
+
+1578865035 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functiontest.c
+	"user_interface.h"
+
+1582332191 source:e:\boulot\gravure\8ball\src\user_interface\handler\ui_getboxhandleat.c
+	"user_interface.h"
+
+1582421202 source:e:\boulot\gravure\8ball\src\user_interface\handler\ui_getfrontboxhandle.c
+	"user_interface.h"
+
+1580489384 source:e:\boulot\gravure\8ball\src\user_interface\handler\ui_getitemhandleat.c
+	"user_interface.h"
+
+1580403466 source:e:\boulot\gravure\8ball\src\user_interface\handler\ui_getscrollbarhandle.c
+	"user_interface.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\input\input_bool.c
+	"user_interface.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\input\input_num.c
+	"user_interface.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\input\input_select.c
+	"user_interface.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\input\input_text.c
+	"user_interface.h"
+
+1582327536 source:e:\boulot\gravure\8ball\src\user_interface\ui_background.c
+	"user_interface.h"
+
+1579102139 source:e:\boulot\gravure\8ball\src\user_interface\ui_clampscrollbarfactor.c
+	"user_interface.h"
+
+1585332452 source:e:\boulot\gravure\8ball\src\user_interface\ui_drawbox.c
+	"user_interface.h"
+
+1580752468 source:e:\boulot\gravure\8ball\src\user_interface\ui_drawbutton.c
+	"user_interface.h"
+
+1582034734 source:e:\boulot\gravure\8ball\src\user_interface\ui_drawcameraorientation.c
+	"user_interface.h"
+
+1582235920 source:e:\boulot\gravure\8ball\src\user_interface\ui_drawscrollbar.c
+	"user_interface.h"
+
+1582326343 source:e:\boulot\gravure\8ball\src\user_interface\ui_foregroundbox.c
+	"user_interface.h"
+
+1582421781 source:e:\boulot\gravure\8ball\src\user_interface\ui_getboxside.c
+	"user_interface.h"
+
+1579097217 source:e:\boulot\gravure\8ball\src\user_interface\ui_getscrollbarlength.c
+	"user_interface.h"
+
+1579098304 source:e:\boulot\gravure\8ball\src\user_interface\ui_getscrollbuttonpos.c
+	"user_interface.h"
+
+1582315495 source:e:\boulot\gravure\8ball\src\user_interface\ui_info.c
+	"user_interface.h"
+
+1579345091 source:e:\boulot\gravure\8ball\src\user_interface\ui_interfacemotion.c
+	"user_interface.h"
+
+1582325049 source:e:\boulot\gravure\8ball\src\user_interface\ui_interfaceonclick.c
+	"user_interface.h"
+
+1582421139 source:e:\boulot\gravure\8ball\src\user_interface\ui_interfaceonrelease.c
+	"user_interface.h"
+
+1579541015 source:e:\boulot\gravure\8ball\src\user_interface\ui_isgrabbar.c
+	"user_interface.h"
+
+1579552413 source:e:\boulot\gravure\8ball\src\user_interface\ui_iskill.c
+	"user_interface.h"
+
+1582420845 source:e:\boulot\gravure\8ball\src\user_interface\ui_isresize.c
+	"user_interface.h"
+
+1585332047 source:e:\boulot\gravure\8ball\src\user_interface\ui_main.c
+	"user_interface.h"
+
+1579724961 source:e:\boulot\gravure\8ball\src\user_interface\ui_setboxside.c
+	"user_interface.h"
+
+1578161042 source:e:\boulot\gravure\8ball\src\user_interface\ui_setdim.c
+	"user_interface.h"
+
+1578600314 source:e:\boulot\gravure\8ball\src\user_interface\ui_setevent.c
+	"user_interface.h"
+
+1578160944 source:e:\boulot\gravure\8ball\src\user_interface\ui_setpos.c
+	"user_interface.h"
+
+1585493139 source:e:\boulot\gravure\8ball\src\user_interface\ui_stringgetptrat.c
+	"user_interface.h"
+
+1582328032 source:e:\boulot\gravure\8ball\src\user_interface\ui_swapbox.c
+	"user_interface.h"
+
+1582327504 source:e:\boulot\gravure\8ball\src\user_interface\ui_totalbox.c
+	"user_interface.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\zone\zone_area.c
+	"user_interface.h"
+
+1577626745 source:e:\boulot\gravure\8ball\src\user_interface\zone\zone_scroll.c
+	"user_interface.h"
+
+1571154045 source:e:\boulot\gravure\8ball\src\toolset\idle\tool_buildidle.c
+	"toolset.h"
+
+1570143166 source:e:\boulot\gravure\8ball\src\toolset\idle\tool_idle.c
+	"toolset.h"
+
+1571398859 source:e:\boulot\gravure\8ball\src\toolset\resize\tool_buildresize.c
+	"toolset.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\toolset\resize\tool_resize.c
+	"toolset.h"
+
+1571241094 source:e:\boulot\gravure\8ball\src\toolset\rotate\tool_buildrotate.c
+	"toolset.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\toolset\rotate\tool_rotate.c
+	"toolset.h"
+
+1571241102 source:e:\boulot\gravure\8ball\src\toolset\scale\tool_buildscale.c
+	"toolset.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\toolset\scale\tool_scale.c
+	"toolset.h"
+
+1585071903 source:e:\boulot\gravure\8ball\src\toolset\select\select.c
+	"toolset.h"
+
+1571241126 source:e:\boulot\gravure\8ball\src\toolset\select\tool_buildselect.c
+	"toolset.h"
+
+1576937241 source:e:\boulot\gravure\8ball\src\toolset\select\tool_select.c
+	"toolset.h"
+
+1571243220 source:e:\boulot\gravure\8ball\src\toolset\transform\tool_buildtransform.c
+	"toolset.h"
+
+1585082018 source:e:\boulot\gravure\8ball\src\toolset\transform\tool_transform.c
+	"toolset.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\camera\camera_release.c
+	"camera.h"
+
+1583603353 source:e:\boulot\gravure\8ball\src\camera\data\model_getlasthandle.c
+	"camera.h"
+
+1585081510 source:e:\boulot\gravure\8ball\src\camera\data\release_model.c
+	"camera.h"
+
+1584102146 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functionreleasemodel.c
+	"user_interface.h"
+
+1585063542 source:e:\boulot\gravure\8ball\src\user_interface\functions\ui_functionimportscn.c
+	"user_interface.h"
+
+1585081720 source:e:\boulot\gravure\8ball\src\camera\data\release_modelpointers.c
+	"camera.h"
+
+1583609668 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\string\string_add.c
+	"user_interface.h"
+
+1583609938 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\string\string_copy.c
+	"user_interface.h"
+
+1583609410 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\string\string_set.c
+	"user_interface.h"
+
+1583609946 source:e:\boulot\gravure\8ball\src\user_interface\datatype\instruction\string\string_get.c
+	"user_interface.h"
+
+1583610186 source:e:\boulot\gravure\8ball\src\sdl_util\zone_upleftcorner.c
+	"sdl_util.h"
+
+1583671035 e:\boulot\gravure\8ball\include\macro\logical_shrinker.h
+
+1585082033 source:e:\boulot\gravure\8ball\src\user_interface\ask\ui_ask_form.c
+	"user_interface.h"
+
+1585234142 e:\boulot\gravure\8ball\include\memmgr.h
+	"8ball.h"
+
+1585245559 source:e:\boulot\gravure\8ball\src\memmgr\my_malloc.c
+	"memmgr.h"
+
+1583756716 source:e:\boulot\gravure\8ball\src\user_interface\ask\variadic\strlento.c
+	"user_interface.h"
+
+1583843063 source:e:\boulot\gravure\8ball\src\sdl_util\line_hrz_width.c
+	"sdl_util.h"
+
+1583762841 source:e:\boulot\gravure\8ball\src\sdl_util\new_scanline.c
+	"sdl_util.h"
+
+1583759546 source:e:\boulot\gravure\8ball\src\sdl_util\hrz_line_width.c
+	"sdl_util.h"
+
+1583843076 source:e:\boulot\gravure\8ball\src\sdl_util\line_vrt_width.c
+	"sdl_util.h"
+
+1583841403 source:e:\boulot\gravure\8ball\src\sdl_util\set_pos_linewidth.c
+	"sdl_util.h"
+
+1584189037 source:e:\boulot\gravure\8ball\src\matrix\matrix_compose.c
+
+1584189421 source:e:\boulot\gravure\8ball\src\matrix\new_matrix_12.c
+	"matrix.h"
+
+1584189012 e:\boulot\gravure\8ball\include\matrix.h
+	"8ball.h"
+
+1584987024 source:e:\boulot\gravure\8ball\src\matrix\matrix_multiply.c
+	"matrix.h"
+
+1584189425 source:e:\boulot\gravure\8ball\src\matrix\new_matrix_13.c
+	"matrix.h"
+
+1584189432 source:e:\boulot\gravure\8ball\src\matrix\new_matrix_22.c
+	"matrix.h"
+
+1584189437 source:e:\boulot\gravure\8ball\src\matrix\new_matrix_33.c
+	"matrix.h"
+
+1585234153 source:e:\boulot\gravure\8ball\src\memmgr\mem_newpage.c
+	"memmgr.h"
+
+1585156821 source:e:\boulot\gravure\8ball\src\memmgr\memmgr.c
+	"memmgr.h"
+
+1584994496 source:e:\boulot\gravure\8ball\src\memmgr\default_page_dim.c
+	"memmgr.h"
+
+1585055451 source:e:\boulot\gravure\8ball\src\memmgr\mem_getcellpage.c
+	"memmgr.h"
+
+1585055416 source:e:\boulot\gravure\8ball\src\memmgr\mem_getdatacell.c
+	"memmgr.h"
+
+1585058544 source:e:\boulot\gravure\8ball\src\memmgr\mem_removepage.c
+	"memmgr.h"
+
+1585070039 source:e:\boulot\gravure\8ball\src\memmgr\my_free.c
+	"memmgr.h"
+
+1585227820 e:\boulot\gravure\8ball\include\str_util.h
+	"8ball.h"
+
+1585064593 source:e:\boulot\gravure\8ball\src\str_util\ft_strdup.c
+	"str_util.h"
+
+1585069566 source:e:\boulot\gravure\8ball\src\memmgr\mem_cleanpage.c
+	"memmgr.h"
+
+1585244418 source:e:\boulot\gravure\8ball\src\memmgr\mem_getemptycell.c
+	"memmgr.h"
+
+1585068648 source:e:\boulot\gravure\8ball\src\memmgr\mem_getpagecell.c
+	"memmgr.h"
+
+1585069656 source:e:\boulot\gravure\8ball\src\memmgr\mem_releasepage.c
+	"memmgr.h"
+
+1585079506 source:e:\boulot\gravure\8ball\src\history\history_removenode.c
+	"history.h"
+
+1585079609 source:e:\boulot\gravure\8ball\src\history\history_updatedeletion.c
+	"history.h"
+
+1585245622 source:e:\boulot\gravure\8ball\src\memmgr\mem_pagecount.c
+	"memmgr.h"
+
+1585245583 source:e:\boulot\gravure\8ball\src\memmgr\ft\page\page_getavailable.c
+	"memmgr.h"
+
+1585245370 source:e:\boulot\gravure\8ball\src\memmgr\mem_setcell.c
+	"memmgr.h"
+
+1585224605 source:e:\boulot\gravure\8ball\src\camera\camera_aspect_ratio.c
+	"camera.h"
+
+1585224503 source:e:\boulot\gravure\8ball\src\camera\clear_zbuffer.c
+	"camera.h"
+
+1585253265 source:e:\boulot\gravure\8ball\src\camera\new_camera.c
+	"camera.h"
+
+1585224636 source:e:\boulot\gravure\8ball\src\camera\refresh_orientation.c
+	"camera.h"
+
+1585224676 source:e:\boulot\gravure\8ball\src\camera\reset_camera.c
+	"camera.h"
+
+1585253344 source:e:\boulot\gravure\8ball\src\camera\resize_camera_viewport.c
+	"camera.h"
+
+1578331136 source:e:\boulot\gravure\8ball\src\sdl_util\shape\circle.c
+	"sdl_util.h"
+
+1583762206 source:e:\boulot\gravure\8ball\src\sdl_util\shape\line.c
+	"sdl_util.h"
+
+1583846663 source:e:\boulot\gravure\8ball\src\sdl_util\shape\line_hrz_width.c
+	"sdl_util.h"
+
+1583846676 source:e:\boulot\gravure\8ball\src\sdl_util\shape\line_vrt_width.c
+	"sdl_util.h"
+
+1582387095 source:e:\boulot\gravure\8ball\src\sdl_util\shape\square_dim.c
+	"sdl_util.h"
+
+1583441880 source:e:\boulot\gravure\8ball\src\str_util\ft_strequ.c
+	"sdl_util.h"
+
+1585331644 source:e:\boulot\gravure\8ball\src\sdl_util\shape\square.c
+	"sdl_util.h"
+
+1585231538 source:e:\boulot\gravure\8ball\src\memmgr\ft\display\mem_celldisplay.c
+	"memmgr.h"
+
+1585231471 source:e:\boulot\gravure\8ball\src\memmgr\ft\display\mem_display.c
+	"memmgr.h"
+
+1585231506 source:e:\boulot\gravure\8ball\src\memmgr\ft\display\mem_pagedisplay.c
+	"memmgr.h"
+
+1585233893 source:e:\boulot\gravure\8ball\src\memmgr\ft\page\page_set_empty_cells.c
+	"memmgr.h"
+
+1585233944 source:e:\boulot\gravure\8ball\src\memmgr\mem_getroot.c
+	"memmgr.h"
+
+1585486799 source:e:\boulot\gravure\8ball\src\charset\blit_pos.c
+	"alphabet_tileset.h"
+
+1585486881 source:e:\boulot\gravure\8ball\src\charset\get_tile.c
+	"alphabet_tileset.h"
+
+1585486528 source:e:\boulot\gravure\8ball\src\charset\load_charset.c
+	"alphabet_tileset.h"
+
+1585486606 source:e:\boulot\gravure\8ball\src\charset\charset_endian.c
+	"alphabet_tileset.h"
+
+1585492355 source:e:\boulot\gravure\8ball\src\charset\charset_getoffsetheight.c
+	"alphabet_tileset.h"
+
+1585492041 source:e:\boulot\gravure\8ball\src\charset\charset_getoffsetwidth.c
+	"alphabet_tileset.h"
+
+1585491762 source:e:\boulot\gravure\8ball\src\charset\charset_print.c
+	"alphabet_tileset.h"
+
+1585491555 source:e:\boulot\gravure\8ball\src\charset\charset_print_noalpha.c
+	"alphabet_tileset.h"
+
+1585492569 source:e:\boulot\gravure\8ball\src\charset\charset_printstopwidth.c
+	"alphabet_tileset.h"
+
+1585492673 source:e:\boulot\gravure\8ball\src\charset\charset_printstopwidthselection.c
+	"alphabet_tileset.h"
+
+1585492433 source:e:\boulot\gravure\8ball\src\charset\charset_printwidth.c
+	"alphabet_tileset.h"
+
+1585492536 source:e:\boulot\gravure\8ball\src\charset\charset_printwidthselection.c
+	"alphabet_tileset.h"
+
+1585491819 source:e:\boulot\gravure\8ball\src\charset\worddelimiter.c
+	"alphabet_tileset.h"
+
+1585491955 source:e:\boulot\gravure\8ball\src\charset\wordlength.c
+	"alphabet_tileset.h"
+
+1585568079 e:\boulot\gravure\8ball\include\dbg_util.h
+	"8ball.h"
+
+1585565914 source:e:\boulot\gravure\8ball\src\charset\destructor\free_tileset.c
+	"alphabet_tileset.h"
+
+1585566220 source:e:\boulot\gravure\8ball\src\history\destructor\release_history.c
+	"history.h"
+
+1585566061 source:e:\boulot\gravure\8ball\src\opencl_util\destructor\release_opencl.c
+	"opencl_util.h"
+
+1585566328 source:e:\boulot\gravure\8ball\src\user_interface\destructor\release_ui.c
+	"user_interface.h"
+
+1585568082 source:e:\boulot\gravure\8ball\src\debug\print_vector_array.c
+	"dbg_util.h"
+
+1585567819 source:e:\boulot\gravure\8ball\src\user_interface\misc\loading_bar.c
+	"user_interface.h"
+
+1585580217 source:e:\boulot\gravure\8ball\src\frame\vertices_project.c
+	"frame.h"
+
+1585579946 source:e:\boulot\gravure\8ball\src\frame\vertices_highlight.c
+	"frame.h"
+
+1585574582 e:\boulot\gravure\8ball\src\frame\frame.c
+	"frame.h"
+
+1585574602 source:e:\boulot\gravure\8ball\src\frame\draw_hud_screen.c
+	"frame.h"
+
+1585574508 source:e:\boulot\gravure\8ball\src\frame\hud_refresh.c
+	"frame.h"
+
+1585592927 source:e:\boulot\gravure\8ball\src\frame\draw_axis.c
+	"frame.h"
+
+1585585941 source:e:\boulot\gravure\8ball\src\frame\highlight_selection.c
+	"frame.h"
+
+1585593181 source:e:\boulot\gravure\8ball\src\model\copy_model.c
+	"model.h"
+
+1585589410 source:e:\8ball dev\8ball_140420\main.c
+	"8ball.h"
+	"model.h"
+	"alphabet_tileset.h"
+	"frame.h"
+
+1710759125 e:\8ball dev\8ball_140420\include\8ball.h
+	<cstdlib>
+	<stdlib.h>
+	<windows.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<fcntl.h>
+	<unistd.h>
+	<stdlib.h>
+	<stdarg.h>
+	<stdio.h>
+	<math.h>
+	<string.h>
+	<time.h>
+	<OpenCL/cl.h>
+	"cl.h"
+	"todo_string.h"
+	"SDL.h"
+	"my_color_table.h"
+	"model.h"
+	"float.h"
+	"macro/logical_shrinker.h"
+	"macro/NATOphonetic.h"
+	"dbg_util.h"
+	"structures.h"
+	"memmgr.h"
+	"camera.h"
+	"alphabet_tileset.h"
+	"geometry.h"
+	"rasterization.h"
+	"str_util.h"
+	"sdl_util.h"
+	"opencl_util.h"
+	"ft_gpu.h"
+	"toolset.h"
+	"mouse.h"
+	"filesystem.h"
+	"export.h"
+	"import.h"
+	"hud.h"
+	"morpho.h"
+	"frame.h"
+	"history.h"
+	"user_interface.h"
+	"input_manager.h"
+	"ascii_art_box.h"
+
+1575477142 e:\8ball dev\8ball_140420\include\pthread\pthread.h
+	<windows.h>
+	"config.h"
+	<time.h>
+	<signal.h>
+	<limits.h>
+	"need_errno.h"
+	<errno.h>
+	<sched.h>
+	<sys/types.h>
+
+1575477234 e:\8ball dev\8ball_140420\include\pthread\sched.h
+	"need_errno.h"
+	<errno.h>
+	<sys/types.h>
+	<time.h>
+
+1556859844 e:\8ball dev\8ball_140420\include\cl\cl.h
+	<CL/cl_version.h>
+	<CL/cl_platform.h>
+
+1556859844 e:\8ball dev\8ball_140420\include\cl\cl_version.h
+
+1556859844 e:\8ball dev\8ball_140420\include\cl\cl_platform.h
+	<CL/cl_version.h>
+	<stdint.h>
+	<stddef.h>
+	<altivec.h>
+	<intrin.h>
+	<xmmintrin.h>
+	<intrin.h>
+	<emmintrin.h>
+	<mmintrin.h>
+	<intrin.h>
+	<immintrin.h>
+
+1575495274 e:\8ball dev\8ball_140420\include\todo_string.h
+
+1582199470 e:\8ball dev\8ball_140420\include\my_color_table.h
+	"8ball.h"
+
+1585589542 e:\8ball dev\8ball_140420\include\model.h
+	"8ball.h"
+	"putin_model.h"
+	"disc_model.h"
+	"miko_model.h"
+	"debug_model.h"
+	"punk_model.h"
+	"lol_model.h"
+	"wave_model.h"
+	"strip_model.h"
+	"knight_model.h"
+	"mask_model.h"
+	"bust_model.h"
+	"cube_model.h"
+	"lights.h"
+
+1563305644 e:\8ball dev\8ball_140420\include\model\putin_model.h
+	"model.h"
+
+1563359878 e:\8ball dev\8ball_140420\include\model\disc_model.h
+	"model.h"
+
+1563300760 e:\8ball dev\8ball_140420\include\model\miko_model.h
+	"model.h"
+
+1562852640 e:\8ball dev\8ball_140420\include\model\debug_model.h
+	"model.h"
+
+1563493794 e:\8ball dev\8ball_140420\include\model\punk_model.h
+	"model.h"
+
+1563360346 e:\8ball dev\8ball_140420\include\model\lol_model.h
+	"model.h"
+
+1562852640 e:\8ball dev\8ball_140420\include\model\wave_model.h
+	"model.h"
+
+1569165446 e:\8ball dev\8ball_140420\include\model\strip_model.h
+	"model.h"
+
+1572023862 e:\8ball dev\8ball_140420\include\model\knight_model.h
+	"model.h"
+
+1574884288 e:\8ball dev\8ball_140420\include\model\mask_model.h
+	"model.h"
+
+1585153838 e:\8ball dev\8ball_140420\include\model\bust_model.h
+	"model.h"
+
+1567193548 e:\8ball dev\8ball_140420\include\model\cube_model.h
+	"model.h"
+
+1564745056 e:\8ball dev\8ball_140420\include\model\lights.h
+	"model.h"
+
+1583667436 e:\8ball dev\8ball_140420\include\macro\logical_shrinker.h
+
+1581075070 e:\8ball dev\8ball_140420\include\macro\natophonetic.h
+	"8ball.h"
+
+1585564480 e:\8ball dev\8ball_140420\include\dbg_util.h
+	"8ball.h"
+
+1585659414 e:\8ball dev\8ball_140420\include\structures.h
+	"8ball.h"
+
+1585230544 e:\8ball dev\8ball_140420\include\memmgr.h
+	"8ball.h"
+
+1585221128 e:\8ball dev\8ball_140420\include\camera.h
+	"8ball.h"
+	"opencl_util.h"
+
+1585562518 e:\8ball dev\8ball_140420\include\opencl_util.h
+	"8ball.h"
+
+1585659362 e:\8ball dev\8ball_140420\include\alphabet_tileset.h
+	"8ball.h"
+	"charset_lowercase.h"
+	"charset_uppercase.h"
+	"charset_numbers.h"
+	"charset_ponctuation.h"
+	"charset_special.h"
+
+1576987612 e:\8ball dev\8ball_140420\tileset\charset_lowercase.h
+
+1571919524 e:\8ball dev\8ball_140420\tileset\charset_uppercase.h
+
+1563029960 e:\8ball dev\8ball_140420\tileset\charset_numbers.h
+
+1563029972 e:\8ball dev\8ball_140420\tileset\charset_ponctuation.h
+
+1581626206 e:\8ball dev\8ball_140420\tileset\charset_special.h
+
+1575124442 e:\8ball dev\8ball_140420\include\geometry.h
+	"8ball.h"
+
+1583597294 e:\8ball dev\8ball_140420\include\rasterization.h
+	"8ball.h"
+
+1585224222 e:\8ball dev\8ball_140420\include\str_util.h
+	"8ball.h"
+
+1585224296 e:\8ball dev\8ball_140420\include\sdl_util.h
+	"8ball.h"
+
+1576931846 e:\8ball dev\8ball_140420\include\ft_gpu.h
+	"8ball.h"
+
+1585068280 e:\8ball dev\8ball_140420\include\toolset.h
+	"8ball.h"
+
+1578071438 e:\8ball dev\8ball_140420\include\mouse.h
+	"8ball.h"
+
+1583418884 e:\8ball dev\8ball_140420\include\filesystem.h
+	"8ball.h"
+
+1585564910 e:\8ball dev\8ball_140420\include\export.h
+	"8ball.h"
+	"user_interface.h"
+
+1585659234 e:\8ball dev\8ball_140420\include\user_interface.h
+	"8ball.h"
+	"cursor.h"
+
+1578331012 e:\8ball dev\8ball_140420\include\cursor.h
+	"user_interface.h"
+
+1583688384 e:\8ball dev\8ball_140420\include\import.h
+	"8ball.h"
+
+1572545016 e:\8ball dev\8ball_140420\include\hud.h
+	"8ball.h"
+
+1575123862 e:\8ball dev\8ball_140420\include\morpho.h
+	"8ball.h"
+
+1585589364 e:\8ball dev\8ball_140420\include\frame.h
+	"8ball.h"
+
+1585562660 e:\8ball dev\8ball_140420\include\history.h
+	"8ball.h"
+
+1585251656 e:\8ball dev\8ball_140420\include\input_manager.h
+	"8ball.h"
+
+1571139888 e:\8ball dev\8ball_140420\tileset\ascii_art_box.h
+
+1578755374 source:e:\8ball dev\8ball_140420\rc\icon.rc
+
+1585221006 source:e:\8ball dev\8ball_140420\src\camera\camera_aspect_ratio.c
+	"camera.h"
+
+1571941388 source:e:\8ball dev\8ball_140420\src\camera\camera_event.c
+	"camera.h"
+
+1571414858 source:e:\8ball dev\8ball_140420\src\camera\camera_motion.c
+	"camera.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\camera\camera_release.c
+	"camera.h"
+
+1585220904 source:e:\8ball dev\8ball_140420\src\camera\clear_zbuffer.c
+	"camera.h"
+
+1583599754 source:e:\8ball dev\8ball_140420\src\camera\data\model_getlasthandle.c
+	"camera.h"
+
+1585066874 source:e:\8ball dev\8ball_140420\src\camera\data\push_model.c
+	"camera.h"
+
+1585077912 source:e:\8ball dev\8ball_140420\src\camera\data\release_model.c
+	"camera.h"
+
+1585078122 source:e:\8ball dev\8ball_140420\src\camera\data\release_modelpointers.c
+	"camera.h"
+
+1585249666 source:e:\8ball dev\8ball_140420\src\camera\new_camera.c
+	"camera.h"
+
+1585221038 source:e:\8ball dev\8ball_140420\src\camera\refresh_orientation.c
+	"camera.h"
+
+1585221078 source:e:\8ball dev\8ball_140420\src\camera\reset_camera.c
+	"camera.h"
+
+1585249746 source:e:\8ball dev\8ball_140420\src\camera\resize_camera_viewport.c
+	"camera.h"
+
+1585483200 source:e:\8ball dev\8ball_140420\src\charset\blit_pos.c
+	"alphabet_tileset.h"
+
+1585483008 source:e:\8ball dev\8ball_140420\src\charset\charset_endian.c
+	"alphabet_tileset.h"
+
+1585488756 source:e:\8ball dev\8ball_140420\src\charset\charset_getoffsetheight.c
+	"alphabet_tileset.h"
+
+1585488442 source:e:\8ball dev\8ball_140420\src\charset\charset_getoffsetwidth.c
+	"alphabet_tileset.h"
+
+1585488164 source:e:\8ball dev\8ball_140420\src\charset\charset_print.c
+	"alphabet_tileset.h"
+
+1585487956 source:e:\8ball dev\8ball_140420\src\charset\charset_print_noalpha.c
+	"alphabet_tileset.h"
+
+1585488970 source:e:\8ball dev\8ball_140420\src\charset\charset_printstopwidth.c
+	"alphabet_tileset.h"
+
+1582383718 source:e:\8ball dev\8ball_140420\src\charset\charset_printstopwidth_noalpha.c
+	"alphabet_tileset.h"
+
+1585489074 source:e:\8ball dev\8ball_140420\src\charset\charset_printstopwidthselection.c
+	"alphabet_tileset.h"
+
+1585488834 source:e:\8ball dev\8ball_140420\src\charset\charset_printwidth.c
+	"alphabet_tileset.h"
+
+1585488938 source:e:\8ball dev\8ball_140420\src\charset\charset_printwidthselection.c
+	"alphabet_tileset.h"
+
+1585562316 source:e:\8ball dev\8ball_140420\src\charset\destructor\free_tileset.c
+	"alphabet_tileset.h"
+
+1585483282 source:e:\8ball dev\8ball_140420\src\charset\get_tile.c
+	"alphabet_tileset.h"
+
+1582387684 source:e:\8ball dev\8ball_140420\src\charset\is_printable.c
+	"alphabet_tileset.h"
+
+1585482930 source:e:\8ball dev\8ball_140420\src\charset\load_charset.c
+	"alphabet_tileset.h"
+
+1585488220 source:e:\8ball dev\8ball_140420\src\charset\worddelimiter.c
+	"alphabet_tileset.h"
+
+1585488356 source:e:\8ball dev\8ball_140420\src\charset\wordlength.c
+	"alphabet_tileset.h"
+
+1585562910 source:e:\8ball dev\8ball_140420\src\constructor.c
+	"8ball.h"
+
+1585564484 source:e:\8ball dev\8ball_140420\src\debug\print_vector_array.c
+	"dbg_util.h"
+
+1585562924 source:e:\8ball dev\8ball_140420\src\destructor.c
+	"8ball.h"
+
+1582469218 source:e:\8ball dev\8ball_140420\src\export\c\print_c.c
+	"export.h"
+
+1575124360 source:e:\8ball dev\8ball_140420\src\export\export_c.c
+	"export.h"
+
+1582148736 source:e:\8ball dev\8ball_140420\src\export\export_dxf.c
+	"export.h"
+
+1583330674 source:e:\8ball dev\8ball_140420\src\export\export_obj.c
+	"export.h"
+
+1583435400 source:e:\8ball dev\8ball_140420\src\filesystem\fs\fd\fd_readclose.c
+	"filesystem.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\filesystem\fs\fs_abort.c
+	"filesystem.h"
+
+1583413332 source:e:\8ball dev\8ball_140420\src\filesystem\fs\fs_close.c
+	"filesystem.h"
+
+1583411140 source:e:\8ball dev\8ball_140420\src\filesystem\fs\fs_pipe.c
+	"filesystem.h"
+
+1583411268 source:e:\8ball dev\8ball_140420\src\filesystem\fs\fs_read.c
+	"filesystem.h"
+
+1583411218 source:e:\8ball dev\8ball_140420\src\filesystem\fs\fs_touch.c
+	"filesystem.h"
+
+1583325214 source:e:\8ball dev\8ball_140420\src\filesystem\getvalidfilename.c
+	"filesystem.h"
+
+1583237530 source:e:\8ball dev\8ball_140420\src\filesystem\obj_comment.c
+	"filesystem.h"
+
+1585589328 source:e:\8ball dev\8ball_140420\src\frame\draw_axis.c
+	"frame.h"
+
+1585576396 source:e:\8ball dev\8ball_140420\src\frame\draw_f.c
+	"frame.h"
+
+1585571004 source:e:\8ball dev\8ball_140420\src\frame\draw_hud_screen.c
+	"frame.h"
+
+1581940642 source:e:\8ball dev\8ball_140420\src\frame\draw_model_stack.c
+	"frame.h"
+
+1585570984 source:e:\8ball dev\8ball_140420\src\frame\frame.c
+	"frame.h"
+
+1585582342 source:e:\8ball dev\8ball_140420\src\frame\highlight_selection.c
+	"frame.h"
+
+1585570910 source:e:\8ball dev\8ball_140420\src\frame\hud_refresh.c
+	"frame.h"
+
+1582041984 source:e:\8ball dev\8ball_140420\src\frame\print_debug.c
+	"frame.h"
+
+1585576348 source:e:\8ball dev\8ball_140420\src\frame\vertices_highlight.c
+	"frame.h"
+
+1585576618 source:e:\8ball dev\8ball_140420\src\frame\vertices_project.c
+	"frame.h"
+
+1585078170 source:e:\8ball dev\8ball_140420\src\ft_gpu\gpu_modelrefresh.c
+	"ft_gpu.h"
+
+1569147770 source:e:\8ball dev\8ball_140420\src\geometry\add_v.c
+	"geometry.h"
+
+1573299918 source:e:\8ball dev\8ball_140420\src\geometry\angle.c
+	"geometry.h"
+
+1563115770 source:e:\8ball dev\8ball_140420\src\geometry\clamp_v.c
+	"geometry.h"
+
+1562851782 source:e:\8ball dev\8ball_140420\src\geometry\copy_v.c
+	"geometry.h"
+
+1563116076 source:e:\8ball dev\8ball_140420\src\geometry\cross_prod.c
+	"geometry.h"
+
+1562851800 source:e:\8ball dev\8ball_140420\src\geometry\div_v.c
+	"geometry.h"
+
+1562851838 source:e:\8ball dev\8ball_140420\src\geometry\dot_prod.c
+	"geometry.h"
+
+1571940910 source:e:\8ball dev\8ball_140420\src\geometry\length.c
+	"geometry.h"
+
+1563030648 source:e:\8ball dev\8ball_140420\src\geometry\minmax.c
+	"geometry.h"
+
+1562851888 source:e:\8ball dev\8ball_140420\src\geometry\misc.c
+	"geometry.h"
+
+1569765344 source:e:\8ball dev\8ball_140420\src\geometry\mtp_v.c
+	"geometry.h"
+
+1570724726 source:e:\8ball dev\8ball_140420\src\geometry\rotate.c
+	"geometry.h"
+
+1562851902 source:e:\8ball dev\8ball_140420\src\geometry\sub_v.c
+	"geometry.h"
+
+1575124426 source:e:\8ball dev\8ball_140420\src\geometry\translate_vector.c
+	"geometry.h"
+
+1563011388 source:e:\8ball dev\8ball_140420\src\geometry\unit.c
+	"geometry.h"
+
+1580219666 source:e:\8ball dev\8ball_140420\src\history\actiontype\history_relinkselection.c
+	"history.h"
+
+1583605190 source:e:\8ball dev\8ball_140420\src\history\actiontype\history_setval.c
+	"history.h"
+
+1576960384 source:e:\8ball dev\8ball_140420\src\history\actiontype\history_toolresize.c
+	"history.h"
+
+1576960408 source:e:\8ball dev\8ball_140420\src\history\actiontype\history_toolrotate.c
+	"history.h"
+
+1576960432 source:e:\8ball dev\8ball_140420\src\history\actiontype\history_toolscale.c
+	"history.h"
+
+1576931964 source:e:\8ball dev\8ball_140420\src\history\actiontype\history_tooltransform.c
+	"history.h"
+
+1585562622 source:e:\8ball dev\8ball_140420\src\history\destructor\release_history.c
+	"history.h"
+
+1585077594 source:e:\8ball dev\8ball_140420\src\history\history_add.c
+	"history.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\history\history_clear.c
+	"history.h"
+
+1583876762 source:e:\8ball dev\8ball_140420\src\history\history_display.c
+	"history.h"
+
+1583745240 source:e:\8ball dev\8ball_140420\src\history\history_new.c
+	"history.h"
+
+1581630198 source:e:\8ball dev\8ball_140420\src\history\history_redo.c
+	"history.h"
+
+1585075908 source:e:\8ball dev\8ball_140420\src\history\history_removenode.c
+	"history.h"
+
+1581630904 source:e:\8ball dev\8ball_140420\src\history\history_type.c
+	"history.h"
+
+1585068208 source:e:\8ball dev\8ball_140420\src\history\history_undo.c
+	"history.h"
+
+1585076010 source:e:\8ball dev\8ball_140420\src\history\history_updatedeletion.c
+	"history.h"
+
+1572200526 source:e:\8ball dev\8ball_140420\src\hud\angle\hud_drawangle.c
+	"hud.h"
+
+1572022610 source:e:\8ball dev\8ball_140420\src\hud\angle\hud_newangle.c
+	"hud.h"
+
+1576160936 source:e:\8ball dev\8ball_140420\src\hud\arrow\hud_drawarrow.c
+	"hud.h"
+
+1572545794 source:e:\8ball dev\8ball_140420\src\hud\arrow\hud_newarrow.c
+	"hud.h"
+
+1572187096 source:e:\8ball dev\8ball_140420\src\hud\hud_draw.c
+	"hud.h"
+
+1571141316 source:e:\8ball dev\8ball_140420\src\hud\init\hud_init.c
+	"hud.h"
+
+1571047084 source:e:\8ball dev\8ball_140420\src\hud\init\hud_initaxis.c
+	"hud.h"
+
+1571047118 source:e:\8ball dev\8ball_140420\src\hud\init\hud_initpersp.c
+	"hud.h"
+
+1572187214 source:e:\8ball dev\8ball_140420\src\hud\length\hud_drawlength.c
+	"hud.h"
+
+1580220138 source:e:\8ball dev\8ball_140420\src\hud\length\hud_newlength.c
+	"hud.h"
+
+1572190340 source:e:\8ball dev\8ball_140420\src\hud\ref\hud_project.c
+	"hud.h"
+
+1571666308 source:e:\8ball dev\8ball_140420\src\hud\ref\selection_center.c
+	"hud.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\import\obj_import.c
+	"import.h"
+
+1585326114 source:e:\8ball dev\8ball_140420\src\input_manager\inputmanager_loop.c
+	"input_manager.h"
+
+1582818474 source:e:\8ball dev\8ball_140420\src\input_manager\user_cameradrag.c
+	"input_manager.h"
+
+1575730828 source:e:\8ball dev\8ball_140420\src\input_manager\user_camerazoom.c
+	"input_manager.h"
+
+1580219730 source:e:\8ball dev\8ball_140420\src\input_manager\user_canvaclick.c
+	"input_manager.h"
+
+1585562910 source:e:\8ball dev\8ball_140420\src\input_manager\user_computecloud.c
+	"input_manager.h"
+
+1570099978 source:e:\8ball dev\8ball_140420\src\input_manager\user_idle.c
+	"input_manager.h"
+
+1582327798 source:e:\8ball dev\8ball_140420\src\input_manager\user_interfaceclick.c
+	"input_manager.h"
+
+1583684834 source:e:\8ball dev\8ball_140420\src\input_manager\user_keydown.c
+	"input_manager.h"
+
+1583685204 source:e:\8ball dev\8ball_140420\src\input_manager\user_keyup.c
+	"input_manager.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\input_manager\user_morphoclick.c
+	"input_manager.h"
+
+1585247644 source:e:\8ball dev\8ball_140420\src\input_manager\user_mousebuttondown.c
+	"input_manager.h"
+
+1585078406 source:e:\8ball dev\8ball_140420\src\input_manager\user_mousebuttonup.c
+	"input_manager.h"
+
+1582986170 source:e:\8ball dev\8ball_140420\src\input_manager\user_mousemotion.c
+	"input_manager.h"
+
+1580219978 source:e:\8ball dev\8ball_140420\src\input_manager\user_onleftclick.c
+	"input_manager.h"
+
+1585562838 source:e:\8ball dev\8ball_140420\src\input_manager\user_quit.c
+	"input_manager.h"
+
+1585250408 source:e:\8ball dev\8ball_140420\src\input_manager\user_resizewindow.c
+	"input_manager.h"
+
+1569851284 source:e:\8ball dev\8ball_140420\src\input_manager\user_switchcloudview.c
+	"input_manager.h"
+
+1569851176 source:e:\8ball dev\8ball_140420\src\input_manager\user_switchmodelview.c
+	"input_manager.h"
+
+1584185438 source:e:\8ball dev\8ball_140420\src\matrix\matrix_compose.c
+
+1584983426 source:e:\8ball dev\8ball_140420\src\matrix\matrix_multiply.c
+	"matrix.h"
+
+1584185414 e:\8ball dev\8ball_140420\include\matrix.h
+	"8ball.h"
+
+1584185822 source:e:\8ball dev\8ball_140420\src\matrix\new_matrix_12.c
+	"matrix.h"
+
+1584185826 source:e:\8ball dev\8ball_140420\src\matrix\new_matrix_13.c
+	"matrix.h"
+
+1584185834 source:e:\8ball dev\8ball_140420\src\matrix\new_matrix_22.c
+	"matrix.h"
+
+1584185838 source:e:\8ball dev\8ball_140420\src\matrix\new_matrix_33.c
+	"matrix.h"
+
+1584990898 source:e:\8ball dev\8ball_140420\src\memmgr\default_page_dim.c
+	"memmgr.h"
+
+1585227940 source:e:\8ball dev\8ball_140420\src\memmgr\ft\display\mem_celldisplay.c
+	"memmgr.h"
+
+1585227872 source:e:\8ball dev\8ball_140420\src\memmgr\ft\display\mem_display.c
+	"memmgr.h"
+
+1585227908 source:e:\8ball dev\8ball_140420\src\memmgr\ft\display\mem_pagedisplay.c
+	"memmgr.h"
+
+1585241984 source:e:\8ball dev\8ball_140420\src\memmgr\ft\page\page_getavailable.c
+	"memmgr.h"
+
+1585230294 source:e:\8ball dev\8ball_140420\src\memmgr\ft\page\page_set_empty_cells.c
+	"memmgr.h"
+
+1585065968 source:e:\8ball dev\8ball_140420\src\memmgr\mem_cleanpage.c
+	"memmgr.h"
+
+1585051852 source:e:\8ball dev\8ball_140420\src\memmgr\mem_getcellpage.c
+	"memmgr.h"
+
+1585051818 source:e:\8ball dev\8ball_140420\src\memmgr\mem_getdatacell.c
+	"memmgr.h"
+
+1585240820 source:e:\8ball dev\8ball_140420\src\memmgr\mem_getemptycell.c
+	"memmgr.h"
+
+1585065050 source:e:\8ball dev\8ball_140420\src\memmgr\mem_getpagecell.c
+	"memmgr.h"
+
+1585230346 source:e:\8ball dev\8ball_140420\src\memmgr\mem_getroot.c
+	"memmgr.h"
+
+1585230554 source:e:\8ball dev\8ball_140420\src\memmgr\mem_newpage.c
+	"memmgr.h"
+
+1585242024 source:e:\8ball dev\8ball_140420\src\memmgr\mem_pagecount.c
+	"memmgr.h"
+
+1585066058 source:e:\8ball dev\8ball_140420\src\memmgr\mem_releasepage.c
+	"memmgr.h"
+
+1585054946 source:e:\8ball dev\8ball_140420\src\memmgr\mem_removepage.c
+	"memmgr.h"
+
+1585241772 source:e:\8ball dev\8ball_140420\src\memmgr\mem_setcell.c
+	"memmgr.h"
+
+1585153222 source:e:\8ball dev\8ball_140420\src\memmgr\memmgr.c
+	"memmgr.h"
+
+1585066440 source:e:\8ball dev\8ball_140420\src\memmgr\my_free.c
+	"memmgr.h"
+
+1585241960 source:e:\8ball dev\8ball_140420\src\memmgr\my_malloc.c
+	"memmgr.h"
+
+1585589582 source:e:\8ball dev\8ball_140420\src\model\copy_model.c
+	"model.h"
+
+1575123926 source:e:\8ball dev\8ball_140420\src\morpho\morpho_setallactive.c
+	"morpho.h"
+
+1585078202 source:e:\8ball dev\8ball_140420\src\mouse\click\hud\mouse_clickhud.c
+	"mouse.h"
+
+1572022700 source:e:\8ball dev\8ball_140420\src\mouse\click\hud\mouse_clickhudangle.c
+	"mouse.h"
+
+1580219774 source:e:\8ball dev\8ball_140420\src\mouse\click\hud\mouse_clickhudarrow.c
+	"mouse.h"
+
+1571931204 source:e:\8ball dev\8ball_140420\src\mouse\click\hud\mouse_clickhudlength.c
+	"mouse.h"
+
+1583332930 source:e:\8ball dev\8ball_140420\src\mouse\click\mouse_clickselect.c
+	"mouse.h"
+
+1578100720 source:e:\8ball dev\8ball_140420\src\mouse\click\ui\mouse_clickui.c
+	"mouse.h"
+
+1582817712 source:e:\8ball dev\8ball_140420\src\mouse\motion\mouse_motionangle.c
+	"mouse.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\mouse\motion\mouse_motionarrow.c
+	"mouse.h"
+
+1580220158 source:e:\8ball dev\8ball_140420\src\mouse\motion\mouse_motionlength.c
+	"mouse.h"
+
+1585562462 source:e:\8ball dev\8ball_140420\src\opencl_util\destructor\release_opencl.c
+	"opencl_util.h"
+
+1563641474 source:e:\8ball dev\8ball_140420\src\opencl_util\get_device_info.c
+	"opencl_util.h"
+
+1585078254 source:e:\8ball dev\8ball_140420\src\opencl_util\init_clmem.c
+	"opencl_util.h"
+
+1568226252 source:e:\8ball dev\8ball_140420\src\opencl_util\init_kernel.c
+	"opencl_util.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\opencl_util\init_opencl.c
+	"opencl_util.h"
+
+1585078350 source:e:\8ball dev\8ball_140420\src\opencl_util\push_model_opencl.c
+	"opencl_util.h"
+
+1581940986 source:e:\8ball dev\8ball_140420\src\rasterization\triangle.c
+	"8ball.h"
+
+1563115934 source:e:\8ball dev\8ball_140420\src\sdl_util\add_color.c
+	"8ball.h"
+
+1585481974 source:e:\8ball dev\8ball_140420\src\sdl_util\blit.c
+	"8ball.h"
+
+1579008446 source:e:\8ball dev\8ball_140420\src\sdl_util\blit_font_at.c
+	"sdl_util.h"
+
+1585256700 source:e:\8ball dev\8ball_140420\src\sdl_util\clean_surface.c
+	"sdl_util.h"
+
+1585408820 source:e:\8ball dev\8ball_140420\src\sdl_util\copy_surface.c
+	"sdl_util.h"
+
+1578327120 source:e:\8ball dev\8ball_140420\src\sdl_util\dtoa.c
+	"sdl_util.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\sdl_util\ft_realloc.c
+	"sdl_util.h"
+
+1582127342 source:e:\8ball dev\8ball_140420\src\sdl_util\halt_program.c
+	"sdl_util.h"
+
+1571395452 source:e:\8ball dev\8ball_140420\src\sdl_util\isincanva.c
+	"sdl_util.h"
+
+1579012982 source:e:\8ball dev\8ball_140420\src\sdl_util\isintile.c
+	"sdl_util.h"
+
+1578096040 source:e:\8ball dev\8ball_140420\src\sdl_util\isinzone.c
+	"sdl_util.h"
+
+1582040882 source:e:\8ball dev\8ball_140420\src\sdl_util\layer_merge.c
+	"sdl_util.h"
+
+1583663050 source:e:\8ball dev\8ball_140420\src\sdl_util\layer_popmerge.c
+	"sdl_util.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\sdl_util\list.c
+	"sdl_util.h"
+
+1585405372 source:e:\8ball dev\8ball_140420\src\sdl_util\mapping.c
+	"sdl_util.h"
+
+1563115140 source:e:\8ball dev\8ball_140420\src\sdl_util\mtp_color.c
+	"8ball.h"
+
+1583759242 source:e:\8ball dev\8ball_140420\src\sdl_util\new_scanline.c
+	"sdl_util.h"
+
+1585412962 source:e:\8ball dev\8ball_140420\src\sdl_util\new_surface.c
+	"sdl_util.h"
+
+1585256958 source:e:\8ball dev\8ball_140420\src\sdl_util\set_alpha.c
+	"sdl_util.h"
+
+1583837804 source:e:\8ball dev\8ball_140420\src\sdl_util\set_pos_linewidth.c
+	"sdl_util.h"
+
+1582818584 source:e:\8ball dev\8ball_140420\src\sdl_util\setcursorposition.c
+	"sdl_util.h"
+
+1578327538 source:e:\8ball dev\8ball_140420\src\sdl_util\shape\circle.c
+	"sdl_util.h"
+
+1583758608 source:e:\8ball dev\8ball_140420\src\sdl_util\shape\line.c
+	"sdl_util.h"
+
+1583843064 source:e:\8ball dev\8ball_140420\src\sdl_util\shape\line_hrz_width.c
+	"sdl_util.h"
+
+1583843078 source:e:\8ball dev\8ball_140420\src\sdl_util\shape\line_vrt_width.c
+	"sdl_util.h"
+
+1585328046 source:e:\8ball dev\8ball_140420\src\sdl_util\shape\square.c
+	"sdl_util.h"
+
+1582383496 source:e:\8ball dev\8ball_140420\src\sdl_util\shape\square_dim.c
+	"sdl_util.h"
+
+1585412820 source:e:\8ball dev\8ball_140420\src\sdl_util\stretch_surface.c
+	"user_interface.h"
+
+1585327998 source:e:\8ball dev\8ball_140420\src\sdl_util\super_blit.c
+	"sdl_util.h"
+
+1582567510 source:e:\8ball dev\8ball_140420\src\sdl_util\togglefullscreen.c
+	"sdl_util.h"
+
+1583606588 source:e:\8ball dev\8ball_140420\src\sdl_util\zone_upleftcorner.c
+	"sdl_util.h"
+
+1585060994 source:e:\8ball dev\8ball_140420\src\str_util\ft_strdup.c
+	"str_util.h"
+
+1583438282 source:e:\8ball dev\8ball_140420\src\str_util\ft_strequ.c
+	"sdl_util.h"
+
+1571150446 source:e:\8ball dev\8ball_140420\src\toolset\idle\tool_buildidle.c
+	"toolset.h"
+
+1570139568 source:e:\8ball dev\8ball_140420\src\toolset\idle\tool_idle.c
+	"toolset.h"
+
+1571395260 source:e:\8ball dev\8ball_140420\src\toolset\resize\tool_buildresize.c
+	"toolset.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\toolset\resize\tool_resize.c
+	"toolset.h"
+
+1571237496 source:e:\8ball dev\8ball_140420\src\toolset\rotate\tool_buildrotate.c
+	"toolset.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\toolset\rotate\tool_rotate.c
+	"toolset.h"
+
+1571237504 source:e:\8ball dev\8ball_140420\src\toolset\scale\tool_buildscale.c
+	"toolset.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\toolset\scale\tool_scale.c
+	"toolset.h"
+
+1585068304 source:e:\8ball dev\8ball_140420\src\toolset\select\select.c
+	"toolset.h"
+
+1571237528 source:e:\8ball dev\8ball_140420\src\toolset\select\tool_buildselect.c
+	"toolset.h"
+
+1576933642 source:e:\8ball dev\8ball_140420\src\toolset\select\tool_select.c
+	"toolset.h"
+
+1572545046 source:e:\8ball dev\8ball_140420\src\toolset\tool_init.c
+	"toolset.h"
+
+1571239622 source:e:\8ball dev\8ball_140420\src\toolset\transform\tool_buildtransform.c
+	"toolset.h"
+
+1585078420 source:e:\8ball dev\8ball_140420\src\toolset\transform\tool_transform.c
+	"toolset.h"
+
+1585078434 source:e:\8ball dev\8ball_140420\src\user_interface\ask\ui_ask_form.c
+	"user_interface.h"
+
+1583753118 source:e:\8ball dev\8ball_140420\src\user_interface\ask\variadic\strlento.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\button\btn_icon.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\button\btn_quit.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\button\btn_text.c
+	"user_interface.h"
+
+1580485088 source:e:\8ball dev\8ball_140420\src\user_interface\constructor\ui_initassets.c
+	"user_interface.h"
+
+1583745240 source:e:\8ball dev\8ball_140420\src\user_interface\constructor\ui_newbox.c
+	"user_interface.h"
+
+1579006434 source:e:\8ball dev\8ball_140420\src\user_interface\constructor\ui_newfont.c
+	"user_interface.h"
+
+1581529010 source:e:\8ball dev\8ball_140420\src\user_interface\constructor\ui_newitem_numericchooser.c
+	"user_interface.h"
+
+1579723594 source:e:\8ball dev\8ball_140420\src\user_interface\constructor\ui_newitempicture.c
+	"user_interface.h"
+
+1583744988 source:e:\8ball dev\8ball_140420\src\user_interface\constructor\ui_newitemsimplebutton.c
+	"user_interface.h"
+
+1585060540 source:e:\8ball dev\8ball_140420\src\user_interface\constructor\ui_newitemtext.c
+	"user_interface.h"
+
+1579176430 source:e:\8ball dev\8ball_140420\src\user_interface\constructor\ui_newscrollbar.c
+	"user_interface.h"
+
+1578331178 source:e:\8ball dev\8ball_140420\src\user_interface\cursor\ui_cursor.c
+	"user_interface.h"
+
+1581191386 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\corefilter.c
+	"user_interface.h"
+
+1581188288 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\double\doublefilter_alfa.c
+	"user_interface.h"
+
+1581190924 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\double\doublefilter_bravo.c
+	"user_interface.h"
+
+1581190940 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\double\doublefilter_charlie.c
+	"user_interface.h"
+
+1581190958 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\double\doublefilter_delta.c
+	"user_interface.h"
+
+1581191504 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\double\doublefilter_echo.c
+	"user_interface.h"
+
+1581191514 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\double\doublefilter_foxtrot.c
+	"user_interface.h"
+
+1581188106 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\float\floatfilter_alfa.c
+	"user_interface.h"
+
+1581196656 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\float\floatfilter_bravo.c
+	"user_interface.h"
+
+1581188130 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\float\floatfilter_charlie.c
+	"user_interface.h"
+
+1581188140 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\float\floatfilter_delta.c
+	"user_interface.h"
+
+1581196664 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\float\floatfilter_echo.c
+	"user_interface.h"
+
+1581196652 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\float\floatfilter_foxtrot.c
+	"user_interface.h"
+
+1581187394 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\int\intfilter_alfa.c
+	"user_interface.h"
+
+1581275550 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\int\intfilter_bravo.c
+	"user_interface.h"
+
+1581196686 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\int\intfilter_charlie.c
+	"user_interface.h"
+
+1581196692 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\int\intfilter_delta.c
+	"user_interface.h"
+
+1581196678 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\int\intfilter_echo.c
+	"user_interface.h"
+
+1581196700 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\int\intfilter_foxtrot.c
+	"user_interface.h"
+
+1581182412 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\uint\uintfilter_alfa.c
+	"user_interface.h"
+
+1581196704 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\uint\uintfilter_bravo.c
+	"user_interface.h"
+
+1581275584 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\uint\uintfilter_charlie.c
+	"user_interface.h"
+
+1581275582 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\uint\uintfilter_delta.c
+	"user_interface.h"
+
+1581275580 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\uint\uintfilter_echo.c
+	"user_interface.h"
+
+1581275576 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\filter\uint\uintfilter_foxtrot.c
+	"user_interface.h"
+
+1581190720 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\coreinstruction.c
+	"user_interface.h"
+
+1582152748 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\double\double_add.c
+	"user_interface.h"
+
+1581181090 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\double\double_copy.c
+	"user_interface.h"
+
+1581526070 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\double\double_get.c
+	"user_interface.h"
+
+1581536520 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\double\double_set.c
+	"user_interface.h"
+
+1581275078 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\float\float_add.c
+	"user_interface.h"
+
+1581181034 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\float\float_copy.c
+	"user_interface.h"
+
+1581196766 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\float\float_get.c
+	"user_interface.h"
+
+1581536568 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\float\float_set.c
+	"user_interface.h"
+
+1581536892 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\int\int_add.c
+	"user_interface.h"
+
+1581180952 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\int\int_copy.c
+	"user_interface.h"
+
+1581180940 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\int\int_get.c
+	"user_interface.h"
+
+1581536592 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\int\int_set.c
+	"user_interface.h"
+
+1583605786 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\scheduler\strtoval.c
+	"user_interface.h"
+
+1583606242 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\scheduler\valtostr.c
+	"user_interface.h"
+
+1583606070 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\string\string_add.c
+	"user_interface.h"
+
+1583606340 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\string\string_copy.c
+	"user_interface.h"
+
+1583606348 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\string\string_get.c
+	"user_interface.h"
+
+1583605812 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\string\string_set.c
+	"user_interface.h"
+
+1582152720 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\uint\uint_add.c
+	"user_interface.h"
+
+1581180270 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\uint\uint_copy.c
+	"user_interface.h"
+
+1582154958 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\uint\uint_get.c
+	"user_interface.h"
+
+1582154944 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\instruction\uint\uint_set.c
+	"user_interface.h"
+
+1581275100 source:e:\8ball dev\8ball_140420\src\user_interface\datatype\type\uint\uint_processor.c
+	"user_interface.h"
+
+1580391526 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\item\ui_releaseitem_numericchooser.c
+	"user_interface.h"
+
+1579733070 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\item\ui_releaseitem_picture.c
+	"user_interface.h"
+
+1579723064 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\item\ui_releaseitem_simplebutton.c
+	"user_interface.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\item\ui_releaseitem_string.c
+	"user_interface.h"
+
+1585562730 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\release_ui.c
+	"user_interface.h"
+
+1580473464 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\ui_releaseassets.c
+	"user_interface.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\ui_releasebox.c
+	"user_interface.h"
+
+1579004650 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\ui_releasefont.c
+	"user_interface.h"
+
+1580393222 source:e:\8ball dev\8ball_140420\src\user_interface\destructor\ui_releaseitem.c
+	"user_interface.h"
+
+1585330318 source:e:\8ball dev\8ball_140420\src\user_interface\display\item\ui_displayitem.c
+	"user_interface.h"
+
+1582463994 source:e:\8ball dev\8ball_140420\src\user_interface\display\item\ui_displayitem_numericchooser.c
+	"user_interface.h"
+
+1582231094 source:e:\8ball dev\8ball_140420\src\user_interface\display\item\ui_displayitembutton.c
+	"user_interface.h"
+
+1585481912 source:e:\8ball dev\8ball_140420\src\user_interface\display\item\ui_displayitempicture.c
+	"user_interface.h"
+
+1580220030 source:e:\8ball dev\8ball_140420\src\user_interface\display\item\ui_displayitemscrollbar.c
+	"user_interface.h"
+
+1585481098 source:e:\8ball dev\8ball_140420\src\user_interface\display\item\ui_displayitemstring.c
+	"user_interface.h"
+
+1585328716 source:e:\8ball dev\8ball_140420\src\user_interface\display\ui_displaybox.c
+	"user_interface.h"
+
+1585325992 source:e:\8ball dev\8ball_140420\src\user_interface\display\ui_displaycursorcaption.c
+	"user_interface.h"
+
+1580818030 source:e:\8ball dev\8ball_140420\src\user_interface\envdim\item\ui_getitemheight_numericchooser.c
+	"user_interface.h"
+
+1579777216 source:e:\8ball dev\8ball_140420\src\user_interface\envdim\item\ui_getitemheight_simplebutton.c
+	"user_interface.h"
+
+1580219854 source:e:\8ball dev\8ball_140420\src\user_interface\envdim\item\ui_getitemheight_string.c
+	"user_interface.h"
+
+1580818162 source:e:\8ball dev\8ball_140420\src\user_interface\envdim\ui_getboxenvdim.c
+	"user_interface.h"
+
+1582328202 source:e:\8ball dev\8ball_140420\src\user_interface\event\bargrab\ui_eventbargrab_motion.c
+	"user_interface.h"
+
+1582328520 source:e:\8ball dev\8ball_140420\src\user_interface\event\bargrab\ui_eventbargrab_onclick.c
+	"user_interface.h"
+
+1579440160 source:e:\8ball dev\8ball_140420\src\user_interface\event\bargrab\ui_eventbargrab_onrelease.c
+	"user_interface.h"
+
+1579340918 source:e:\8ball dev\8ball_140420\src\user_interface\event\boxkill\ui_eventboxkill_motion.c
+	"user_interface.h"
+
+1579341178 source:e:\8ball dev\8ball_140420\src\user_interface\event\boxkill\ui_eventboxkill_onclick.c
+	"user_interface.h"
+
+1582324400 source:e:\8ball dev\8ball_140420\src\user_interface\event\boxkill\ui_eventboxkill_onrelease.c
+	"user_interface.h"
+
+1579721296 source:e:\8ball dev\8ball_140420\src\user_interface\event\boxside\ui_eventboxside_motion.c
+	"user_interface.h"
+
+1579338406 source:e:\8ball dev\8ball_140420\src\user_interface\event\boxside\ui_eventboxside_onclick.c
+	"user_interface.h"
+
+1579351842 source:e:\8ball dev\8ball_140420\src\user_interface\event\boxside\ui_eventboxside_onrelease.c
+	"user_interface.h"
+
+1582830710 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_motion.c
+	"user_interface.h"
+
+1582314762 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_onclick.c
+	"user_interface.h"
+
+1582416996 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\numericchooser\ui_eventitem_numericchooser_onrelease.c
+	"user_interface.h"
+
+1579731562 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\picture\ui_eventitem_picture_motion.c
+	"user_interface.h"
+
+1579731450 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\picture\ui_eventitem_picture_onclick.c
+	"user_interface.h"
+
+1579732586 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\picture\ui_eventitem_picture_onrelease.c
+	"user_interface.h"
+
+1579730998 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_motion.c
+	"user_interface.h"
+
+1579732110 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_onclick.c
+	"user_interface.h"
+
+1579732184 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\simplebutton\ui_eventitem_simplebutton_onrelease.c
+	"user_interface.h"
+
+1579732262 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\string\ui_eventitem_string_motion.c
+	"user_interface.h"
+
+1579732306 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\string\ui_eventitem_string_onclick.c
+	"user_interface.h"
+
+1579732696 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\string\ui_eventitem_string_onrelease.c
+	"user_interface.h"
+
+1582808284 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\ui_eventitem_motion.c
+	"user_interface.h"
+
+1580399354 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\ui_eventitem_onclick.c
+	"user_interface.h"
+
+1580393624 source:e:\8ball dev\8ball_140420\src\user_interface\event\item\ui_eventitem_onrelease.c
+	"user_interface.h"
+
+1579777956 source:e:\8ball dev\8ball_140420\src\user_interface\event\scrollbar\ui_eventscrollbar_motion.c
+	"user_interface.h"
+
+1579549430 source:e:\8ball dev\8ball_140420\src\user_interface\event\scrollbar\ui_eventscrollbar_onclick.c
+	"user_interface.h"
+
+1580220094 source:e:\8ball dev\8ball_140420\src\user_interface\event\scrollbar\ui_eventscrollbar_onrelease.c
+	"user_interface.h"
+
+1585562832 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functionbye.c
+	"user_interface.h"
+
+1578928892 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functionexportdxf.c
+	"user_interface.h"
+
+1583751898 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functionexportobj.c
+	"user_interface.h"
+
+1578877454 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functionfall.c
+	"user_interface.h"
+
+1585078450 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functionimportobj.c
+	"user_interface.h"
+
+1585059944 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functionimportscn.c
+	"user_interface.h"
+
+1585078070 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functioninput.c
+	"user_interface.h"
+
+1584098548 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functionreleasemodel.c
+	"user_interface.h"
+
+1578861436 source:e:\8ball dev\8ball_140420\src\user_interface\functions\ui_functiontest.c
+	"user_interface.h"
+
+1582328592 source:e:\8ball dev\8ball_140420\src\user_interface\handler\ui_getboxhandleat.c
+	"user_interface.h"
+
+1582417604 source:e:\8ball dev\8ball_140420\src\user_interface\handler\ui_getfrontboxhandle.c
+	"user_interface.h"
+
+1580485786 source:e:\8ball dev\8ball_140420\src\user_interface\handler\ui_getitemhandleat.c
+	"user_interface.h"
+
+1580399868 source:e:\8ball dev\8ball_140420\src\user_interface\handler\ui_getscrollbarhandle.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\input\input_bool.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\input\input_num.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\input\input_select.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\input\input_text.c
+	"user_interface.h"
+
+1585564220 source:e:\8ball dev\8ball_140420\src\user_interface\misc\loading_bar.c
+	"user_interface.h"
+
+1582323938 source:e:\8ball dev\8ball_140420\src\user_interface\ui_background.c
+	"user_interface.h"
+
+1579098540 source:e:\8ball dev\8ball_140420\src\user_interface\ui_clampscrollbarfactor.c
+	"user_interface.h"
+
+1585328854 source:e:\8ball dev\8ball_140420\src\user_interface\ui_drawbox.c
+	"user_interface.h"
+
+1580748870 source:e:\8ball dev\8ball_140420\src\user_interface\ui_drawbutton.c
+	"user_interface.h"
+
+1582031136 source:e:\8ball dev\8ball_140420\src\user_interface\ui_drawcameraorientation.c
+	"user_interface.h"
+
+1582232322 source:e:\8ball dev\8ball_140420\src\user_interface\ui_drawscrollbar.c
+	"user_interface.h"
+
+1582322744 source:e:\8ball dev\8ball_140420\src\user_interface\ui_foregroundbox.c
+	"user_interface.h"
+
+1582418182 source:e:\8ball dev\8ball_140420\src\user_interface\ui_getboxside.c
+	"user_interface.h"
+
+1579093618 source:e:\8ball dev\8ball_140420\src\user_interface\ui_getscrollbarlength.c
+	"user_interface.h"
+
+1579094706 source:e:\8ball dev\8ball_140420\src\user_interface\ui_getscrollbuttonpos.c
+	"user_interface.h"
+
+1582311896 source:e:\8ball dev\8ball_140420\src\user_interface\ui_info.c
+	"user_interface.h"
+
+1579341492 source:e:\8ball dev\8ball_140420\src\user_interface\ui_interfacemotion.c
+	"user_interface.h"
+
+1582321450 source:e:\8ball dev\8ball_140420\src\user_interface\ui_interfaceonclick.c
+	"user_interface.h"
+
+1582417540 source:e:\8ball dev\8ball_140420\src\user_interface\ui_interfaceonrelease.c
+	"user_interface.h"
+
+1579537416 source:e:\8ball dev\8ball_140420\src\user_interface\ui_isgrabbar.c
+	"user_interface.h"
+
+1579548814 source:e:\8ball dev\8ball_140420\src\user_interface\ui_iskill.c
+	"user_interface.h"
+
+1582417246 source:e:\8ball dev\8ball_140420\src\user_interface\ui_isresize.c
+	"user_interface.h"
+
+1585590404 source:e:\8ball dev\8ball_140420\src\user_interface\ui_main.c
+	"user_interface.h"
+
+1579721362 source:e:\8ball dev\8ball_140420\src\user_interface\ui_setboxside.c
+	"user_interface.h"
+
+1578157444 source:e:\8ball dev\8ball_140420\src\user_interface\ui_setdim.c
+	"user_interface.h"
+
+1578596716 source:e:\8ball dev\8ball_140420\src\user_interface\ui_setevent.c
+	"user_interface.h"
+
+1578157346 source:e:\8ball dev\8ball_140420\src\user_interface\ui_setpos.c
+	"user_interface.h"
+
+1585489540 source:e:\8ball dev\8ball_140420\src\user_interface\ui_stringgetptrat.c
+	"user_interface.h"
+
+1582324434 source:e:\8ball dev\8ball_140420\src\user_interface\ui_swapbox.c
+	"user_interface.h"
+
+1582323906 source:e:\8ball dev\8ball_140420\src\user_interface\ui_totalbox.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\zone\zone_area.c
+	"user_interface.h"
+
+1577623146 source:e:\8ball dev\8ball_140420\src\user_interface\zone\zone_scroll.c
+	"user_interface.h"
+

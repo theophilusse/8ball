@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="8ball" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Option virtualFolders="src\geometry\;src\opencl_util\;" />
+		<Build>
+			<Target title="default">
+				<Option output="8ball" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="console_dev">
+				<Option output="8ball" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-mwindows" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-g" />
+			<Add directory="E:/BOULOT/GRAVURE/SDL-1.2.9/include" />
+			<Add directory="tileset" />
+			<Add directory="include" />
+			<Add directory="include/model" />
+			<Add directory="src" />
+			<Add directory="src/geometry" />
+			<Add directory="src/HeightMap" />
+			<Add directory="src/opencl_util" />
+			<Add directory="src/rasterization" />
+			<Add directory="src/sdl_util" />
+			<Add directory="include/CL" />
+			<Add directory="clkernel" />
+			<Add directory="include/pthread" />
+		</Compiler>
+		<Linker>
+			<Add option="lib/libgeometry.a" />
+			<Add option="lib/libsdl_util.a" />
+			<Add option="-lopencl" />
+			<Add library="mingw32" />
+			<Add library="SDLmain" />
+			<Add library="SDL.dll" />
+			<Add library="user32" />
+			<Add library="gdi32" />
+			<Add library="winmm" />
+			<Add library="dxguid" />
+			<Add library="lib/pthread/pthreadGC2.dll" />
+			<Add directory="E:/BOULOT/GRAVURE/SDL-1.2.9/lib" />
+			<Add directory="E:/BOULOT/GRAVURE/8ball/lib" />
+			<Add directory=".objs/src/geometry" />
+			<Add directory="lib/OpenCL_windows" />
+			<Add directory="lib/pthread" />
+		</Linker>
+		<Unit filename="include/8ball.h" />
+		<Unit filename="include/alphabet_tileset.h" />
+		<Unit filename="include/camera.h" />
+		<Unit filename="include/cursor.h" />
+		<Unit filename="include/dbg_util.h" />
+		<Unit filename="include/export.h" />
+		<Unit filename="include/filesystem.h" />
+		<Unit filename="include/frame.h" />
+		<Unit filename="include/ft_gpu.h" />
+		<Unit filename="include/geometry.h" />
+		<Unit filename="include/history.h" />
+		<Unit filename="include/hud.h" />
+		<Unit filename="include/import.h" />
+		<Unit filename="include/input_manager.h" />
+		<Unit filename="include/macro/NATOphonetic.h" />
+		<Unit filename="include/macro/logical_shrinker.h" />
+		<Unit filename="include/matrix.h" />
+		<Unit filename="include/memmgr.h" />
+		<Unit filename="include/model.h" />
+		<Unit filename="include/model/bustHD_model.h" />
+		<Unit filename="include/model/bust_model.h" />
+		<Unit filename="include/model/carpet_model.h" />
+		<Unit filename="include/model/cube_model.h" />
+		<Unit filename="include/model/debug_model.h" />
+		<Unit filename="include/model/disc_model.h" />
+		<Unit filename="include/model/knight_model.h" />
+		<Unit filename="include/model/lights.h" />
+		<Unit filename="include/model/lol_model.h" />
+		<Unit filename="include/model/mask_model.h" />
+		<Unit filename="include/model/miko_model.h" />
+		<Unit filename="include/model/punk_model.h" />
+		<Unit filename="include/model/putin_model.h" />
+		<Unit filename="include/model/strip_model.h" />
+		<Unit filename="include/model/teapot_model.h" />
+		<Unit filename="include/model/uvsphere_model.h" />
+		<Unit filename="include/model/wave_model.h" />
+		<Unit filename="include/morpho.h" />
+		<Unit filename="include/mouse.h" />
+		<Unit filename="include/my_color_table.h" />
+		<Unit filename="include/opencl_util.h" />
+		<Unit filename="include/rasterization.h" />
+		<Unit filename="include/sdl_util.h" />
+		<Unit filename="include/str_util.h" />
+		<Unit filename="include/structures.h" />
+		<Unit filename="include/todo_string.h" />
+		<Unit filename="include/toolset.h" />
+		<Unit filename="include/user_interface.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="rc/icon.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/camera/camera_aspect_ratio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/camera_event.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/camera_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/camera_release.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/clear_zbuffer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/data/model_getLastHandle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/data/push_model.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/data/release_model.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/data/release_modelPointers.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/new_camera.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/refresh_orientation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/reset_camera.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/camera/resize_camera_viewport.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/blit_pos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_endian.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_getOffsetHeight.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_getOffsetWidth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_print.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_printStopWidth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_printStopWidthSelection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_printStopWidth_noAlpha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_printWidth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_printWidthSelection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/charset_print_noAlpha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/destructor/free_tileset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/get_tile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/gprintf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/is_printable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/load_charset.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/wordDelimiter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/charset/wordLength.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/constructor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/debug/print_vector_array.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/destructor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/export/c/print_c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/export/export_c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/export/export_dxf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/export/export_obj.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filesystem/fs/fd/fd_readClose.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filesystem/fs/fs_abort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filesystem/fs/fs_close.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filesystem/fs/fs_pipe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filesystem/fs/fs_read.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filesystem/fs/fs_touch.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filesystem/getValidFileName.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/filesystem/obj_comment.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/draw_axis.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/draw_f.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/draw_hud_screen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/draw_model_stack.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/frame.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/highlight_selection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/hud_refresh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/print_debug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/vertices_highlight.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/frame/vertices_project.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ft_gpu/gpu_modelRefresh.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/add_v.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/angle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/clamp_v.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/copy_v.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/cross_prod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/div_v.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/dot_prod.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/length.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/minmax.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/mtp_v.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/rotate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/sub_v.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/translate_vector.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/geometry/unit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/actionType/history_relinkSelection.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/actionType/history_setVal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/actionType/history_toolResize.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/actionType/history_toolRotate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/actionType/history_toolScale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/actionType/history_toolTransform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/destructor/release_history.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_clear.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_new.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_redo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_removeNode.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_type.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_undo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/history/history_updateDeletion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/angle/hud_drawAngle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/angle/hud_newAngle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/arrow/hud_drawArrow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/arrow/hud_newArrow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/hud_draw.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/init/hud_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/init/hud_initAxis.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/init/hud_initPersp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/length/hud_drawLength.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/length/hud_newLength.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/ref/hud_project.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/hud/ref/selection_center.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/import/obj_import.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/inputManager_loop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_cameraDrag.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_cameraZoom.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_canvaClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_computeCloud.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_idle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_interfaceClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_keydown.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_keyup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_morphoClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_mouseButtonDown.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_mouseButtonUp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_mouseMotion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_onLeftClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_quit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_resizewindow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_switchCloudView.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/input_manager/user_switchModelView.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/matrix/matrix_compose.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/matrix/matrix_multiply.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/matrix/new_matrix_12.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/matrix/new_matrix_13.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/matrix/new_matrix_22.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/matrix/new_matrix_33.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/default_page_dim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/ft/display/mem_cellDisplay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/ft/display/mem_display.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/ft/display/mem_pageDisplay.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/ft/page/page_getAvailable.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/ft/page/page_set_empty_cells.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/memMgr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_cleanPage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_getCellPage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_getDataCell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_getEmptyCell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_getPageCell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_getRoot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_newPage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_pageCount.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_releasePage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_removePage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/mem_setCell.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/my_free.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/memmgr/my_malloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/model/copy_model.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/morpho/morpho_setAllActive.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/click/hud/mouse_clickHUD.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/click/hud/mouse_clickHUDAngle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/click/hud/mouse_clickHUDArrow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/click/hud/mouse_clickHUDLength.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/click/mouse_clickSelect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/click/ui/mouse_clickUI.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/motion/mouse_motionAngle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/motion/mouse_motionArrow.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/mouse/motion/mouse_motionLength.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/opencl_util/destructor/release_opencl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/opencl_util/get_device_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/opencl_util/init_clmem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/opencl_util/init_kernel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/opencl_util/init_opencl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/opencl_util/push_model_opencl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/rasterization/triangle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/add_color.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/blit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/blit_font_at.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/clean_surface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/copy_surface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/dtoa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/ft_realloc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/halt_program.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/isInCanva.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/isInTile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/isInZone.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/layer_merge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/layer_popMerge.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/list.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/mapping.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/mtp_color.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/new_scanline.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/new_surface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/setCursorPosition.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/set_alpha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/set_pos_lineWidth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/shape/circle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/shape/line.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/shape/line_hrz_width.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/shape/line_vrt_width.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/shape/square.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/shape/square_dim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/stretch_surface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/super_blit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/toggleFullscreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sdl_util/zone_upLeftCorner.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/str_util/ft_strdup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/str_util/ft_strequ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/idle/tool_buildIdle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/idle/tool_idle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/resize/tool_buildResize.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/resize/tool_resize.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/rotate/tool_buildRotate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/rotate/tool_rotate.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/scale/tool_buildScale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/scale/tool_scale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/select/select.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/select/tool_buildSelect.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/select/tool_select.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/tool_init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/transform/tool_buildTransform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/toolset/transform/tool_transform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ask/ui_ask_form.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ask/variadic/strlento.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/button/btn_icon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/button/btn_quit.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/button/btn_text.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/button/ui_button.h" />
+		<Unit filename="src/user_interface/constructor/ui_initAssets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/constructor/ui_newBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/constructor/ui_newFont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/constructor/ui_newItemPicture.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/constructor/ui_newItemSimpleButton.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/constructor/ui_newItemText.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/constructor/ui_newItem_numericChooser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/constructor/ui_newScrollBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/cursor/ui_cursor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/coreFilter.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/double/doubleFilter_alfa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/double/doubleFilter_bravo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/double/doubleFilter_charlie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/double/doubleFilter_delta.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/double/doubleFilter_echo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/double/doubleFilter_foxtrot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/float/floatFilter_alfa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/float/floatFilter_bravo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/float/floatFilter_charlie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/float/floatFilter_delta.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/float/floatFilter_echo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/float/floatFilter_foxtrot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/int/intFilter_alfa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/int/intFilter_bravo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/int/intFilter_charlie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/int/intFilter_delta.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/int/intFilter_echo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/int/intFilter_foxtrot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/uint/uintFilter_alfa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/uint/uintFilter_bravo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/uint/uintFilter_charlie.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/uint/uintFilter_delta.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/uint/uintFilter_echo.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/filter/uint/uintFilter_foxtrot.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/coreInstruction.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/double/double_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/double/double_copy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/double/double_get.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/double/double_set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/float/float_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/float/float_copy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/float/float_get.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/float/float_set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/int/int_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/int/int_copy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/int/int_get.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/int/int_set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/scheduler/strToVal.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/scheduler/valToStr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/string/string_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/string/string_copy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/string/string_get.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/string/string_set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/uint/uint_add.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/uint/uint_copy.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/uint/uint_get.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/instruction/uint/uint_set.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/datatype/type/uint/uint_processor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/item/ui_releaseItem_numericChooser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/item/ui_releaseItem_picture.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/item/ui_releaseItem_simpleButton.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/item/ui_releaseItem_string.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/release_ui.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/ui_releaseAssets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/ui_releaseBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/ui_releaseFont.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/destructor/ui_releaseItem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/display/item/ui_displayItem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/display/item/ui_displayItemButton.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/display/item/ui_displayItemPicture.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/display/item/ui_displayItemScrollBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/display/item/ui_displayItemString.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/display/item/ui_displayItem_numericChooser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/display/ui_display.h" />
+		<Unit filename="src/user_interface/display/ui_displayBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/display/ui_displayCursorCaption.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/envdim/item/ui_getItemHeight_numericChooser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/envdim/item/ui_getItemHeight_simpleButton.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/envdim/item/ui_getItemHeight_string.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/envdim/ui_getBoxEnvDim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/barGrab/ui_eventBarGrab_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/barGrab/ui_eventBarGrab_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/barGrab/ui_eventBarGrab_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/boxKill/ui_eventBoxKill_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/boxKill/ui_eventBoxKill_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/boxKill/ui_eventBoxKill_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/boxSide/ui_eventBoxSide_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/boxSide/ui_eventBoxSide_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/boxSide/ui_eventBoxSide_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/numericChooser/ui_eventItem_numericChooser_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/numericChooser/ui_eventItem_numericChooser_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/numericChooser/ui_eventItem_numericChooser_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/picture/ui_eventItem_picture_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/picture/ui_eventItem_picture_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/picture/ui_eventItem_picture_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/simpleButton/ui_eventItem_simpleButton_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/simpleButton/ui_eventItem_simpleButton_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/simpleButton/ui_eventItem_simpleButton_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/string/ui_eventItem_string_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/string/ui_eventItem_string_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/string/ui_eventItem_string_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/ui_eventItem_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/ui_eventItem_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/item/ui_eventItem_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/scrollBar/ui_eventScrollbar_motion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/scrollBar/ui_eventScrollbar_onClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/event/scrollBar/ui_eventScrollbar_onRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionBye.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionExportDXF.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionExportOBJ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionFall.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionImportOBJ.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionImportSCN.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionInput.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionReleaseModel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/functions/ui_functionTest.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/handler/ui_getBoxHandleAt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/handler/ui_getFrontBoxHandle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/handler/ui_getItemHandleAt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/handler/ui_getScrollBarHandle.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/input/input_bool.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/input/input_num.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/input/input_select.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/input/input_text.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/input/ui_input.h" />
+		<Unit filename="src/user_interface/misc/loading_bar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_background.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_clampScrollBarFactor.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_drawBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_drawButton.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_drawCameraOrientation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_drawScrollBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_foregroundBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_getBoxSide.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_getScrollBarLength.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_getScrollButtonPos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_info.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_interfaceMotion.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_interfaceOnClick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_interfaceOnRelease.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_isGrabBar.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_isKill.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_isResize.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_setBoxSide.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_setDim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_setEvent.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_setPos.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_stringGetPtrAt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_swapBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/ui_totalBox.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/zone/ui_zone.h" />
+		<Unit filename="src/user_interface/zone/zone_area.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/user_interface/zone/zone_scroll.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tileset/ascii_art_box.h" />
+		<Unit filename="tileset/charset_lowercase.h" />
+		<Unit filename="tileset/charset_numbers.h" />
+		<Unit filename="tileset/charset_ponctuation.h" />
+		<Unit filename="tileset/charset_special.h" />
+		<Unit filename="tileset/charset_uppercase.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
