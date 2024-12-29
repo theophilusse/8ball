@@ -1,12 +1,23 @@
 #include "opencl_util.h"
 
+static size_t get_maxAllocSize(cl_device_id device)
+{
+    size_t maxAllocSize;
+
+    clGetDeviceInfo(device, CL_DEVICE_MAX_MEM_ALLOC_SIZE, sizeof(maxAllocSize), &maxAllocSize, NULL);
+    printf("Max Allocation Size: %zu bytes\n", maxAllocSize);
+    return (maxAllocSize);
+}
+
 int        init_clmem_option(t_opencl *cl)
 {
     cl_int      err;
 
+    get_maxAllocSize(cl->device);
     cl->input_option = clCreateBuffer(cl->context, CL_MEM_READ_WRITE,
-         sizeof(struct s_option), &cl->option, &err);
+         sizeof(struct s_option), NULL/*&cl->option*/, &err);
     if (err < 0) {
+        display_cl_error(err);
         printf("Couldn't create option buffer\n");
         return (1);
     }
@@ -30,7 +41,7 @@ int        init_clmem_picture(t_opencl *cl, SDL_Surface *picture)
     ***/
     cl->picture_bufsz = ((picture->h * picture->w) * (picture->pitch / picture->w))
                         + (4 * sizeof(uint));
-    printf("Picturze BUFSZ [%u]\n", cl->picture_bufsz); /// Debug.
+    printf("Picturze BUFSZ [%zu]\n", cl->picture_bufsz); /// Debug.
     if (!(cl->picture_buf = (void *)ALLOC((size_t)cl->picture_bufsz)))
         return (1);
     ((uint *)cl->picture_buf)[0] = (uint)picture->w;
@@ -44,8 +55,11 @@ int        init_clmem_picture(t_opencl *cl, SDL_Surface *picture)
 
     ///(picture->h * picture->pitch) + picture->w * (picture->pitch / picture->w); // MAP A PIXEL
 
-    cl->input_picture = clCreateBuffer(cl->context, CL_MEM_READ_WRITE //CL_MEM_READ_ONLY
-         ///CL_MEM_COPY_HOST_PTR, (cl->picture_bufsz * sizeof(uchar)) + (sizeof(uint) * 4),
+    printf("picture_bufsz: %zu", cl->picture_bufsz);
+    cl->input_picture = clCreateBuffer(cl->context,
+        CL_MEM_READ_ONLY | CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR
+        //CL_MEM_READ_WRITE //CL_MEM_READ_ONLY
+        ///CL_MEM_COPY_HOST_PTR, (cl->picture_bufsz * sizeof(uchar)) + (sizeof(uint) * 4),
                                 , cl->picture_bufsz,
                                 cl->picture_buf, &err);
     if(err < 0)
@@ -76,13 +90,13 @@ int        init_clmem_cloud_buffer(t_opencl *cl, SDL_Surface *picture, int flg)
             return (1);
         }
         cl->output_cloud = clCreateBuffer(cl->context, CL_MEM_READ_WRITE, /** kernel.cl **/
-             cl->cloud_bufsz, cl->cloud_buf, &err);
+             cl->cloud_bufsz, NULL/*cl->cloud_buf*/, &err);
         if (err < 0) {
             printf("Couldn't create output cloud buffer\n");
             return (1);
         }
         cl->input_cloud = clCreateBuffer(cl->context, CL_MEM_READ_WRITE, /** Unsused ? **/
-            cl->cloud_bufsz, cl->cloud_buf, &err);
+            cl->cloud_bufsz, NULL/*cl->cloud_buf*/, &err);
         if (err < 0) {
             printf("Couldn't create input cloud buffer\n");
             return (1);
@@ -120,7 +134,7 @@ int        init_clmem_cloud_buffer(t_opencl *cl, SDL_Surface *picture, int flg)
             return (1);
         }
         cl->input_cloud = clCreateBuffer(cl->context, CL_MEM_READ_WRITE, /** Unsused ? **/
-            cl->cloud_bufsz, cl->cloud_buf, &err);
+            cl->cloud_bufsz, NULL/*cl->cloud_buf*/, &err);
         if (err < 0) {
             printf("Couldn't create input cloud buffer\n");
             return (1);
@@ -137,32 +151,41 @@ int         init_clmem_triangle(t_camdata *camdata, t_opencl *cl)
 
     cl->output_surface = NULL;
     cl->input_triangle = NULL;
+    DEBUG //
     if (push_triangle_opencl(cl, camdata))
         return (1);
-    cl->input_triangle = clCreateBuffer(cl->context, CL_MEM_READ_ONLY /*|
-         CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR*/, cl->triangle_bufsz, cl->triangle_buf, &err);
+    DEBUG //
+    cl->input_triangle = clCreateBuffer(cl->context, CL_MEM_READ_ONLY |
+         CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR, cl->triangle_bufsz, cl->triangle_buf, &err);
     if (err != CL_SUCCESS)
     {
+        display_cl_error(err);
         printf("Couldn't create model buffer\n");
         return (1);
     }
-    cl->output_surface = clCreateBuffer(cl->context, CL_MEM_READ_ONLY /*|
-         CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR*/, cl->surface_bufsz, cl->surface_buf, &err);
-    if (err != CL_SUCCESS)
+    if (cl->surface_bufsz > 0)
     {
-        printf("Couldn't create triangle surface buffer\n");
-        return (1);
+        cl->output_surface = clCreateBuffer(cl->context, CL_MEM_READ_ONLY |
+            CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR, cl->surface_bufsz, cl->surface_buf, &err);
+        if (err != CL_SUCCESS)
+        {
+            display_cl_error(err);
+            printf("cl->surface_bufsz: %zu\n", cl->surface_bufsz);
+            printf("Couldn't create triangle surface buffer\n");
+            return (1);
+        }
     }
     ///print_vector_array((double *)cl->triangle_buf + 4, 12); // Debug
     if ((err = clEnqueueWriteBuffer(cl->queue, cl->input_triangle,
                                     /*CL_FALSE*/CL_TRUE, 0,  cl->triangle_bufsz, cl->triangle_buf, 0, NULL, NULL)) != CL_SUCCESS)
     {
+        display_cl_error(err);
         printf("Couldn't write buffer 1\n");
         return (1);
     }
     printf("Model buffer ptr  : [%p]\n", cl->triangle_buf); //
-    printf("Model triangle n. : [%u]\n", (cl->triangle_bufsz - sizeof(struct s_point)) / (sizeof(struct s_point) * 3)); //
-    printf("Model buffer size : [%u]\n", cl->triangle_bufsz); //
+    printf("Model triangle n. : [%zu]\n", (cl->triangle_bufsz - sizeof(struct s_point)) / (sizeof(struct s_point) * 3)); //
+    printf("Model buffer size : [%zu]\n", cl->triangle_bufsz); //
     printf("Memory object : [%p]\n", cl->input_triangle); //
     return (0);
 };
@@ -175,19 +198,23 @@ int         init_clmem(t_cam *cam, double *sun, SDL_Surface *picture, t_opencl *
     if (!cam)
         return (1);
     cl->model_buf = NULL;
+    DEBUG //
     cl->input_camera = clCreateBuffer(cl->context, CL_MEM_READ_WRITE | CL_MEM_COPY_HOST_PTR,
                                       sizeof(struct s_cam) - sizeof(t_camdata *), cam, &err);
     if (err < 0)
         printf("Couldn't create camera\n");
+    DEBUG //
     cl->input_lights = clCreateBuffer(cl->context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR,
                                       sizeof(double) * 4, sun, &err);
     if (err < 0)
         printf("Couldn't create sundata\n");
+    DEBUG //
     if (push_model_opencl(cl, cam->data))
         return (1);
-    printf("[%p] Model @%p size:[%u]\n", cl->context, cl->model_buf, cl->model_bufsz); // Debug
-    cl->input_model = clCreateBuffer(cl->context, CL_MEM_READ_ONLY /*|
-         CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR*/, cl->model_bufsz, cl->model_buf, &err);
+    DEBUG //
+    printf("[%p] Model @%p size:[%zu]\n", cl->context, cl->model_buf, cl->model_bufsz); // Debug
+    cl->input_model = clCreateBuffer(cl->context, CL_MEM_READ_ONLY |
+         CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR, cl->model_bufsz, cl->model_buf, &err);
     if (err != CL_SUCCESS)
     {
         printf("Couldn't create model buffer\n");
@@ -200,13 +227,15 @@ int         init_clmem(t_cam *cam, double *sun, SDL_Surface *picture, t_opencl *
         return (1);
     }*/
     cl->zbuffer_bufsz = (cam->vw * cam->vh) * (sizeof(double) * 4);
-    cl->output_zbuffer = clCreateBuffer(cl->context, CL_MEM_READ_WRITE,
+    cl->output_zbuffer = clCreateBuffer(cl->context, CL_MEM_READ_ONLY |
+         CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR,
          ///(cam->vw * cam->vh) * (sizeof(double) + 3 * sizeof(uchar)), cam->data->zbuffer, &err);
          cl->zbuffer_bufsz, cam->data->zbuffer, &err);
     if (err < 0)
         printf("Couldn't create zbuffer\n");
     cl->pixels_bufsz = cam->data->backbuffer->w * cam->data->backbuffer->h * (cam->data->backbuffer->pitch / cam->data->backbuffer->w);
-    cl->output_pixels = clCreateBuffer(cl->context, CL_MEM_READ_WRITE,
+    cl->output_pixels = clCreateBuffer(cl->context, CL_MEM_READ_ONLY |
+         CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR,
          cl->pixels_bufsz, cam->data->backbuffer->pixels, &err);
     if (err < 0)
         printf("Couldn't create backbuffer\n");
@@ -223,8 +252,8 @@ int         init_clmem(t_cam *cam, double *sun, SDL_Surface *picture, t_opencl *
         const cl_event *event_wait_list,
         cl_event *event)
     **/
-    printf("Sizeof S_CAM : [%u]\n", sizeof(struct s_cam) - sizeof(void *)); /// Debug Alignement
-    printf("Sizeof uint : [%u]\n", sizeof(uint) ); /// Debug Alignement
+    printf("Sizeof S_CAM : [%zu]\n", sizeof(struct s_cam) - sizeof(void *)); /// Debug Alignement
+    printf("Sizeof uint : [%zu]\n", sizeof(uint) ); /// Debug Alignement
     if ((err = clEnqueueWriteBuffer(cl->queue, cl->input_camera,
                                     /*CL_FALSE*/CL_TRUE, 0,  sizeof(struct s_cam) - sizeof(t_camdata *), cam, 0, NULL, NULL)) != CL_SUCCESS)
     {

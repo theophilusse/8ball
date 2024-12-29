@@ -372,23 +372,6 @@ void        reverse_vec(struct s_point in, t_point *out)
     out->z = -in.z;
 }
 
-int         reverse_normal(t_triangle *T, struct s_point P)
-{
-    struct s_point  n_;
-    struct s_point  n;
-
-    copy_v3(T->n, (double *)&n);
-    reverse_vec(n, &n_);
-    add_v3((double *)&n, T->v0 , (double *)&n);
-    add_v3((double *)&n_, T->v0, (double *)&n_);
-    if (length3((double *)&n_) < length3((double *)&n))
-    {
-        reverse_vec(*((t_point *)T->n), (t_point *)T->n);
-        return (1);
-    }
-    return (0);
-}
-
 void        draw_triangle(SDL_Surface *surface, uchar *rgb, int *a, int *b, int *c)
 {
     int maxX = _max(a[0], _max(b[0], c[0]));

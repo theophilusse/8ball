@@ -10,7 +10,6 @@ SDL_Surface          *get_tile(const char *image[], const uchar *color_bg, const
     SDL_Surface       *ret;
     int row, col;
 
-    DEBUG ///
     /* if (!(ret = SDL_CreateRGBSurface(SDL_HWSURFACE|SDL_DOUBLEBUF, 16, 16, 32, crmask, cgmask, cbmask, camask))) */ /// Old
     if (!(ret = new_surface32(16, 16))) /// Keep. Crash ?
         return (NULL);

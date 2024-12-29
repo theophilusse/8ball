@@ -2,7 +2,7 @@
 
 int             mouse_clickHUDArrow(t_hud *hud, int *clickCoord)
 {
-    t_hud_arrow           *arrow;
+    //t_hud_arrow           *arrow;
     double      pta[3];
     double      ptb[3];
     double      ptc[3];
@@ -18,7 +18,7 @@ int             mouse_clickHUDArrow(t_hud *hud, int *clickCoord)
 
     if (!clickCoord || !hud)// || !arrow->vertice)
         return (1);
-    arrow = (t_hud_arrow *)hud->data.buf;
+    //arrow = (t_hud_arrow *)hud->data.buf;
     hud->select_index = -1;
     coord[0] = (double)clickCoord[0];
     coord[1] = (double)clickCoord[1];

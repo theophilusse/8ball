@@ -9,9 +9,7 @@ void            set_alpha(SDL_Surface *s, uchar alpha)
         return ;
     transparent[3] = alpha;
     ///SDL_FillRect(scref (!(pixl = (uchar *)getpixel_addr(s, x, y)))en, 0, SDL_MapRGB(screen->format, 0, 64, 0));
-    DEBUG ///
     square(s, 0, 0, s->w, s->h, transparent);
-    DEBUG ///
     SDL_Flip(s);
 }
 
@@ -43,13 +41,16 @@ void            blit_mergeAlpha(SDL_Surface *surface, SDL_Surface *screen)
     uchar           *pixl[2];
     uchar           color[4] = { 0, 0, 0, 0 };
 
+    DEBUG //
     if (!surface || !screen)
         return ;
+    DEBUG //
     if (surface->w != screen->w || surface->h != screen->h)
     {
         printf("blit_mergeAlpha usage : dimensions musts be equal.\n");
         return ;
     }
+    DEBUG //
     i = -1;
     while (++i < surface->w)
     {
@@ -60,6 +61,7 @@ void            blit_mergeAlpha(SDL_Surface *surface, SDL_Surface *screen)
             pixl[0] = (uchar *)getpixel_addr(surface, i, j);
             pixl[1] = (uchar *)getpixel_addr(screen, i, j);
             ///if ( *(pixl[0] + 3) == SDL_ALPHA_OPAQUE )
+            return ; // DEBUG
             if ( *(pixl[0] + 3) != SDL_ALPHA_TRANSPARENT )
             {
                 *pixl[1] = *pixl[0];
@@ -71,5 +73,6 @@ void            blit_mergeAlpha(SDL_Surface *surface, SDL_Surface *screen)
             }
         }
     }
+    DEBUG //
     ///SDL_Flip(screen);
 }

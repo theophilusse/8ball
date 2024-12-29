@@ -20,22 +20,22 @@
 
 /** Delete **/
 ///int      COMP_ui_ask_form(struct s_ftData_zone zone, const char *form, ...)
-void        gprintf(struct s_ftData_gTextData data, char *form, ...)
+int        gprintf(struct s_ftData_gTextData data, char *form, ...)
 {
-    t_mega                  *mega;
+    //t_mega                  *mega;
     va_list                 va;
     struct s_ftData_zone    zone;
     struct s_multitype      mt;
     struct s_ftData_parse   buf;
-    struct s_ui_font        font;
+    //struct s_ui_font        font;
     uint                    len;
     char                    strBuf[STRING_SIZE];
     int                     basePos[2];
     uint                    tabNext;
 
-    mega = (t_mega *)global_mega;
+    //mega = (t_mega *)global_mega;
     zone = data.dsp.zone;
-    font = data.font;
+    //font = data.font;
     buf.i = 0;
     buf.n = 0;
     while (form[buf.i] != '\0')

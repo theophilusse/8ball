@@ -404,7 +404,7 @@ static t_list           *dxf_set_point(t_list **p_begin_list, double *vertice, i
     double      A[4];
     double      B[4];
     double      C[4];
-    double      D[4];
+    //double      D[4];
     double      *ptr;
 
     if (!vertice)
@@ -427,10 +427,10 @@ static t_list           *dxf_set_point(t_list **p_begin_list, double *vertice, i
     C[3] = ptr[3];
     if (!(ptr = static_getDownRightPixel(vertice, width, height, x, y)))
         return (*p_begin_list);
-    D[0] = ptr[0];
-    D[1] = ptr[1];
-    D[2] = ptr[2];
-    D[3] = ptr[3];
+    //D[0] = ptr[0];
+    //D[1] = ptr[1];
+    //D[2] = ptr[2];
+    //D[3] = ptr[3];
     ///printf("Draw Pixel[%u][%u] - verticeIndex[%d]\n", x, y, *verticeIndex);///
     ///int _macro_dxfMaxIter_ = 2;
     /*
@@ -502,7 +502,7 @@ static void              dxf_write_points_section(t_mega *mega, int fd, double *
     float       fPercent[2];
     t_list      *listing_p;
     t_list      *begin;
-    t_list      *nextNode;
+    //t_list      *nextNode;
 
     /*if (!listing_p)
         return (NULL);*/
@@ -517,7 +517,7 @@ static void              dxf_write_points_section(t_mega *mega, int fd, double *
         free_list(begin);
         listing_p = NULL;
         begin = NULL;
-        nextNode = begin;
+        //nextNode = begin;
     ///***///
 
     ///***DEBUG***///
@@ -625,7 +625,7 @@ static void              dxf_write_points_section(t_mega *mega, int fd, double *
             free_list(begin);
             listing_p = NULL;
             begin = NULL;
-            nextNode = begin;
+            //nextNode = begin;
             /*close(fd);
             if ((fd = dxf_open(filename, 1)) == -1)
                 return ;*/

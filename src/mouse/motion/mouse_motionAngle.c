@@ -4,9 +4,9 @@ int             mouse_motionAngle(void *pmega, int flg) /// Taken from HUD Click
 {
     t_mega                  *mega;
     t_tool                  *tool;
-    struct s_ref            org;
+    //struct s_ref            org;
     struct s_mouse          mouse;
-    double         vd_len;
+    //double         vd_len;
     double         drag_vo[3]; /// Obsolete ?
     double         drag_va[3];
     double         drag_vp[3];
@@ -15,7 +15,7 @@ int             mouse_motionAngle(void *pmega, int flg) /// Taken from HUD Click
     if (!(mega = (t_mega *)pmega))
         return (1);
     tool = &mega->tool[mega->currentTool];
-    org = tool->hud.org;
+    //org = tool->hud.org;
     if (mega->stcl->option.edit_mode == 0 ||
         tool->hud.active != 2 ||
         0)///!mega->hud_angle.selection)
@@ -34,7 +34,7 @@ int             mouse_motionAngle(void *pmega, int flg) /// Taken from HUD Click
     drag_tmp[1] = (double)mouse.mouseDrag[1];
     unit2(drag_tmp, drag_tmp, NULL);
 
-    vd_len = mouse.cacheLengthClick; /// onClick -> HUD_o
+    //vd_len = mouse.cacheLengthClick; /// onClick -> HUD_o
     unit2(drag_va, drag_va, NULL);
 
     ///axis_hud_absdot = dot_prod2(drag_va, mouse.cacheUnitClick);

@@ -43,32 +43,38 @@ int             resize_camera_viewport(t_cam *c, t_opencl *cl, uint x, uint y)
 
     /** OpenCL Buffers **/
     cl->zbuffer_bufsz = (x * y) * (sizeof(double) * 4);
-    cl->output_zbuffer = clCreateBuffer(cl->context, CL_MEM_READ_WRITE,
+    cl->output_zbuffer = clCreateBuffer(cl->context, CL_MEM_READ_WRITE |
+            CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR,
          cl->zbuffer_bufsz, c->data->zbuffer, &err);
     if (err < 0)
     {
-        printf("Couldn't create zbuffer\n");
-        return (1);
+        printf("Couldn't create zbuffer : [%s]\n", get_cl_error(err));
+        /// TODO
+        ///return (1);
     }
 
     cl->pixels_bufsz = c->data->backbuffer->w * c->data->backbuffer->h * (c->data->backbuffer->pitch / c->data->backbuffer->w);
-    cl->output_pixels = clCreateBuffer(cl->context, CL_MEM_READ_WRITE,
+    cl->output_pixels = clCreateBuffer(cl->context, CL_MEM_READ_WRITE |
+            CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR,
          cl->pixels_bufsz, c->data->backbuffer->pixels, &err);
     if (err < 0)
     {
+        printf("Couldn't create backbuffer : [%s]\n", get_cl_error(err));
         clReleaseMemObject(cl->output_zbuffer);
-        printf("Couldn't create backbuffer\n");
-        return (1);
+        /// TODO
+        ///return (1);
     }
     err = clSetKernelArg(cl->kernel, 5, sizeof(cl_mem), &cl->output_pixels);
     if(err < 0) {
-      printf("Couldn't create kernel 6th argument : [%d]\n", err);
-      return (1);
+      printf("Couldn't create kernel 6th argument : [%s]\n", get_cl_error(err));
+      /// TODO
+      ///return (1);
     }
     err = clSetKernelArg(cl->kernel, 3, sizeof(cl_mem), &cl->output_zbuffer);
     if(err < 0) {
-      printf("Couldn't create kernel 4th argument : [%d]\n", err);
-      return (1);
+      printf("Couldn't create kernel 4th argument : [%s]\n", get_cl_error(err));
+      /// TODO
+      ///return (1);
     }
     return (0);
 }

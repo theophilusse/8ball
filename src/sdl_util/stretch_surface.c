@@ -22,7 +22,7 @@ SDL_Surface *stretch_surface(SDL_Surface *Surface, Uint16 Width, Uint16 Height)
         return (NULL);
     _stretch_factor_x = ((double)Width / (double)Surface->w),
     _stretch_factor_y = ((double)Height / (double)Surface->h);
-    uchar *color[4];
+    //uchar color[4];
     y = -1;
     while (++y < Surface->h)
     {
@@ -31,10 +31,10 @@ SDL_Surface *stretch_surface(SDL_Surface *Surface, Uint16 Width, Uint16 Height)
         {
             ///ReadPixel(Surface, x, y)
             addr = (uchar *)getpixel_addr(Surface, x, y);
-            color[0] = *addr;
-            color[1] = *(addr + 1);
-            color[2] = *(addr + 2);
-            color[2] = *(addr + 3);
+            //color[0] = *addr;
+            //color[1] = *(addr + 1);
+            //color[2] = *(addr + 2);
+            //color[2] = *(addr + 3);
             o_y = -1;
             while (++o_y <= (int)_stretch_factor_y)
             {

@@ -1,5 +1,4 @@
 #include "8ball.h"
-
 /**
  ** Author : ttrossea
  ** constructor.c :
@@ -29,6 +28,11 @@ SDL_Surface          *init_(void)
         putenv(env);
     if (env)
         FREE(env);
+
+    AllocConsole();
+    freopen("CON", "w", stdout);
+    freopen("CON", "w", stderr);
+
     /** initialize SDL video **/
     if ( SDL_Init( SDL_INIT_VIDEO ) < 0 )
     {
@@ -168,11 +172,13 @@ int             opencl_build_data(t_mega *mega)
 {
     if (!mega || !mega->stcl || !mega->picture || !mega->camera)
         return (1);
+    DEBUG //
     if (init_clmem_option(mega->stcl))
     {
         printf("Init OpenCL option Buffer : ERROR.\n");
         return (1);
     }
+    DEBUG //
     ///if (init_clmem_cloud_buffer(mega->stcl, mega->picture, 0))
     if (init_clmem_cloud_buffer(mega->stcl, mega->picture, 1))
     {
@@ -180,6 +186,7 @@ int             opencl_build_data(t_mega *mega)
         return (1);
     }
     ///
+    DEBUG //
     if (init_clmem_triangle(mega->camera->data, mega->stcl)) /// Bug crash
     {
         printf("Init OpenCL triangle Buffer : ERROR.\n");
@@ -216,23 +223,23 @@ int             opencl_build_data(t_mega *mega)
 **/
 int             asset_load(t_camdata *data)
 {
-    double       ppos[3];
-    double       rrot[3];
-    double       sscale[3];
+    //double       ppos[3];
+    //double       rrot[3];
+    //double       sscale[3];
 
     if (!data)
         return (1);
     ///return (0);
-    ppos[0] = -5;
-    ppos[1] = 0;
-    ppos[2] = 0;
+    //ppos[0] = -5;
+    //ppos[1] = 0;
+    //ppos[2] = 0;
 
     //rrot[0] = -35;
-    rrot[0] = 0;
+    //rrot[0] = 0;
     //rrot[1] = 180;
-    rrot[1] = 180;
+    //rrot[1] = 180;
     //rrot[1] = 0;
-    rrot[2] = 0;
+    //rrot[2] = 0;
 
     /*
     rrot[0] = 0;
@@ -244,9 +251,9 @@ int             asset_load(t_camdata *data)
     sscale[1] = 0.5;
     sscale[2] = 0.5;*/
 
-    sscale[0] = 0.05;
-    sscale[1] = 0.05;
-    sscale[2] = 0.05;
+    //sscale[0] = 0.05;
+    //sscale[1] = 0.05;
+    //sscale[2] = 0.05;
 
     ///push_model(data, (uchar *)_blue_crystal, (double *)debug_v, (double *)debug_n, (int *)debug_f, NULL, NULL, NULL); /// Debug
 
@@ -659,6 +666,8 @@ static t_userInterface             *build_ui(t_mega *mega)
     */
     ///instructionTable[0][0] = ;
 
+    printf("UI @ %p\n", ui);
+    memset(ui, 0, sizeof(struct s_userInterface));
     ui->sigFrame = 0;
     ui->font.charset = NULL;
     ui->font_bis.charset = NULL;
@@ -686,8 +695,10 @@ static t_userInterface             *build_ui(t_mega *mega)
     /// Init Cursors ///
     /// ************************* ///
     i = -1;
-    while (++i < 8)
+    DEBUG //
+    while (++i < UI_BOX_COUNT)
         ui->box[i].content = NULL;//
+    DEBUG //
     ui->active = 1;
     ui->event = ui_setDefaultEvent();
     ui->sigRefresh = 0;
@@ -785,59 +796,69 @@ t_mega      *mega_construct(Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 ama
 
     mega->mouse.MouseSensitiv = 0;
     mega->selectStack = NULL;
+
     if (!(mega->screen = init_()))
     {
         DEBUG ///
         FREE(mega);
         return (NULL);
     }
+    printf("new viewport\n");
     ///if (!(mega->viewport = SDL_CreateRGBSurface(SDL_HWSURFACE|SDL_DOUBLEBUF, mega->screen->w, mega->screen->h, 32, rmask, gmask, bmask, amask)))
     if (!(mega->viewport = new_surface32(mega->screen->w, mega->screen->h)))
     {
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("new work viewport\n");
     ///if (!(mega->work_viewport = SDL_CreateRGBSurface(SDL_HWSURFACE|SDL_DOUBLEBUF, mega->screen->w, mega->screen->h, 32, rmask, gmask, bmask, amask)))
     if (!(mega->work_viewport = new_surface32(mega->screen->w, mega->screen->h)))
     {
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("new hud viewport\n");
     ///if (!(mega->hud_viewport = SDL_CreateRGBSurface(SDL_HWSURFACE|SDL_DOUBLEBUF, mega->screen->w, mega->screen->h, 32, rmask, gmask, bmask, amask)))
     if (!(mega->hud_viewport = new_surface32(mega->screen->w, mega->screen->h)))
     {
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("new log viewport\n");
     ///if (!(mega->log_viewport = SDL_CreateRGBSurface(SDL_HWSURFACE|SDL_DOUBLEBUF, mega->screen->w, mega->screen->h, 32, rmask, gmask, bmask, amask)))
     if (!(mega->log_viewport = new_surface32(mega->screen->w, mega->screen->h)))
     {
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("new ui viewport\n");
     ///if (!(mega->ui_viewport = SDL_CreateRGBSurface(SDL_HWSURFACE|SDL_DOUBLEBUF, mega->screen->w, mega->screen->h, 32, rmask, gmask, bmask, amask)))
     if (!(mega->ui_viewport = new_surface32(mega->screen->w, mega->screen->h)))
     {
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("new direct viewport\n");
     ///if (!(mega->direct_viewport = SDL_CreateRGBSurface(SDL_HWSURFACE|SDL_DOUBLEBUF, mega->screen->w, mega->screen->h, 32, rmask, gmask, bmask, amask)))
     if (!(mega->direct_viewport = new_surface32(mega->screen->w, mega->screen->h)))
     {
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("new viewport swp\n");
     ///if (!(mega->viewport_swp = SDL_CreateRGBSurface(SDL_HWSURFACE|SDL_DOUBLEBUF, mega->screen->w, mega->screen->h, 32, rmask, gmask, bmask, amask)))
     if (!(mega->viewport_swp = new_surface32(mega->screen->w, mega->screen->h)))
     {
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("new camera\n");
     if (!(mega->camera = new_camera(mega->screen, rmask, gmask, bmask, amask)))
     {
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("load %s\n", picture_filename);
     /// LoadCharset here before moving to build_ui() -> ui_newCharset.c
     if (!(mega->picture = SDL_LoadBMP(picture_filename)))
     {
@@ -845,6 +866,7 @@ t_mega      *mega_construct(Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 ama
         root_destructor(mega, 1);
         return (NULL);
     }
+    printf("asset load\n");
     if (asset_load(mega->camera->data))
     {
         printf("OpenCL Build Data : ERROR.\n");
@@ -852,15 +874,20 @@ t_mega      *mega_construct(Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 ama
         return (NULL);
     }
 
-    mega->input_manager = input_manager; /** Static table **/
+    printf("new input manager\n");
+    //int (*input_manager_[INPUT_MANAGER_FTSZ])(t_mega *, int); /// Verify syntax array[]
+    if (!(mega->input_manager = ALLOC(sizeof(int (*)(t_mega *, int)) * INPUT_MANAGER_FTSZ))) /// DEBUG ALLOC
+        return (NULL); /** Static table **/
     intput_manager_init(mega->input_manager, INPUT_MANAGER_FTSZ);
     /**toolset_init(mega->toolset, TOOLSET_SIZE);**/
 
+    printf("new toolset\n");
     ///mega->currentTool = TOOLSET_NONE;
     mega->currentTool = TOOLSET_TRANSFORM;
     //mega->currentTool = TOOLSET_SCALE;
     build_toolset(mega);
 
+    printf("new OpenCL\n");
     stcl = init_opencl(&err);
     if (err || !(mega->stcl = (t_opencl *)ALLOC(sizeof(struct s_opencl))))
     {
@@ -869,11 +896,14 @@ t_mega      *mega_construct(Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 ama
         return (NULL);
     }
     *mega->stcl = stcl;
+    DEBUG ///
+    printf("set data OpenCL\n");
     if (opencl_build_data(mega))
     {
         printf("OpenCL Build Data : ERROR.\n");
-        root_destructor(mega, 1);
-        return (NULL);
+        /// TODO
+        //root_destructor(mega, 1);
+        //return (NULL);
     }
 
     /** DeadCode **/
@@ -882,6 +912,7 @@ t_mega      *mega_construct(Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 ama
     */
     /** DeadCode **/
 
+    printf("new UI\n");
     /*** BUILD UI ***/
     if (!(mega->ui = build_ui(mega)))
     {
@@ -889,13 +920,17 @@ t_mega      *mega_construct(Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 ama
         return (NULL);
     }
     /*** BUILD WINDOWS ***/
+    printf("set UI\n");
     uint        i;
     i = -1;
     while (++i < UI_BOX_COUNT)
         ui_newBox(mega, &mega->ui->box[i], i);
     mega->ui->boxCount = ui_totalBox(mega->ui);
-    ui_swapBox(mega->ui, 0, 1);
+    DEBUG //
+    ///ui_swapBox(mega->ui, 0, 1);
+    DEBUG //
     /*** BUILD HISTORY ***/
+    printf("new historic\n");
     if (!(mega->timeMachine = history_new()))
     {
         printf("Build TimeMachine failed\n");

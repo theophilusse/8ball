@@ -277,7 +277,7 @@ int        obj_import(t_mega *mega, const char *fileName)
     char                fname[STRING_SIZE];
     int         fd;
     char        *fDat;
-    size_t      fSz;
+    uint        fSz;
 
     fname[0] = '\0';
     strcat(fname, fileName);

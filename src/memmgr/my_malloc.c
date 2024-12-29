@@ -13,12 +13,8 @@ void            *my_malloc(size_t sz)
     /** Find Page **/
     if (!(page = page_getAvailable(&root, UI_DATATYPE_POINTER)))
     {
-        DEBUG ///
         if (!(page = mem_newPage(default_page_dim()))) /** Init **/
-        {
-            DEBUG ///
             return (NULL);
-        }
     }
 
     /** Find Cell **/

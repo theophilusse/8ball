@@ -78,7 +78,7 @@ int         get_device_info(t_clinfo *cl, cl_device_id dev)
         return (1);
     }
     ***/
-    printf("Max work group size : [%u]\n", cl->max_work_group_size);
+    printf("Max work group size : [%zu]\n", cl->max_work_group_size);
     return (0); /// DEBUG
     qwery = CL_DEVICE_GLOBAL_MEM_SIZE;
     if ((err = clGetDeviceInfo(dev, qwery, sizeof(cl_ulong), &cl->global_mem_size, &retSize)) != CL_SUCCESS)

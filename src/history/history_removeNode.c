@@ -8,7 +8,7 @@ t_history        *history_removeNode(t_history *node)
     t_history       *prev;
 
     if (!node)
-        return ;
+        return (NULL);
     next = node->redo;
     prev = node->undo;
     if (next && prev)
@@ -18,7 +18,7 @@ t_history        *history_removeNode(t_history *node)
     }
     if (next && !prev)
     {
-        return ; /** DeadCode **/
+        return (NULL); /** DeadCode **/
         if ((mega = (t_mega *)global_mega))
             return (node);
         next->undo = NULL;

@@ -12,13 +12,13 @@ uint            charset_getOffsetHeight(t_ui_box *box, t_ui_font *font,
     uchar           startFlag;
     uint            wordLen;
     uint            counter;
-    int            tileDim[2];
+    //int            tileDim[2];
     int             _x;
     char         *p;
     char         c;
 
-    tileDim[0] = font->dim;
-    tileDim[1] = font->dim;
+    //tileDim[0] = font->dim;
+    //tileDim[1] = font->dim;
     if (!box || !(p = (char *)str)) /// Good;
         return (0);
 

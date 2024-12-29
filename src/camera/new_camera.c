@@ -14,7 +14,6 @@ t_cam           *new_camera(SDL_Surface *screen, Uint32 rmask, Uint32 gmask, Uin
     t_cam           *c;
     t_camdata       *d;
 
-    DEBUG ///
     if (!(c = (t_cam *)ALLOC(sizeof(struct s_cam))))
         return (NULL);
     c->data = NULL;
@@ -63,6 +62,7 @@ t_cam           *new_camera(SDL_Surface *screen, Uint32 rmask, Uint32 gmask, Uin
             FREE(c);
         return (NULL);
     }
+    d->helloworld = helloworld(&d->helloworld_size);
     d->backbuffer = NULL;
     i = -1;
     while (++i < MAX_MODEL)

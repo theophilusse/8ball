@@ -76,7 +76,6 @@ int            user_resizeWindow(t_mega *mega, int flg)
     DEBUG ///
     if (renew_frameBuffers(mega, event))
         return (1);
-
     if (resize_camera_viewport(mega->camera, mega->stcl, event.resize.w, event.resize.h))
         return (1);
 

@@ -37,7 +37,7 @@ int             ui_functionImportOBJ(void *pMega, int flag)
 
     clReleaseMemObject(cl->input_triangle);
     cl->input_triangle = clCreateBuffer(cl->context, CL_MEM_READ_ONLY /*|
-     CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR*/, cl->triangle_bufsz, cl->triangle_buf, &err);
+     CL_MEM_ALLOC_HOST_PTR | CL_MEM_COPY_HOST_PTR*/, cl->triangle_bufsz, NULL/*cl->triangle_buf*/, &err);
     if (err != CL_SUCCESS)
     {
         printf("Couldn't create model buffer\n");

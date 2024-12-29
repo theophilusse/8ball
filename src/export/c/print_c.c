@@ -22,10 +22,10 @@ static int          _count_args(const char *format)
 void            print_c(int fd, const char *format, void *pointer, ...)
 {
     va_list         ptr;
-    char            *string;
+    //char            *string;
     char            chunk[STRING_SIZE];
 
-    string = (char *)format;
+    //string = (char *)format;
     chunk[0] = '\0';
     strcat(chunk, "/**\n  * Not implemented yet. (Todo.)\n**/\n");
     write(fd, (const void *)chunk, strlen(chunk));

@@ -168,5 +168,6 @@ int      push_model(t_camdata *d, uchar *amb_color,
             vptr[1] += model_translate[1];
             vptr[2] += model_translate[2];
         }
+    read_helloworld(m, d);
     return (0);
 }

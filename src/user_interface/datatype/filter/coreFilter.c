@@ -1,6 +1,6 @@
 #include "user_interface.h"
 
-void            coreFilter(void *a, void *b, uchar datatype, uchar call)
+void            *coreFilter(void *a, void *b, uchar datatype, uchar call)
 {
     if (datatype >= TOTAL_DATATYPE_COUNT || call >= TOTAL_FILTER_COUNT)
         return (NULL);

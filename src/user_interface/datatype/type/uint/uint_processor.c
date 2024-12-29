@@ -7,8 +7,8 @@ void        uint_processor(void *pVar, void *val, uchar instruction, void (*post
 
     if (!pVar)
         return ;
-    instructionSet[NATO_ALFA] = uint_copy;
-    instructionSet[NATO_BRAVO] = uint_add;
-    instructionSet[NATO_CHARLIE] = uint_get;
+    instructionSet[NATO_ALFA] = (void (*)(void *, void *, void (*)(void *, void *, uchar)))uint_copy;
+    instructionSet[NATO_BRAVO] = (void (*)(void *, void *, void (*)(void *, void *, uchar)))uint_add;
+    instructionSet[NATO_CHARLIE] = (void (*)(void *, void *, void (*)(void *, void *, uchar)))uint_get;
     return ;
 }

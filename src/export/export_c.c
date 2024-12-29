@@ -84,7 +84,7 @@ void         print_segment(t_model *m, uint seg_index)
                 printf("   FACE ==============\n");
                 if (!(fptr = m->f))
                     return ;
-                printf("int f_segdump[%u] =\n{", (f_buffer_size(fptr) / sizeof(int)) + 1 );
+                //printf("int f_segdump[%u] =\n{", (f_buffer_size(fptr) / sizeof(int)) + 1 );
                 while (++i < m->nf)
                 {
                     vecsize = *fptr + 1;

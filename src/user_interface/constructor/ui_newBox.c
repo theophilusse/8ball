@@ -225,7 +225,7 @@ int             ui_newBox(t_mega *mega, t_ui_box *box, uint index)
             box->content->type = BOX_CONTENT_DISPLAY;
 
             func = set_default_function();
-            func.idx[0] = ui_functionInput;
+            func.idx[0] = (int (*)(void *, uchar, int *, uint *))ui_functionInput;
             /*
             func.idx[0] = mega->input_manager[];///
             func.idx[1] = mega->input_manager[];///

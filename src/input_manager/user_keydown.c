@@ -97,6 +97,7 @@ int         user_keydown(t_mega *mega, int flg)
     {
         printf("F2: About\n");
         ui_getBoxHandle_byTitle(mega->ui, "A-Propos", &_h);
+        /// CRASH
         ui_swapBox(mega->ui, _h, mega->ui->box[_h].active == 0 ? 1 : 0);
     }
     if (mega->event.key.keysym.sym == SDLK_F3) // Edit mode Switch

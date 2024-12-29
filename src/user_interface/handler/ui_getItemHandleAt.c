@@ -112,7 +112,7 @@ uchar             ui_getItemHandleAt(t_userInterface *ui, t_ui_box *box, int *on
 {
     t_box_item       *item;
     uint             i;
-    uint             btnDim[2];
+    //uint             btnDim[2];
     int              btnPos[2];
 
     if (!box || !onClick)
@@ -121,11 +121,11 @@ uchar             ui_getItemHandleAt(t_userInterface *ui, t_ui_box *box, int *on
         ///*handle = -1;
         *handle = 255;
     i = -1;
-    int relClick[2];
+    //int relClick[2];
     /*relClick[0] = onClick[0] + box->horizontal_bar.shift;
     relClick[1] = onClick[1] + box->vertical_bar.shift;*/
-    relClick[0] = onClick[0] - 4;
-    relClick[1] = onClick[1] - (39 + 16);
+    //relClick[0] = onClick[0] - 4;
+    //relClick[1] = onClick[1] - (39 + 16);
     item = &box->content->item[0];
     while (++i < UI_BOX_CONTENT_MAX_ITEM && i < box->content->n_item)
     {
@@ -135,10 +135,10 @@ uchar             ui_getItemHandleAt(t_userInterface *ui, t_ui_box *box, int *on
         */
         /*btnPos[0] = item->pos[0];
         btnPos[1] = item->pos[1];*/
-        btnDim[0] = item->dim[0];
+        //btnDim[0] = item->dim[0];
         ///btnDim[1] = item->dim[1] + 16;
         ///btnDim[1] = item->dim[1] - 16;
-        btnDim[1] = item->dim[1];
+        //btnDim[1] = item->dim[1];
         ///printf("GetItemHandle At[%d][%d], #[%u]:(%u ; %u)\n", relClick[0], relClick[1], i, item->pos[0], item->pos[1]);
         ///if (item->status.active != 0 && isInZone(onClick, btnDim, btnPos))
         if (item->status.active != 0)

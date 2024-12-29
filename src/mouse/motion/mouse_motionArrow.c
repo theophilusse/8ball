@@ -24,7 +24,7 @@ int                                 mouse_motionArrow(void *pmega, int flg)
 
     t_hud               *hud;
     struct s_tool       tool;
-    struct s_hud_arrow  arrow;
+    //struct s_hud_arrow  arrow;
 
     if (!(mega = (t_mega *)pmega))
         return (1);
@@ -32,7 +32,7 @@ int                                 mouse_motionArrow(void *pmega, int flg)
     if (tool.type != TOOLTYPE_HUD_ARROW || !(hud = &tool.hud))
         return (0);
     ((t_hud_arrow *)(hud->data.buf))->factor = 0;
-    arrow = *((t_hud_arrow *)(&hud->data.buf));
+    //arrow = *((t_hud_arrow *)(&hud->data.buf));
     if (mega->stcl->option.edit_mode == 0 ||
         hud->active != 2 ||
         !mega->selectStack)

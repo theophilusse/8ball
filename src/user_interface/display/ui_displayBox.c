@@ -9,7 +9,7 @@ int                    ui_displayBox(t_mega *mega, SDL_Surface *viewport, uchar 
     uint            titleLen;
     int             point[18];
     uint             lineWidth = UI_BORDER_WIDTH;
-    uint             twoLineWidth;
+    //uint             twoLineWidth;
     t_box_item      *item;
     uchar           barColor[4];
     int             *pIndex;
@@ -20,14 +20,14 @@ int                    ui_displayBox(t_mega *mega, SDL_Surface *viewport, uchar 
         return (0);
     w = (uint)box->dim[0];
     h = (uint)box->dim[1];
-    twoLineWidth = lineWidth << 1;
+    //twoLineWidth = lineWidth << 1;
     /// Test ScrollBar EnvDim
-    int maxDim[2];
-    int minDim[2];
-    maxDim[0] = box->pos[0] + (int)box->dim[0];
-    maxDim[1] = box->pos[1] + (int)box->dim[1] - 1;
-    minDim[0] = box->pos[0] + 1;
-    minDim[1] = box->pos[1] + 23;
+    //int maxDim[2];
+    //int minDim[2];
+    //maxDim[0] = box->pos[0] + (int)box->dim[0];
+    //maxDim[1] = box->pos[1] + (int)box->dim[1] - 1;
+    //minDim[0] = box->pos[0] + 1;
+    //minDim[1] = box->pos[1] + 23;
     /// Test ScrollBar EnvDim
     DEBUG ///
     ui_drawBox(mega, viewport, boxHandle); /// Test.

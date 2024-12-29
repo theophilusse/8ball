@@ -70,7 +70,6 @@ void         copy_surface(SDL_Surface *image, SDL_Surface *screen, const char *f
         {
             pixel = (uchar *)getpixel_addr(image, i, j);
             ///printf("PixAddr: %p\n", pixel); ///
-            DEBUG ///
             if (!pixel)
                 return ;
             if (pixel && *(pixel + 3) == SDL_ALPHA_OPAQUE)
@@ -109,5 +108,4 @@ void         copy_surface(SDL_Surface *image, SDL_Surface *screen, const char *f
             }
         }
     }
-    DEBUG ///
 }

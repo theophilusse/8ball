@@ -16,6 +16,6 @@ void            my_free(void *ptr)
         page->isFull = 0;
     CELL_FREE(cell->ptr);
     cell->ptr = NULL;
-    if (cell->lid = 0)
+    if (cell->lid == 0)
         mem_removePage(page);
 }

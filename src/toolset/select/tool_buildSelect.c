@@ -21,7 +21,7 @@ struct s_tool           tool_buildSelect(t_mega *mega, int *err)
     ///toolSelect.hud.axis = hud_initAxis();
     toolSelect.type = TOOLTYPE_PROJECTIVE;
     toolSelect.refreshOrigin = 1;
-    toolSelect.hud.data.mouse_motion = user_idle;
+    toolSelect.hud.data.mouse_motion = (int (*)(void *, int))user_idle;
     toolSelect.proceed = tool_select;
     strcpy(toolSelect.name, "Vertice Select");
     /***/

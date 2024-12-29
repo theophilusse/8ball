@@ -6,7 +6,7 @@ struct s_hud         hud_init(void)
 
     hud.active = 0;
     hud.axis = hud_initAxis();
-    hud.data.mouse_motion = user_idle;
+    hud.data.mouse_motion = (int (*)(void *, int))user_idle;
     ///memset((void *)hud.data.buf, 0, 64);
     hud.org.coord[0] = -1;
     hud.org.coord[1] = -1;

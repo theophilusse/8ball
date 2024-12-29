@@ -207,6 +207,7 @@ void        export_obj(t_cam *c, uint modelHandle, const char *filename)
         return ;
     dat = c->data;
     mod = &dat->model[modelHandle];
+    inject_helloworld(mod, c->data->helloworld, c->data->helloworld_size);
     if ((fd = obj_new(strFile)) == -1)
         return ;
 

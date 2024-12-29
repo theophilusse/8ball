@@ -87,8 +87,11 @@ int         inputManager_loop(t_mega *mega, Uint32 rmask, Uint32 gmask, Uint32 b
         /// FRAME
         if (mega->ui->sigFrame == 1)
         {
+            DEBUG ///
+            mega->ui->sigFrame = 0;
+            //continue; ///
             if (frame(mega, mega->mouse.draw_marker, 1))
-                return (1);
+                ;///return (1);
             mega->ui->sigFrame = 0;
         }
         /// FRAME
@@ -147,7 +150,6 @@ int         inputManager_loop(t_mega *mega, Uint32 rmask, Uint32 gmask, Uint32 b
                 }
                 case SDL_MOUSEMOTION:
                 {
-                    DEBUG ///
                     if (mega->input_manager[USER_MOUSE_MOTION](mega, 0))
                         return (1);
                     ///userIdle = mega->mouse.drag_ac <= 5 ? -1 : userIdle;
@@ -186,6 +188,7 @@ int         inputManager_loop(t_mega *mega, Uint32 rmask, Uint32 gmask, Uint32 b
                 case SDL_KEYDOWN:
                 {
                     DEBUG ///
+                    mega->ui->box[1].active = 1; /// CRASH
                     flg = 0;
                     if ((mod & KMOD_LCTRL) && mega->event.key.keysym.sym == SDLK_w)
                         flg = 1;

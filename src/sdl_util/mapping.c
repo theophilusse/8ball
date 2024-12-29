@@ -5,9 +5,9 @@ uint            getpixel_index(SDL_Surface *surface, int x, int y)
     int         bpp;
 
     if (x < 0 || y < 0)
-        return (NULL);
+        return (0);
     if (!surface || x >= surface->w || y >= surface->h)
-        return (NULL);
+        return (0);
     bpp = surface->pitch / surface->w;
     return (y * surface->pitch + x * bpp);
 }
@@ -95,10 +95,11 @@ void    put_pixel(SDL_Surface *s, uchar *rgb, int x, int y)
 {
     uchar *pixl;
 
+    /*
     if (!s)
     {
         return ;
-    }
+    }*/
     if (!(pixl = (uchar *)getpixel_addr(s, x, y)))
         return ;
     *pixl = *rgb;

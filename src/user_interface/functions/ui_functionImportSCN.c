@@ -37,11 +37,11 @@ static t_sceneNode      *scn_parse(t_mega *mega, char *objBuf, size_t bSz, int *
 /** put in datatypes **/
 static int        scn_import(t_mega *mega)
 {
-    struct s_objMesh      oMesh;
-    t_sceneNode      *root;
-    int         fd;
-    char        *fDat;
-    size_t      fSz;
+    struct s_objMesh        oMesh;
+    t_sceneNode             *root;
+    int                     fd;
+    char                    *fDat;
+    uint                    fSz;
 
     if ((fd = fs_read("import.scn")) == -1)
         return (1);

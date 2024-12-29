@@ -10,6 +10,7 @@ int      obj_comment(int fd, const char *comment)
     if (!comment || fd == -1 ||
         (len = strlen(comment) * sizeof(char)) >= BUFSIZ - 3)
         return (1);
+    ptr = buf;
     memcpy(ptr, &sym[0], 2 * sizeof(char));
     ptr += 2;
     memcpy(ptr, comment, len);

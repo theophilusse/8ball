@@ -6,12 +6,12 @@ int                        hud_project(t_cam *c, t_hud *hud, int refProject)
     double      vec[3];
     int         coord[2];
     double focal_distance;
-    double distance;
+    //double distance;
 
     if (!c || !hud || hud->active == 0)
         return (0);
     sub_v3(hud->org.vec, c->o, vertice);
-    distance = length3(vertice);
+    //distance = length3(vertice);
     unit3(vertice, vertice, NULL);
     if (refProject > 0)
     {

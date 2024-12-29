@@ -10,8 +10,8 @@ int                 mouse_clickHUDAngle(t_hud *hud, int *clickCoord)
     double distScreen;
     double distScreenMin = 30;
     double dist;
-    double distMin = DBL_MAX;
-    double *alignedVertice = NULL;
+    //double distMin = DBL_MAX;
+    //double *alignedVertice = NULL;
 
     int    coord[2];
     double coord_b[2];
@@ -44,8 +44,8 @@ int                 mouse_clickHUDAngle(t_hud *hud, int *clickCoord)
     if (distScreen < distScreenMin)
     {
         distScreenMin = distScreen;
-        distMin = dist; /// Obsolete ?
-        alignedVertice = hud->axis.x;
+        //distMin = dist; /// Obsolete ?
+        //alignedVertice = hud->axis.x;
         hud->select_index = 0;
     }
 
@@ -59,8 +59,8 @@ int                 mouse_clickHUDAngle(t_hud *hud, int *clickCoord)
     if (distScreen < distScreenMin)
     {
         distScreenMin = distScreen;
-        distMin = dist; /// Obsolete ?
-        alignedVertice = hud->axis.y;
+        //distMin = dist; /// Obsolete ?
+        //alignedVertice = hud->axis.y;
         hud->select_index = 1;
     }
 
@@ -74,8 +74,8 @@ int                 mouse_clickHUDAngle(t_hud *hud, int *clickCoord)
     if (distScreen < distScreenMin)
     {
         distScreenMin = distScreen;
-        distMin = dist; /// Obsolete ?
-        alignedVertice = hud->axis.z;
+        //distMin = dist; /// Obsolete ?
+        //alignedVertice = hud->axis.z;
         hud->select_index = 2;
     }
 

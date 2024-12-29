@@ -12,18 +12,18 @@ void            charset_print(SDL_Surface *s, SDL_Surface **charset, int x, int 
     int             _x;
     char         *p;
     SDL_Surface  *tile;
-    int          maxDim[2];
-    int          minDim[2];
+    //int          maxDim[2];
+    //int          minDim[2];
 
 
     /** charset_print(mega->screen, mega->charset, box->pos[0] + (i * 16), box->pos[1] + (j * 16), " "); **/ // Debug.
     ///if (!(p = (char *)str) || x < 0 || y < 0 || x + 16 >= s->w || y + 16 >= s->h)
     if (!(p = (char *)str) || x < 0 || y < 0 || x + 16 > s->w || y + 16 > s->h)
         return ;
-    maxDim[0] = s->w;
-    maxDim[1] = s->h;
-    minDim[0] = 0;
-    minDim[1] = 0;
+    //maxDim[0] = s->w;
+    //maxDim[1] = s->h;
+    //minDim[0] = 0;
+    //minDim[1] = 0;
     _x = x;
     while (*p)
     {

@@ -1,5 +1,7 @@
 #include "sdl_util.h"
 
+//Uint32          rmask, gmask, bmask, amask;
+
 SDL_Surface             *new_surface32(uint width, uint height)
 {
     SDL_Surface         *pSurf;

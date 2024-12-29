@@ -100,7 +100,7 @@ void        blit_at_dim(SDL_Surface *image, SDL_Surface *screen, int xTo, int yT
     int         i;
     int         j;
     uchar       *pixel;
-    uchar       color[4];
+    //uchar       color[4];
 
     ///if (!image || !screen) /// Original
     if (!image || !image->pixels || !screen)
@@ -133,7 +133,7 @@ void        blit_at_dim(SDL_Surface *image, SDL_Surface *screen, int xTo, int yT
                     ///printf("pix: %p\n", pixel);///
                     if (*(pixel + 3) == SDL_ALPHA_OPAQUE)
                     { /* */
-
+                    /*
                     if (isBGRA == 1)
                     {
                         color[0] = pixel[2];
@@ -147,7 +147,7 @@ void        blit_at_dim(SDL_Surface *image, SDL_Surface *screen, int xTo, int yT
                         color[1] = pixel[1];
                         color[2] = pixel[2];
                         color[3] = pixel[3];
-                    }
+                    }*/
                     ///DEBUG ///
                     ///put_pixel_dim(screen, color, xTo + i, yTo + j, minDim, maxDim); /// Crash , Keep
                     ///DEBUG ///
@@ -182,6 +182,8 @@ void        refresh(SDL_Surface *image, SDL_Surface *screen)
 {
     uchar       color[4] = { 0, 64, 0, SDL_ALPHA_OPAQUE };
 
+    DEBUG //
+    return ; /// DEBUG
     SDL_FillRect(screen, 0, SDL_MapRGB(screen->format, 0, 64, 0));
     blit(image, screen);
     square(image, 0, 0, image->w, image->h, color);

@@ -77,21 +77,26 @@ void            ui_main(t_mega *mega, t_userInterface *ui)
         DEBUG ///
         ui_debugAllBox(mega);
     **/
-    i = ui->boxCount;
-    while (i-- > 0)
+    DEBUG ///
+    if (0) // DEBUG
     {
-        /*if (box->z_index == 255)
-            continue;*/
-        if (ui->box[i].active != 0)
+        i = ui->boxCount;
+        while (i-- > 0)
         {
-            /// Do.
-            /**
-            ui_debugBox(mega, i); ///
-            */
-            ui_displayBox(mega, viewport, i);
+            /*if (box->z_index == 255)
+                continue;*/
+            if (ui->box[i].active != 0)
+            {
+                /// Do.
+                /**
+                ui_debugBox(mega, i); ///
+                */
+                ui_displayBox(mega, viewport, i);
+            }
         }
     }
     DEBUG ///
+    len = strlen(mega->tool[mega->currentTool].name);
     ///charset_print(viewport, ui->font.charset, 0, viewport->h - 16, mega->tool[mega->currentTool].name);
     charset_print(viewport, mega->ui->font.charset, mega->screen->w - ((int)len + 1), mega->screen->h - 16, mega->tool[mega->currentTool].name);
 }

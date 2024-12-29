@@ -73,9 +73,9 @@ double 			fall(double *particle, double *gravity, uint nvertices, double* a, dou
 	group_id = get_group_id(0);*/
 
 	uint 		addr;
-	uint 		k = 0;
+	//uint 		k = 0;
 
-	k = 0;
+	//k = 0;
 	zdist = 0;
 	//addr = local_id * 3;
 	/*a = triangle[addr];
@@ -243,9 +243,9 @@ void            *td_computeCloudFall(void *p_mega)
 
     pitch = (uint)mega->picture->pitch;
     bpp = pitch / (uint)mega->picture->w;
-    double      picdiv[2];
-    picdiv[0] = mega->stcl->option.picdiv[0];
-    picdiv[1] = mega->stcl->option.picdiv[1];
+    //double      picdiv[2];
+    //picdiv[0] = mega->stcl->option.picdiv[0];
+    //picdiv[1] = mega->stcl->option.picdiv[1];
     gravity[0] = 0;
     gravity[1] = 0;
     gravity[2] = 1;

@@ -4,18 +4,18 @@
 int                 ui_getBoxHandle_byTitle(t_userInterface *ui, const char *boxTitle, uchar *handle)
 {
     uint            i;
-    int             k;
+    //int             k;
     t_ui_box        *box;
 
     if (handle)
         *handle = -1;
     if (!ui)
         return (0);
-    k = -1;
+    //k = -1;
     i = -1;
     ///while (++i < ui->boxCount)
     while (++i < UI_BOX_COUNT)
-        if ((box = &ui->box[i]) && strequ((const char *)box->title, (char *)boxTitle))
+        if ((box = &ui->box[i]) && strcmp((const char *)box->title, (char *)boxTitle) == 0)
         {
             *handle = i;
             return (1);
@@ -27,7 +27,7 @@ int                 ui_getBoxHandle_byTitle(t_userInterface *ui, const char *box
 int                 ui_getBoxHandleAt(t_userInterface *ui, int *onClick, uchar *handle)
 {
     uint            i;
-    uint            min_z_index[2];
+    //uint            min_z_index[2];
     int             k;
     t_ui_box        *box;
 
@@ -35,7 +35,7 @@ int                 ui_getBoxHandleAt(t_userInterface *ui, int *onClick, uchar *
         *handle = -1;
     if (!ui || !onClick || onClick[0] < 0 || onClick[1] < 0)
         return (0);
-    min_z_index[0] = 255;
+    //min_z_index[0] = 255;
     k = -1;
     i = -1;
     while (++i < ui->boxCount)

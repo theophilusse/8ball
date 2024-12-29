@@ -9,15 +9,18 @@ int            frame(t_mega *mega, int flg, int save_work_viewport)
     DEBUG ///
     ///blit(mega.viewport, mega.viewport_swp); /// Test (see input_manager -> mouse motion)
     ///blit(mega.viewport_swp, mega.viewport); /// Test (see input_manager -> mouse motion)
-    clean_surface(mega->viewport); /// KEEP
+
+    clean_surface(mega->viewport);
+    DEBUG //
     /*clean_surface(mega.ui_viewport);*/
     clean_surface(mega->work_viewport);
+    DEBUG //
     /** Refresh s_cam**/
     // Original
     if ((err = clEnqueueWriteBuffer(mega->stcl->queue, mega->stcl->input_camera,
                                     CL_TRUE, 0,  sizeof(struct s_cam) - sizeof(t_camdata *), mega->camera, 0, NULL, NULL)) != CL_SUCCESS)
     {
-        printf("Couldn't write buffer 1 error:[%d]\n", err);
+        printf("Couldn't write buffer 1 error:[%s]\n", get_cl_error(err));
         return (1);
     }
     DEBUG ///
@@ -25,7 +28,7 @@ int            frame(t_mega *mega, int flg, int save_work_viewport)
     if ((err = clEnqueueWriteBuffer(mega->stcl->queue, mega->stcl->input_option,
                                     CL_TRUE, 0, sizeof(struct s_option), &mega->stcl->option, 0, NULL, NULL)) != CL_SUCCESS)
     {
-        printf("Couldn't write buffer 8 error:[%d]\n", err);
+        printf("Couldn't write buffer 8 error:[%s]\n", get_cl_error(err));
         return (1);
     }
     DEBUG ///
@@ -36,7 +39,7 @@ int            frame(t_mega *mega, int flg, int save_work_viewport)
     if ((err = clEnqueueWriteBuffer(mega->stcl->queue, mega->stcl->output_cloud,
                                     CL_TRUE, 0, mega->stcl->cloud_bufsz, mega->stcl->cloud_buf, 0, NULL, NULL)) != CL_SUCCESS)
     {
-        printf("Couldn't write cloud buffer error:[%d]\n", err);
+        printf("Couldn't write cloud buffer error:[%s]\n", get_cl_error(err));
         return (1);
     }
     DEBUG ///
@@ -45,21 +48,26 @@ int            frame(t_mega *mega, int flg, int save_work_viewport)
                                         NULL, cl->global_work_size, NULL,
                                         0, NULL, NULL);
     **/
-    err = (int)clEnqueueNDRangeKernel(mega->stcl->queue, mega->stcl->kernel, mega->stcl->work_dim,
+
+    DEBUG ///
+    err = CL_SUCCESS;
+    if (0) // DEBUG
+        err = (int)clEnqueueNDRangeKernel(mega->stcl->queue, mega->stcl->kernel, mega->stcl->work_dim,
                                         NULL, mega->stcl->global_work_size, mega->stcl->local_work_size,
                                         0, NULL, NULL);
     DEBUG ///
     if (err != CL_SUCCESS)
     {
-        printf("clEnqueueNDRangeKernel ERROR [%d]\n", err);
+        printf("clEnqueueNDRangeKernel ERROR [%s]\n", get_cl_error(err));
         return (1);
     }
     DEBUG ///
-    if ((err = clEnqueueReadBuffer(mega->stcl->queue, mega->stcl->output_pixels, CL_TRUE, 0,
+    if (0 && (err = clEnqueueReadBuffer(mega->stcl->queue, mega->stcl->output_pixels, CL_TRUE, 0,
                                    mega->stcl->pixels_bufsz, mega->camera->data->backbuffer->pixels, 0, NULL, NULL)) != CL_SUCCESS)
     {
-        printf("clEnqueueReadBuffer (bbuf) ERROR [%d]\n", err);
-        return (1);
+        printf("clEnqueueReadBuffer (bbuf) ERROR [%s]\n", get_cl_error(err));
+        /// TODO
+        ///return (1);
     }
     DEBUG ///
 
@@ -68,8 +76,9 @@ int            frame(t_mega *mega, int flg, int save_work_viewport)
     if ((err = clEnqueueReadBuffer(mega->stcl->queue, mega->stcl->output_zbuffer, CL_TRUE, 0,
                                    mega->stcl->zbuffer_bufsz, (void *)mega->camera->data->zbuffer, 0, NULL, NULL)) != CL_SUCCESS)
     {
-        printf("clEnqueueReadBuffer (zbuf) ERROR [%d]\n", err);
-        return (1);
+        printf("clEnqueueReadBuffer (zbuf) ERROR [%s]\n", get_cl_error(err));
+        /// TODO
+        ///return (1);
     }
     DEBUG ///
     if (mega->stcl->option.point_gravity == 1)

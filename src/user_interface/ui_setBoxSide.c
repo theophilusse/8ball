@@ -6,12 +6,12 @@ void             ui_setBoxSide(t_userInterface *ui, t_ui_box *box, uchar i, t_mo
     int             boxPos[2];
     int             oldPos[2];
     int             *mouseDrag;
-    int             *mousePos;
+    //int             *mousePos;
 
     if (i >= 8 || !box || !mouse || !ui)
         return ;
     mouseDrag = mouse->mouseDrag;
-    mousePos = mouse->mousePos;
+    //mousePos = mouse->mousePos;
     /**/
     boxDim[0] = (int)box->dim[0];
     boxDim[1] = (int)box->dim[1];//

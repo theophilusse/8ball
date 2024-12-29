@@ -213,7 +213,7 @@ static char         get_char_azerty(Uint8 sym)
 static int         inputManager_getChar(char *c, uchar datatype)
 {
     SDL_Event       event;
-    SDLMod          mod;
+    //SDLMod          mod;
     SDLKey          b;
     int             ok;
     /***
@@ -227,7 +227,7 @@ static int         inputManager_getChar(char *c, uchar datatype)
     if (!c)
         return (0);
     /// TEST UI
-    mod = SDL_GetModState();
+    //mod = SDL_GetModState();
     // message processing loop
     SDL_PollEvent(&event);
     // check for messages

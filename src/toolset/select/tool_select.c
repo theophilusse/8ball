@@ -20,18 +20,18 @@ int             tool_select(void *pmega, int flg)
     t_mega          *mega;
     SDLMod      mod;
     t_tool           *tool;
-    struct s_tool           toolSelect;
+    //struct s_tool           toolSelect;
     struct s_mouse          mouse;
     struct s_select_vertice select;
     struct s_history_param      historyEvent;
     int                     select_err;
-    t_select_node           *pCopy;
+    //t_select_node           *pCopy;
 
     if (!(mega = (t_mega *)pmega))
         return (1);
-    pCopy = NULL;
+    //pCopy = NULL;
     tool = &mega->tool[mega->currentTool];
-    toolSelect = mega->tool[TOOLSET_SELECT];
+    //toolSelect = mega->tool[TOOLSET_SELECT];
     mod = SDL_GetModState();
     if (tool->hud.active == 2 || (!(mod & KMOD_LCTRL) && tool->hud.active == 2) || //(!(mod & KMOD_LCTRL) && tool.hud.active == 2) ||
         tool->type == TOOLTYPE_HUD_LENGTH ) /// Priority given to HUD

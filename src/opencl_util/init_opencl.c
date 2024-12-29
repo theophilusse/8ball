@@ -26,46 +26,118 @@ cl_device_id create_device(cl_int *error)
    cl_platform_id platform;
    cl_device_id dev;
    int      i;
+   int      j;
+   cl_device_id devices[512];
+   cl_int   ciErrNum;
    cl_device_info qwery;
    cl_device_type devtype;
+   cl_uint ciDeviceCount;
    int err;
+   //cl_platform_id clSelectedPlatformID = NULL;
+   //err = oclGetPlatformID(&clSelectedPlatformID);
+
+   cl_uint num_of_platforms;
+    if (clGetPlatformIDs(0, NULL, &num_of_platforms) != CL_SUCCESS)
+    {
+        printf("Unable to get platform_id\n");
+        //return 1;
+    }
+    cl_platform_id platform_ids[5];
+    if (clGetPlatformIDs(num_of_platforms, platform_ids, NULL) != CL_SUCCESS)
+    {
+        printf("Unable to get platform_id\n");
+        //return (1);
+    }
+    char found = 0;
+    cl_uint num_of_devices;
+    cl_device_id device_id;
+    for(int i=0; i<num_of_platforms; i++)
+    {
+        if((ciErrNum = clGetDeviceIDs(platform_ids[i], CL_DEVICE_TYPE_GPU | CL_DEVICE_TYPE_CPU, 1, &device_id, &num_of_devices)) == CL_SUCCESS){
+            found = 1;
+            //break;
+        }
+        else
+            printf("clGetDeviceIDs: [%s]\n", get_cl_error(ciErrNum));
+    }
+    if(!found){
+        printf("Unable to get device_id\n");
+        //return 1;
+    }
+
+   //numplatform = 1; //
+   //platform_list[0] = clSelectedPlatformID; //
 
    *error = 1;
    /* Identify a platform */
    ///err = clGetPlatformIDs(1, &platform, &numplatform); /// Original
    err = clGetPlatformIDs(5, platform_list, &numplatform); /// TEST
+
+   for (cl_uint p = 0; p < numplatform; p++) {
+    char platform_name[128];
+    clGetPlatformInfo(platform_list[p], CL_PLATFORM_NAME, sizeof(platform_name), platform_name, NULL);
+    printf("Platform %d: %s\n", p, platform_name);
+    }
+
+   //err = clGetPlatformIDs(5, platform_list, NULL); /// TEST
    if(err < 0) {
       perror("Couldn't identify a platform");
-      return (dev);
+      return (0);
    }
    printf("plateform[%u]\n", numplatform); ///
    qwery = CL_DEVICE_TYPE;
    i = -1;
    while (++i < numplatform)
    {
-       err = clGetDeviceIDs(platform_list[i], CL_DEVICE_TYPE_ALL, 1, &dev, NULL);
-       if ((err = clGetDeviceInfo(dev, qwery, sizeof(cl_device_type), &devtype, NULL)) != CL_SUCCESS)
+       ciErrNum = clGetDeviceIDs(platform_list[i], CL_DEVICE_TYPE_ALL, 0, NULL, &ciDeviceCount);
+       if (ciErrNum != CL_SUCCESS)
        {
-           printf("clGetDeviceInfo ERROR : [%d]\n", err);
-           return (dev);
+           printf("clGetDeviceIDs ERROR : [%d]\n", err);
+           display_cl_error(ciErrNum);
+           return (0);
        }
-       if (devtype == CL_DEVICE_TYPE_CPU)
-            platform = platform_list[i];
-       if (devtype == CL_DEVICE_TYPE_GPU)
+       printf("Device count: %d\n", ciDeviceCount);
+       /*if ((devices = (cl_device_id*)ALLOC(sizeof(cl_device_id) * ciDeviceCount)) == NULL)
        {
-            platform = platform_list[i];
-            break;
-       }
+            printf(" Failed to allocate memory for devices !!!\n\n");
+            return (0);
+       }*/
+       ciErrNum = clGetDeviceIDs(platform_list[i], CL_DEVICE_TYPE_ALL, ciDeviceCount, devices, &ciDeviceCount);
+       //
+       //err = clGetDeviceIDs(platform_list[i], CL_DEVICE_TYPE_ALL, 1, &dev, NULL);
+       //if ((err = clGetDeviceInfo(dev, qwery, sizeof(cl_device_type), &devtype, NULL)) != CL_SUCCESS)
+       j = -1;
+       while (++j < ciDeviceCount)
+       {
+            if ((err = clGetDeviceInfo(devices[j], qwery, sizeof(cl_device_type), &devtype, NULL)) != CL_SUCCESS)
+            {
+                printf("clGetDeviceInfo ERROR : [%d]\n", err);
+                return (0);
+            }
+            display_cl_device_type(devtype);
+            if (devtype == CL_DEVICE_TYPE_CPU)
+                platform = platform_list[i];
+            if (devtype == CL_DEVICE_TYPE_GPU)
+            {
+                platform = platform_list[i];
+                i = numplatform; // Stop
+                break;
+            }
+        }
+        //FREE(devices);
    }
 
    /* Access a device */
-   err = clGetDeviceIDs(platform, devtype, 1, &dev, NULL);
+   //err = clGetDeviceIDs(platform, devtype, 1, &dev, NULL);
+   err = clGetDeviceIDs(platform, devtype, 1, &devices[j], NULL);
    if(err < 0) {
       printf("Couldn't access any devices");
       *error = 1;
    }
    else
       *error = 0;
+   dev = devices[j];
+   //FREE(devices);
    return (dev);
 }
 
@@ -91,7 +163,7 @@ cl_program build_program(cl_context ctx, cl_device_id dev, const char* filename,
    ///program_handle = fopen(filename, "r");
    if(program_handle == NULL) {
       printf("Couldn't find the program file");
-      return (program);
+      return (NULL);
    }
    fseek(program_handle, 0, SEEK_END);
    program_size = ftell(program_handle);
@@ -182,6 +254,7 @@ struct s_opencl init_opencl(int *error)
 
     *error = 1;
 
+    memset(&cl, 0, sizeof(struct s_opencl));
     cl.sig_refresh_model = 0;
     cl.kernel = NULL;
     cl.kernel_cloud_fall = NULL;
@@ -219,25 +292,25 @@ struct s_opencl init_opencl(int *error)
     i = -1;
     while (++i < cl.info.dimensions)
     {
-        printf("/!\\ Dimension [%u] Global work Size : [%u]\n", i, cl.info.dimension_size[i]);
+        printf("/!\\ Dimension [%u] Global work Size : [%zu]\n", i, cl.info.dimension_size[i]);
         if (i == 0)
             cl.global_size = cl.info.dimension_size[i];
         else
             cl.global_size *= cl.info.dimension_size[i];
     }
-    printf("/!\\ Total Global Size : [%u]\n", cl.global_size);
+    printf("/!\\ Total Global Size : [%zu]\n", cl.global_size);
     cl.local_size = cl.info.max_work_group_size / 4;
-    printf("/!\\ Local size set to : [%u]\n", cl.local_size);
+    printf("/!\\ Local size set to : [%zu]\n", cl.local_size);
     ///cl.num_groups = cl.global_size / cl.local_size; // Probably bad
     cl.num_groups = (cl.info.dimension_size[0] * cl.info.dimension_size[0] /* / 4*/) / cl.local_size;
-    printf("/!\\ Number of work-groups : [%u]\n", cl.num_groups);
+    printf("/!\\ Number of work-groups : [%zu]\n", cl.num_groups);
 
     cl.work_dim = 1; // One dimension work
     cl.global_work_size[0] = cl.info.dimension_size[0];
     ///cl.global_work_size[1] = 0/*cl.info.dimension_size[1]*/;
     cl.global_work_size[1] = cl.info.dimension_size[1];
     cl.global_work_size[2] = 0;
-    printf("/!\\ Number Global work Size : [%u]\n", cl.global_work_size[0]);
+    printf("/!\\ Number Global work Size : [%zu]\n", cl.global_work_size[0]);
 
     cl.local_work_size[0] = cl.local_size;
     cl.local_work_size[1] = cl.local_size;
@@ -259,10 +332,13 @@ struct s_opencl init_opencl(int *error)
 
     /*** DEBUG CONFIGURATION **/
 
+    printf("Build program %s\n", PROGRAM_FILE);
     cl.program = build_program(cl.context, cl.device, PROGRAM_FILE, &err);
+    printf("Build program %s\n", PROGRAM_FILE_CLOUD_FALL);
     cl.program_cloud_fall = build_program(cl.context, cl.device, PROGRAM_FILE_CLOUD_FALL, &err);
     if (!err)
         *error = 0;
+    printf("Create command queue");
     cl.queue = clCreateCommandQueue(cl.context, cl.device, 0, &err);
     if(err < 0) {
       printf("Couldn't create command queue\n");

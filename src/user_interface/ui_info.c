@@ -20,7 +20,7 @@
 
 uchar                *ui_listActive(t_userInterface *ui, uchar printList)
 {
-    static uchar            *table[UI_BOX_COUNT];
+    static uchar            table[UI_BOX_COUNT];
     uint                    i;
 
     if (!ui)
@@ -28,7 +28,10 @@ uchar                *ui_listActive(t_userInterface *ui, uchar printList)
     i = -1;
     if (printList == 1)
         while (++i < UI_BOX_COUNT)
-            printf("[%s]:%u\n", ui->box[i].title, (table[i] = ui->box[i].active));
+        {
+            table[i] = ui->box[i].active;
+            printf("[%s]:%u\n", ui->box[i].title, (uint)table[i]);
+        }
     else
         while (++i < UI_BOX_COUNT)
             table[i] = ui->box[i].active;

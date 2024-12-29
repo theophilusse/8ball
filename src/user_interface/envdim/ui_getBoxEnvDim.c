@@ -3,21 +3,21 @@
 static uint         get_total_height_render(t_userInterface *ui, t_ui_box *box)
 {
     uint            k;
-    uint            w;
-    uint            h;
+    //uint            w;
+    //uint            h;
     uint            maxChar;
     uint            titleLen;
     int             point[18];
     int currentVerticalPos;
     uint             lineWidth = UI_BORDER_WIDTH;
-    uint             twoLineWidth;
+    //uint             twoLineWidth;
     t_box_item      *item;
 
     if (!ui || !box || !box->content)
         return (0);
-    w = (uint)box->dim[0];
-    h = (uint)box->dim[1];
-    twoLineWidth = lineWidth << 1;
+    //w = (uint)box->dim[0];
+    //h = (uint)box->dim[1];
+    //twoLineWidth = lineWidth << 1;
     point[0] = box->pos[0]; /// upper LEFT CORNER
     point[1] = box->pos[1];
 
@@ -56,8 +56,8 @@ static uint         get_total_height_render(t_userInterface *ui, t_ui_box *box)
             k = -1;
             while (++k < UI_BOX_CONTENT_MAX_ITEM  && k < box->content->n_item)
             {
-                int        pos[2];
-                uint        _w;
+                //int        pos[2];
+                //uint        _w;
                 item = &box->content->item[k];
                 if (item->status.active == 0)
                     continue;
@@ -65,9 +65,9 @@ static uint         get_total_height_render(t_userInterface *ui, t_ui_box *box)
                 ///item->pos[1] = currentVerticalPos; /// Responsive.
                 ///item->pos[1] = currentVerticalPos - point[1]; ///+ 16; /// Responsive.
                 item->pos[1] = currentVerticalPos - point[1]; /// Responsive.
-                pos[0] = point[0] + item->pos[0] + lineWidth;
-                pos[1] = (int)item->pos[1] + (int)box->pos[1];
-                _w = box->dim[0] - (twoLineWidth + item->pos[0]);
+                //pos[0] = point[0] + item->pos[0] + lineWidth;
+                //pos[1] = (int)item->pos[1] + (int)box->pos[1];
+                //_w = box->dim[0] - (twoLineWidth + item->pos[0]);
                 switch (item->type)
                 {
                     case UI_ITEMTYPE_STRING:
@@ -117,7 +117,7 @@ uint        ui_getBoxEnvWidth(t_ui_box *box)
 {
     t_box_item      *item;
     t_box_content   *content;
-    uint            maxDim;
+    //uint            maxDim;
     uchar           i;
     uint            ret;
 
@@ -127,7 +127,7 @@ uint        ui_getBoxEnvWidth(t_ui_box *box)
     if (!(content = box->content))
         return (ret);
     item = &content->item[0];
-    maxDim = 0;
+    //maxDim = 0;
     i = -1;
     while (++i < UI_BOX_CONTENT_MAX_ITEM && i < box->content->n_item)
     {

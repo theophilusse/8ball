@@ -6,7 +6,7 @@ struct s_ui_event           ui_eventItem_string_onRelease(t_mega *mega, t_ui_box
     int         itmPos[2];
 
     if (!mega || !box || !item || !onClick)
-        return ;
+        return (event);
     itmPos[0] = item->pos[0] - box->horizontal_bar.shift;
     itmPos[1] = item->pos[1] - box->vertical_bar.shift;
     relClick[0] = onClick[0] - itmPos[0];

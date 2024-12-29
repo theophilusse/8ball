@@ -4,7 +4,7 @@ void             history_toolScale(t_mega *mega, t_history *timeMachine, uint un
 {
     t_select_node   *sel;
 
-    float       max_dist;
+    //float       max_dist;
     double      v;
     double hyp[3];
     double vec[3];
@@ -12,12 +12,12 @@ void             history_toolScale(t_mega *mega, t_history *timeMachine, uint un
     double axis[3];
     struct s_ref        ref;
 
-    if (!mega || !(sel = mega->selectStack) || !vec)
+    if (!mega || !(sel = mega->selectStack))
         return ;
     copy_v3(timeMachine->param.vec, axis); /// Axis.
     selection_center(sel, &ref); /// Org. (center)
     copy_v3(ref.vec, org); /// Copy Org.
-    max_dist = timeMachine->param._f32; /// Max_dist.
+    //max_dist = timeMachine->param._f32; /// Max_dist.
     v = timeMachine->param._f64; /// Factor.
     if (v != 0)
         while (undo-- != 0)

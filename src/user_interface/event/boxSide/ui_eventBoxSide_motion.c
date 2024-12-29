@@ -3,7 +3,7 @@
 void            ui_eventBoxSide_motion(t_mega *mega, t_userInterface *ui, t_ui_box* box, struct s_mouse mouse)
 {
     if (!box)
-        return (0);
+        return ;
 
     ui_setBoxSide(ui, box, ui->event.flag, &mouse);
     box->horizontal_bar.length = ui_getScrollBarLength(box, 0);

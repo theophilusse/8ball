@@ -6,7 +6,7 @@ void            ui_drawBox(t_mega *mega, SDL_Surface *viewport, uchar boxHandle)
     uint            titleLen;
     int             point[18];
     int             lineWidth = UI_BORDER_WIDTH;
-    uint             twoLineWidth;
+    //uint             twoLineWidth;
     uchar           barColor[4];
     uchar           *lineColor;
     uchar           boxColor[4];
@@ -47,7 +47,7 @@ void            ui_drawBox(t_mega *mega, SDL_Surface *viewport, uchar boxHandle)
         boxColor[3] = SDL_ALPHA_OPAQUE;
         lineColor = (uchar *)_black_blue;
     }
-    twoLineWidth = lineWidth << 1;
+    //twoLineWidth = lineWidth << 1;
     point[0] = box->pos[0]; /// upper LEFT CORNER
     point[1] = box->pos[1];
 

@@ -74,7 +74,7 @@ int                 push_model_opencl(t_opencl *cl, t_camdata *d)
     void            *host_model_buffer;
 
     total_size += sizeof(size_t); /// Test.
-    printf("[GPU] Allocating %d bytes geometry.\n", total_size);
+    printf("[GPU] Allocating %zu bytes geometry.\n", total_size);
     if (!(host_model_buffer = ALLOC(total_size)))
         return (1);
 
@@ -106,7 +106,7 @@ int                 push_model_opencl(t_opencl *cl, t_camdata *d)
         gpumodel->n_jmp = (size_t)((m->v[0] + 1) * m->v[1]) * sizeof(double);
         //gpumodel->n_jmp = (size_t)(m->v[0] * m->v[1]) * sizeof(double);
 
-        printf("n_jmp = %u\n", gpumodel->n_jmp); ///
+        printf("n_jmp = %zu\n", gpumodel->n_jmp); ///
         gpumodel->f_jmp = gpumodel->n_jmp + ((uint)((m->n[0] + 1) * m->n[1]) * sizeof(double)); /// Normals.
         ///gpumodel->f_jmp = gpumodel->n_jmp; /// No Normals.
 
@@ -122,7 +122,7 @@ int                 push_model_opencl(t_opencl *cl, t_camdata *d)
             (void *)((void *)gpumodel + sizeof(struct s_gpu_model)),
             (const void *)m->v, gpumodel->n_jmp)) == NULL)
                 return (1);
-        printf("Max value [%u]\n", gpumodel->n_jmp - 2069);///
+        printf("Max value [%zu]\n", gpumodel->n_jmp - 2069);///
         //return (1);
         /*** CRASH ***/
         //return (1); /// DEBUG///////////////////////////
@@ -172,7 +172,10 @@ void                *alloc_triangle_auxmem(uint ntriangle, size_t *bufsz)
 
     total_size = sizeof(struct s_srf) * ntriangle;
     if (bufsz)
+    {
         *bufsz = total_size;
+        DEBUG
+    }
     return (ALLOC(total_size));
 }
 
@@ -280,12 +283,14 @@ int                 push_triangle_opencl(t_opencl *cl, t_camdata *d)
             return (1);
         }
     }
+    printf("Loaded vertices: %u\n", count_vertices);
     *((double *)host_triangle_buffer) = (double)count_vertices;
-    if ( count_vertices > 0 && !( cl->surface_buf = alloc_triangle_auxmem(count_vertices / 3, &cl->surface_bufsz) ) )
+    if ( count_vertices > 0 && !( cl->surface_buf = alloc_triangle_auxmem(count_vertices / 3, NULL) ) )
     {
         FREE(host_triangle_buffer);
         return (1);
     }
+    cl->surface_bufsz = count_vertices; // DEBUG
     cl->triangle_buf = host_triangle_buffer;
     cl->triangle_bufsz = total_size;
     return (0);

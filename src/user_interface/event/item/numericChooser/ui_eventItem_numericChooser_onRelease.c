@@ -44,7 +44,7 @@ struct s_ui_event       ui_eventItem_numericChooser_onRelease(t_mega *mega, t_ui
                 item->ft.idx[0](item->ptr, (int)item->status.param[2], (int *)&zone, (void *)&tabNext);
                 if (tabNext == 1)
                 {
-                    printf("TABULATION DOWN ::: Todo. (get next item)\n", tabNext);///
+                    //printf("TABULATION DOWN ::: Todo. (get next item)\n", tabNext);///
                     /**
                     while (++item->type != UI_ITEMTYPE_NUMERICCHOOSER)
                         if (item->type == UI_ITEMTYPE_EMPTY)
@@ -77,10 +77,10 @@ struct s_ui_event       ui_eventItem_numericChooser_onRelease(t_mega *mega, t_ui
                 {
                     case UI_DATATYPE_INT:
                     {
-                        int         swpInt;
+                        //int         swpInt;
 
                         ptrInt = (int *)item->ptr;
-                        swpInt = *ptrInt;
+                        //swpInt = *ptrInt;
                         *ptrInt = *ptrInt - (int)item->status.factor;
                         break;
                     }
