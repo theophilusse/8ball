@@ -31,6 +31,10 @@
     cl_program          build_program(cl_context ctx, cl_device_id dev, const char* filename, cl_int *error);
     struct s_opencl     init_opencl(int *error);
 
+    const char          *get_cl_error(cl_int err);
+    void                display_cl_error(cl_int err);
+    void                display_cl_device_type(cl_device_type device_type);
+
     int                init_clmem(t_cam *cam, double *sun, SDL_Surface *picture, t_opencl *cl);
     int                init_clmem_cloud_fall(t_cam *cam, SDL_Surface *picture, t_opencl *cl);
     int                get_device_info(t_clinfo *cl, cl_device_id dev);

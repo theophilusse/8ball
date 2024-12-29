@@ -141,6 +141,8 @@
     void 			            ui_background(t_userInterface *ui, uchar handle, uchar active);
 
     /// DISPLAY ///
+    int                         ui_displayItem_numericChooser(SDL_Surface *viewport, t_mega *mega, t_ui_box *box, t_box_item *item,
+                                    uchar boxHandle, uint itemHandle, uint vrtOffset);
     int                         ui_displayItemPicture(SDL_Surface *viewport, t_mega *mega, t_ui_box *box, t_box_item *item, uchar boxHandle, uint itemHandle, uint vrtOffset);
     int                         ui_displayItemString(SDL_Surface *viewport, t_mega *mega, t_ui_box *box, t_box_item *item, uchar boxHandle, uint itemHandle, uint vrtOffset);
     int                         ui_displayItemButton(SDL_Surface *viewport, t_mega *mega, t_ui_box *box, t_box_item *item, uchar boxHandle, uint itemHandle, uint vrtOffset);
@@ -205,7 +207,7 @@
     void            ui_drawButton(SDL_Surface *s, t_ui_box *box, int *pos, uint *dim, uchar isPressed, uchar isItem, SDL_Surface *pic);
     void            ui_drawScrollBar(t_userInterface *ui, t_ui_box *box, struct s_ui_scrollbar sb, SDL_Surface *viewport);
     void            ui_drawBox(t_mega *mega, SDL_Surface *viewport, uchar boxHandle);
-
+    void            ui_releaseItem_numericChooser(t_box_item *item);
     int             ui_stringGetPtrAt(t_mega *mega, t_userInterface *ui, t_box_item *item, int *relClick);
 
 
@@ -236,8 +238,8 @@
 
     /// Filters
     #define TOTAL_FILTER_COUNT              6
-    void            (*filterTable[TOTAL_DATATYPE_COUNT][TOTAL_FILTER_COUNT])(void *, void *, uchar);
-    void            coreFilter(void *a, void *b, uchar datatype, uchar call);
+    static void            (*filterTable[TOTAL_DATATYPE_COUNT][TOTAL_FILTER_COUNT])(void *, void *, uchar);
+    void            *coreFilter(void *a, void *b, uchar datatype, uchar call);
     void            uintFilter_alfa(void *in, void *pmin, void *pmax);
     void            uintFilter_bravo(void *in, void *pmin, void *pmax);
     void            uintFilter_charlie(void *in, void *pmin, void *pmax);
@@ -268,7 +270,7 @@
 
     /// Instruction Set
     #define TOTAL_INSTRUCTION_COUNT     3
-    void            (*instructionTable[TOTAL_DATATYPE_COUNT][TOTAL_INSTRUCTION_COUNT])(void *, void *);
+    static void            (*instructionTable[TOTAL_DATATYPE_COUNT][TOTAL_INSTRUCTION_COUNT])(void *, void *);
     void            coreInstruction(void *a, void *b, uchar datatype, uchar call);
     void            uint_add(void *in, void *out);
     void            uint_get(void *in, char *out);

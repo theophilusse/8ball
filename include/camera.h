@@ -39,6 +39,7 @@
 
     void            clear_zbuffer(double *zbuffer, int w, int h);
     t_cam           *new_camera(SDL_Surface *screen, Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 amask);
+    void            camera_aspect_ratio(t_cam *c);
     void            reset_camera(t_cam *cam, int flag);
 
     void            refresh_orientation(t_cam *c);

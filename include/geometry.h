@@ -58,6 +58,7 @@ int             _max(int a, int b);
 void            clamp_v3(double *v, int max_value, int min_value);
 
 void                translate_vector(double *vector, double *rotate, double *scale, double *translate);
+int             reverse_normal(t_triangle *T, struct s_point P);
 
 
 #endif // GEOMETRY_H

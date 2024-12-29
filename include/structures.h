@@ -265,7 +265,9 @@
 
     typedef struct          s_camdata
     {
-        double                  verticesDist[2]; /// For color formula
+        void           *helloworld;
+        uint           helloworld_size;
+        double         verticesDist[2]; /// For color formula
         double         *zbuffer; // <-- cl_mem Input
         SDL_Surface    *backbuffer; // <-- cl_mem Output
         struct s_model  model[MAX_MODEL];
@@ -489,7 +491,7 @@
         float           _f32;
         double          _f64;
         double          vec[3];
-        char            buf[32];
+        char            buf[STRING_SIZE];
         uint            n;
         size_t          _sz;
         void            *ptr;
@@ -772,6 +774,8 @@
         SDL_Surface *work_viewport;
         SDL_Surface *picture;
         /*SDL_Surface **tileset;*/
+        void *helloworld;
+        uint helloworld_size;
         t_cam *camera;
         t_opencl *stcl;
         SDL_Event event;

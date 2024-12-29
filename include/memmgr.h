@@ -12,8 +12,8 @@
         ((t_memPage **)(&core_memory_pointer))
 
     /* High-Level de-allocation USE THIS FUNCTION */
-    #define FREE(sz) \
-        (my_free(sz))
+    #define FREE(ptr) \
+        (my_free(ptr))
 
     /*******************************************/
 
@@ -45,8 +45,8 @@
 
     typedef struct s_memPointer
     {
-        struct s_memPointer     *next;
-        struct s_memPointer     *prev;
+        struct s_memPage     *next;
+        struct s_memPage     *prev;
     }              t_memPointer;
 
     typedef struct s_memPageDim
@@ -96,7 +96,10 @@
     int             memMgr_init(void);
     int             memMgr_release(void);
 
-    t_memPage       *core_memory_pointer;
+    //#ifndef GLOBAL_MEM_POINTER
+    // #define GLOBAL_MEM_POINTER
+    static t_memPage       *core_memory_pointer;
+    //#endif // GLOBAL_MEM_POINTER
 
     void     		mem_cellDisplay(t_memCell *cell);
     void     		mem_pageDisplay(t_memPage *page);

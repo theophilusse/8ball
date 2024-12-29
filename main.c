@@ -4,6 +4,7 @@
 #include "frame.h"
 
 //Uint32          rmask, gmask, bmask, amask;
+//void            *global_mega;
 
 static void         endian(void)
 {
@@ -126,16 +127,18 @@ int main ( int argc, char** argv )
     return (42);*/
     /** memMgr Test **/
 
-    if (memMgr_init() ||
+    printf("memMgr_init Mega_construct\n");
+    if (
+    #ifdef CUSTOM_ALLOC
+        memMgr_init() ||
+    #endif
         !(mega = mega_construct(rmask, gmask, bmask, amask, "input.bmp")))
         return (1);
 
-    DEBUG
     ///printf("ponc space @ %p\n", charset_ponc_space);
     ///charset_print(mega->screen, mega->ui->font.charset, 0, 0, "          TEST");
     printf("PIXELS SPACE : %p\n", mega->ui->font.charset[32]->pixels);
-    DEBUG
-
+    printf("Mouse caption\n");
     memset((void *)global_variables.mouseCaption, 0, sizeof(char) * STRING_SIZE);
     strcat(global_variables.mouseCaption, "Test Caption (main.c)"); ///
     global_variables.videoInfo = SDL_GetVideoInfo();
@@ -145,6 +148,7 @@ int main ( int argc, char** argv )
     mega->global = &global_variables;
     printf("DEBUG CAPTION : [%s]\n", global_variables.mouseCaption); ///
     printf("DEBUG CAPTION : [%s]\n", mega->global->mouseCaption); ///
+    printf("Load bitmap\n");
     global_mega = (void *)mega;
     SDL_Surface* tmp = SDL_LoadBMP("rc/nagscreen.bmp");
     SDL_Surface* bmp;
@@ -158,26 +162,18 @@ int main ( int argc, char** argv )
     SDL_WM_SetIcon(bmp, NULL); /// Icon.
     /** toggleFullscreen(mega); **/
 
-    DEBUG ///
-
     /*** NagScreen ***/
     /*set_alpha(mega->viewport_swp, SDL_ALPHA_TRANSPARENT);*/
     SDL_FillRect(mega->viewport_swp, 0, SDL_MapRGB(mega->viewport_swp->format, 0, 64, 0));
     SDL_FillRect(mega->viewport, 0, SDL_MapRGB(mega->viewport_swp->format, 0, 64, 0));
 
-    DEBUG ///
-
     blit_at(bmp, mega->viewport, (mega->viewport->w / 2) - (bmp->w / 2), (mega->viewport->h / 2) - (bmp->h / 2));
     blit(mega->viewport, mega->screen);
     SDL_Flip(mega->screen);
 
-    DEBUG ///
-
     //
     SDL_FreeSurface(bmp);
     bmp = NULL;
-
-    DEBUG ///
 
     /*** NagScreen ***/
     if (0 && mega->input_manager[USER_COMPUTE_CLOUD](mega, 0))
@@ -186,8 +182,6 @@ int main ( int argc, char** argv )
         root_destructor(mega, 1);
         return (1);
     }
-
-    DEBUG ///
 
     /** LOL **/
     /*
@@ -202,27 +196,20 @@ int main ( int argc, char** argv )
     */
     /** LOL **/
 
-    DEBUG ///
-
     /*** START ***/
     ///charset_print(mega->viewport, mega->ui->font.charset,
     charset_print_noAlpha(mega->viewport, mega->ui->font.charset,
                   (mega->viewport->w / 2) - (8*16),
                   mega->viewport->h - (mega->viewport->h / 10),
                   "~ Press Any key ~");
-
-    DEBUG ///
     printf("Viewport : [%p] ;; viewport_swp : [%p]\n", mega->viewport, mega->viewport_swp); ///
 
     copy_surface(mega->viewport, mega->viewport_swp, "012", "012");
-    DEBUG ///
     blit(mega->viewport, mega->screen);
-    DEBUG ///
     SDL_Flip(mega->screen);
     // program main loop
 
-    DEBUG ///
-
+    printf("Entering Main Loop\n");
     // free mega struct when mainLoop finish
     err = inputManager_loop(mega, rmask, gmask, bmask, amask);
     root_destructor(mega, err);

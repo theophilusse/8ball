@@ -21,7 +21,7 @@
     #define TOOLSET_RESIZE              4
     #define TOOLSET_ROTATE              5
 
-    struct s_tool             (*build_tool[TOOLSET_SIZE])(t_mega *, int *); /// tool constructor
+    static struct s_tool             (*build_tool[TOOLSET_SIZE])(t_mega *, int *); /// tool constructor
     ///int             (*toolset[TOOLSET_SIZE])(t_mega *, int); /// Verify syntax array[]
     int                   selection_isSelected(double *vrt, t_select_node *selection);
     t_select_node         *selection_deselectIndex(t_select_node *selectionStack, uint nodeIndex);

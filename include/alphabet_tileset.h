@@ -30,7 +30,10 @@
      ** Charset's color mask.
      **
     **/
-    Uint32          crmask, cgmask, cbmask, camask;
+    #ifndef COLOR_MASKS
+     #define COLOR_MASKS
+        extern Uint32          crmask, cgmask, cbmask, camask;
+    #endif // COLOR_MASKS
 
     uchar             wordDelimiter(char c);
     uint              wordLength(char *str);
@@ -47,7 +50,7 @@
     SDL_Surface    **load_charset(const uchar *color_bg, const uchar *color_fg);
 
     /** Voir papier **/
-    void            gprintf(struct s_ftData_gTextData data, char *form, ...);
+    int        gprintf(struct s_ftData_gTextData data, char *form, ...);
 
     void           charset_print_noAlpha(SDL_Surface *s, SDL_Surface **charset, int x, int y, const char *str);
     void           charset_print(SDL_Surface *s, SDL_Surface **charset, int x, int y, const char *str);

@@ -1,7 +1,7 @@
 #ifndef HEIGHTBALL_H
     #define HEIGHTBALL_H
 
-    #ifdef __cplusplus
+   #ifdef __cplusplus
         #include <cstdlib>
     #else
         #include <stdlib.h>
@@ -27,11 +27,12 @@
     #include <math.h>
     #include <string.h>
     #include <time.h>
-    //#ifndef PTHREAD_HEADER
-    //    #include <pthread.h>
-    //#endif
+    #ifndef PTHREAD_HEADER
+        #include <pthread.h>
+    #endif
 
     #define CL_USE_DEPRECATED_OPENCL_1_2_APIS
+    #define CL_TARGET_OPENCL_VERSION 220
     #ifdef MAC
         #include <OpenCL/cl.h>
     #else
@@ -64,7 +65,7 @@
     #define TOOLSET_SIZE               16
 
     #define UI_CURSOR_COUNT             16
-    #define UI_BOX_COUNT                8
+    #define UI_BOX_COUNT                255
     #define UI_BOX_TITLE_STRLEN         32
     ///#define UI_BOX_CONTENT_MAX_ITEM     16
     #define UI_BOX_CONTENT_MAX_ITEM     128
@@ -84,17 +85,14 @@
     #define WINX        1024
     #define WINY        512
     /** #define FULLSCREEN_MOD **/
-    int         global_winx;
-    int         global_winy;
+    static int         global_winx;
+    static int         global_winy;
 
-    #include "SDL.h"
+    #include <SDL/SDL.h>
 
     typedef unsigned int    uint;
     typedef unsigned char   uchar;
-    /*
-        #define ALLOC(sz) \
-            ((void *)malloc(sz))
-    */
+
     #include "my_color_table.h"
     #include "model.h"
 
@@ -107,8 +105,8 @@
     #define MAX_MODEL               100
 
     /*** #define DEBUG_TRIANGLE ***/
-    Uint32          rmask, gmask, bmask, amask;
-    void            *global_mega;
+    static Uint32          rmask, gmask, bmask, amask;
+    static const void            *global_mega;
 
     #include "float.h"
 
@@ -118,7 +116,16 @@
     #include "dbg_util.h"
 
     #include "structures.h"
-    #include "memmgr.h"
+
+    #ifdef CUSTOM_ALLOC
+        #include "memmgr.h"
+    #else
+        #define ALLOC(sz) \
+            ((void *)malloc(sz))
+        #define FREE(ptr) \
+            (free(ptr))
+    #endif
+
     #include "camera.h"
 
     #include "alphabet_tileset.h"
@@ -139,14 +146,19 @@
     #include "frame.h"
     #include "history.h"
     #include "user_interface.h"
+    #include "helloworld.h"
 
-    SDL_Surface          *init_(void);
-    /*int                  push_model(t_camdata *d, uchar *amb_color,
+    #ifndef HEIGHT_BALL
+     #define HEIGHT_BALL
+        SDL_Surface          *init_(void);
+        /*int                  push_model(t_camdata *d, uchar *amb_color,
                                     double *vrt, double *nv, int *fce,
                                     double *model_translate, double *model_rotate, double *model_scale);*/
-    t_mega               *mega_construct(Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 amask, const char *picture_filename);
-    int             root_destructor(t_mega *mega, int isErr);
-    void            loading_bar(SDL_Surface *surface, float from_percent, float percent);
+        t_mega               *mega_construct(Uint32 rmask, Uint32 gmask, Uint32 bmask, Uint32 amask, const char *picture_filename);
+        int             root_destructor(t_mega *mega, int isErr);
+        //void            loading_bar(SDL_Surface *surface, float from_percent, float percent);
+    #endif
+
     #include "input_manager.h"
     /*void            charset_print(SDL_Surface *s, SDL_Surface **charset, int x, int y, const char *str);
     SDL_Surface     **load_charset(const uchar *color_bg, const uchar *color_fg);*/

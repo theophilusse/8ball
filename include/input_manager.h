@@ -30,7 +30,9 @@
      ** Input Manager.
      ** Input -> Pointer Table -> Input Function
     **/
-    int (*input_manager[INPUT_MANAGER_FTSZ])(t_mega *, int); /// Verify syntax array[]
+
+    ///extern int (*input_manager_[INPUT_MANAGER_FTSZ])(t_mega *, int); /// Verify syntax array[]
+
 
     int             user_quit(t_mega *mega, int flg);
     int             user_resizeWindow(t_mega *mega, int flg);

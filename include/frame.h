@@ -6,7 +6,6 @@
     void           vertices_project(SDL_Surface *viewport, t_cam *camera, uint occlusion); /// Need to be modified
     void           vertices_highlight(SDL_Surface *viewport, t_cam *camera /*, int *currentObject*/); /// Need to be modified
     void           highlight_selection(SDL_Surface *viewport, t_cam *camera, int w, int h, t_select_node *selectStack, uint occlusion);
-    void           draw_hud_screen(SDL_Surface *dst, t_mega* mega, struct s_tool tool);
     void           draw_axis(SDL_Surface *s, uchar *color, double *axis, int w, int h, int x, int y, int size, SDL_Surface **tileset, char *name);
 
     void           hud_refresh(SDL_Surface *dst, t_mega *mega, t_tool *tool);
